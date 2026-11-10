@@ -1,0 +1,38 @@
+{
+  "name": "Crossing at San Felice Scalo with the interlocking",
+  "description": "Valle Lauro line as a single track with two-track stations, ETCS with the reference onboard and the interlocking trackside: the controlled train runs its usual timetable towards Monte Clanio while R 2101 leaves Monte Clanio in the opposite direction. The interlocking sets the reverse routes of R 2101, gives each single-track segment to one direction at a time (block consent) and sends R 2101 onto track II of San Felice Scalo, where the two trains cross.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "leader": {
+    "on": false
+  },
+  "services": [
+    {
+      "id": "R 2101",
+      "train": "regional",
+      "stops": [
+        {
+          "station": "Monte Clanio",
+          "departure_s": 300
+        },
+        {
+          "station": "San Felice Scalo",
+          "arrival_s": 560,
+          "departure_s": 660
+        },
+        {
+          "station": "Ponte Sabato",
+          "arrival_s": 920,
+          "departure_s": 950
+        },
+        {
+          "station": "Valle Lauro",
+          "arrival_s": 1190
+        }
+      ]
+    }
+  ]
+}

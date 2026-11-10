@@ -1,0 +1,456 @@
+{
+ "head": {
+  "vars": [
+   "sol",
+   "opStart",
+   "opEnd",
+   "opStartName",
+   "opEndName",
+   "length",
+   "maxSpeed",
+   "etcsLevel",
+   "protection",
+   "contactLine",
+   "lineId",
+   "gradientProfile",
+   "opStartKm",
+   "opEndKm"
+  ]
+ },
+ "results": {
+  "bindings": [
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/c34c16f2da"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/0c44658f13"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/344867a1c5"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "BARONISSI"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "ACQUAMELA"
+    },
+    "length": {
+     "type": "literal",
+     "value": "1454.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "85"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+16.0(9.852) +20.0(11.139)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C148 | 12+206"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C148 | 10+752"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/b7b89a6332"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/9f295fe320"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/c2861b5114"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "MERCATO S.SEVERINO"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "FISCIANO"
+    },
+    "length": {
+     "type": "literal",
+     "value": "3674.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "85"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+2.2(17.272) -19.0(14.372) -20.0(15.272) +0.0(17.615) +20.1(17.749) +0.0(16.872) +0.0(17.542) -20.0(14.092) -10.0(16.722)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C215 | 43+664;C148 | 43+664;C216 | 43+664"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C148 | 13+953"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/83818d108f"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/451b98863c"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/ef59cf3b2f"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "FRATTE"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "FRATTE VILLA COMUNALE"
+    },
+    "length": {
+     "type": "literal",
+     "value": "435.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "85"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+0.0(3.235) +16.0(2.985)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C148 | 3+420"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C148 | 2+985"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/f95d1967c5"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/c2861b5114"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/0c44658f13"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "FISCIANO"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "BARONISSI"
+    },
+    "length": {
+     "type": "literal",
+     "value": "1747.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "85"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+20.0(12.536) -6.0(13.566) +6.3(12.989) +0.0(12.016) +0.0(13.366) +0.0(13.716)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C148 | 13+953"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C148 | 12+206"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/3e9f6cd0c9"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/344867a1c5"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/c4f3c63f15"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "ACQUAMELA"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "PELLEZZANO"
+    },
+    "length": {
+     "type": "literal",
+     "value": "1296.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+0.0(9.287)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C148 | 10+752"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C148 | 9+456"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/3110089892"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/c4f3c63f15"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/451b98863c"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "PELLEZZANO"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "FRATTE"
+    },
+    "length": {
+     "type": "literal",
+     "value": "6036.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "85"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+19.9(8.275) +18.0(6.793) +16.0(6.056) +8.0(7.509) +14.0(3.652) +16.5(7.809)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C148 | 9+456"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C148 | 3+420"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/f068b31e05"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/817efbc66c"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/a7825fc1a6"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "SALERNO IRNO"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "SALERNO"
+    },
+    "length": {
+     "type": "literal",
+     "value": "1407.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "60"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+0.0(0.000) +13.2(0.391) +3.6(0.177) +13.2(1.169) +18.3(0.277)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C148 | 1+407"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "F75-F76 | 53+90;C148 | 53+90;F73-F74 | 53+90;C147 | 53+90;C146 | 53+90"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/c3aa57b929"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/ef59cf3b2f"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/817efbc66c"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "FRATTE VILLA COMUNALE"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "SALERNO IRNO"
+    },
+    "length": {
+     "type": "literal",
+     "value": "1578.0"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "60"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "C148"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+16.0(1.407)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C148 | 2+985"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C148 | 1+407"
+    }
+   }
+  ]
+ }
+}

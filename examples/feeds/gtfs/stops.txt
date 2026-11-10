@@ -1,0 +1,13 @@
+stop_id,stop_name,stop_lat,stop_lon,location_type,parent_station,platform_code
+IT:ITF3:StopPlace:yutreno:valle-lauro,Valle Lauro,40.8789882,14.6337841,1,,
+IT:ITF3:Quay:yutreno:valle-lauro-1,Valle Lauro,40.8789882,14.6337841,0,IT:ITF3:StopPlace:yutreno:valle-lauro,1
+IT:ITF3:Quay:yutreno:valle-lauro-2,Valle Lauro,40.8789882,14.6337841,0,IT:ITF3:StopPlace:yutreno:valle-lauro,2
+IT:ITF3:StopPlace:yutreno:ponte-sabato,Ponte Sabato,40.8817194,14.6932772,1,,
+IT:ITF3:Quay:yutreno:ponte-sabato-1,Ponte Sabato,40.8817194,14.6932772,0,IT:ITF3:StopPlace:yutreno:ponte-sabato,1
+IT:ITF3:Quay:yutreno:ponte-sabato-2,Ponte Sabato,40.8817194,14.6932772,0,IT:ITF3:StopPlace:yutreno:ponte-sabato,2
+IT:ITF3:StopPlace:yutreno:san-felice-scalo,San Felice Scalo,40.8828649,14.7535535,1,,
+IT:ITF3:Quay:yutreno:san-felice-scalo-1,San Felice Scalo,40.8828649,14.7535535,0,IT:ITF3:StopPlace:yutreno:san-felice-scalo,1
+IT:ITF3:Quay:yutreno:san-felice-scalo-2,San Felice Scalo,40.8828649,14.7535535,0,IT:ITF3:StopPlace:yutreno:san-felice-scalo,2
+IT:ITF3:StopPlace:yutreno:monte-clanio,Monte Clanio,40.8842096,14.807922,1,,
+IT:ITF3:Quay:yutreno:monte-clanio-1,Monte Clanio,40.8842096,14.807922,0,IT:ITF3:StopPlace:yutreno:monte-clanio,1
+IT:ITF3:Quay:yutreno:monte-clanio-2,Monte Clanio,40.8842096,14.807922,0,IT:ITF3:StopPlace:yutreno:monte-clanio,2

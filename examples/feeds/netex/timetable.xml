@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PublicationDelivery xmlns="http://www.netex.org.uk/netex" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="any">
+  <PublicationTimestamp>2026-11-05T00:00:00</PublicationTimestamp>
+  <ParticipantRef>yutreno</ParticipantRef>
+  <Description>Valle Lauro – Monte Clanio – orario del 2026-11-05 (YuTreno)</Description>
+  <dataObjects>
+    <CompositeFrame id="epd:IT:ITF3:CompositeFrame_EU_PI_LINE_OFFER:yutreno" version="1">
+      <ValidBetween>
+        <FromDate>2026-11-05T00:00:00</FromDate>
+        <ToDate>2026-11-05T23:59:59</ToDate>
+      </ValidBetween>
+      <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
+      <codespaces>
+        <Codespace id="yutreno">
+          <Xmlns>yutreno</Xmlns>
+          <XmlnsUrl>https://github.com/nicola-amatucci/yutreno</XmlnsUrl>
+        </Codespace>
+      </codespaces>
+      <FrameDefaults>
+        <DefaultCodespaceRef ref="yutreno"/>
+        <DefaultLocale>
+          <TimeZone>Europe/Rome</TimeZone>
+          <DefaultLanguage>it</DefaultLanguage>
+        </DefaultLocale>
+      </FrameDefaults>
+      <frames>
+        <ServiceCalendarFrame id="epd:IT:ITF3:ServiceCalendarFrame_EU_PI_CALENDAR:yutreno" version="1">
+          <TypeOfFrameRef ref="epip:EU_PI_CALENDAR" versionRef="1"/>
+          <ServiceCalendar id="IT:ITF3:ServiceCalendar:yutreno:2026-11-05" version="1">
+            <Name>2026-11-05</Name>
+            <FromDate>2026-11-05</FromDate>
+            <ToDate>2026-11-05</ToDate>
+            <dayTypes>
+              <DayType id="IT:ITF3:DayType:yutreno:2026-11-05" version="1">
+                <Name>2026-11-05</Name>
+              </DayType>
+            </dayTypes>
+            <dayTypeAssignments>
+              <DayTypeAssignment id="IT:ITF3:DayTypeAssignment:yutreno:2026-11-05" order="1" version="1">
+                <Date>2026-11-05</Date>
+                <DayTypeRef ref="IT:ITF3:DayType:yutreno:2026-11-05" version="1"/>
+              </DayTypeAssignment>
+            </dayTypeAssignments>
+          </ServiceCalendar>
+        </ServiceCalendarFrame>
+        <ResourceFrame id="epd:IT:ITF3:ResourceFrame_EU_PI_COMMON:yutreno" version="1">
+          <TypeOfFrameRef ref="epip:EU_PI_COMMON" versionRef="1"/>
+          <organisations>
+            <Operator id="IT:ITF3:Operator:yutreno:yutreno" version="1">
+              <Name>YuTreno</Name>
+              <ContactDetails>
+                <Url>https://github.com/nicola-amatucci/yutreno</Url>
+              </ContactDetails>
+              <OrganisationType>railOperator</OrganisationType>
+            </Operator>
+          </organisations>
+        </ResourceFrame>
+        <SiteFrame id="epd:IT:ITF3:SiteFrame_EU_PI_STOP:yutreno" version="1">
+          <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
+          <stopPlaces>
+            <StopPlace id="IT:ITF3:StopPlace:yutreno:valle-lauro" version="1">
+              <Name>Valle Lauro</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>14.6337841</Longitude>
+                  <Latitude>40.8789882</Latitude>
+                </Location>
+              </Centroid>
+              <TransportMode>rail</TransportMode>
+              <StopPlaceType>railStation</StopPlaceType>
+              <quays>
+                <Quay id="IT:ITF3:Quay:yutreno:valle-lauro-1" version="1">
+                  <Name>Valle Lauro – binario 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.6337841</Longitude>
+                      <Latitude>40.8789882</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>1</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+                <Quay id="IT:ITF3:Quay:yutreno:valle-lauro-2" version="1">
+                  <Name>Valle Lauro – binario 2</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.6337841</Longitude>
+                      <Latitude>40.8789882</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>2</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="IT:ITF3:StopPlace:yutreno:ponte-sabato" version="1">
+              <Name>Ponte Sabato</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>14.6932772</Longitude>
+                  <Latitude>40.8817194</Latitude>
+                </Location>
+              </Centroid>
+              <TransportMode>rail</TransportMode>
+              <StopPlaceType>railStation</StopPlaceType>
+              <quays>
+                <Quay id="IT:ITF3:Quay:yutreno:ponte-sabato-1" version="1">
+                  <Name>Ponte Sabato – binario 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.6932772</Longitude>
+                      <Latitude>40.8817194</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>1</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+                <Quay id="IT:ITF3:Quay:yutreno:ponte-sabato-2" version="1">
+                  <Name>Ponte Sabato – binario 2</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.6932772</Longitude>
+                      <Latitude>40.8817194</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>2</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="IT:ITF3:StopPlace:yutreno:san-felice-scalo" version="1">
+              <Name>San Felice Scalo</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>14.7535535</Longitude>
+                  <Latitude>40.8828649</Latitude>
+                </Location>
+              </Centroid>
+              <TransportMode>rail</TransportMode>
+              <StopPlaceType>railStation</StopPlaceType>
+              <quays>
+                <Quay id="IT:ITF3:Quay:yutreno:san-felice-scalo-1" version="1">
+                  <Name>San Felice Scalo – binario 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.7535535</Longitude>
+                      <Latitude>40.8828649</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>1</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+                <Quay id="IT:ITF3:Quay:yutreno:san-felice-scalo-2" version="1">
+                  <Name>San Felice Scalo – binario 2</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.7535535</Longitude>
+                      <Latitude>40.8828649</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>2</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+              </quays>
+            </StopPlace>
+            <StopPlace id="IT:ITF3:StopPlace:yutreno:monte-clanio" version="1">
+              <Name>Monte Clanio</Name>
+              <Centroid>
+                <Location>
+                  <Longitude>14.807922</Longitude>
+                  <Latitude>40.8842096</Latitude>
+                </Location>
+              </Centroid>
+              <TransportMode>rail</TransportMode>
+              <StopPlaceType>railStation</StopPlaceType>
+              <quays>
+                <Quay id="IT:ITF3:Quay:yutreno:monte-clanio-1" version="1">
+                  <Name>Monte Clanio – binario 1</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.807922</Longitude>
+                      <Latitude>40.8842096</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>1</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+                <Quay id="IT:ITF3:Quay:yutreno:monte-clanio-2" version="1">
+                  <Name>Monte Clanio – binario 2</Name>
+                  <Centroid>
+                    <Location>
+                      <Longitude>14.807922</Longitude>
+                      <Latitude>40.8842096</Latitude>
+                    </Location>
+                  </Centroid>
+                  <PublicCode>2</PublicCode>
+                  <QuayType>railPlatform</QuayType>
+                </Quay>
+              </quays>
+            </StopPlace>
+          </stopPlaces>
+        </SiteFrame>
+        <ServiceFrame id="epd:IT:ITF3:ServiceFrame_EU_PI_NETWORK:yutreno" version="1">
+          <TypeOfFrameRef ref="epip:EU_PI_NETWORK" versionRef="1"/>
+          <Network id="IT:ITF3:Network:yutreno:valle-lauro-monte-clanio" version="1">
+            <Name>Valle Lauro – Monte Clanio</Name>
+          </Network>
+          <routes>
+            <Route id="IT:ITF3:Route:yutreno:valle-lauro-monte-clanio-out" version="1">
+              <Name>Valle Lauro – Monte Clanio (andata)</Name>
+              <LineRef ref="IT:ITF3:Line:yutreno:valle-lauro-monte-clanio" version="1"/>
+              <DirectionType>outbound</DirectionType>
+            </Route>
+            <Route id="IT:ITF3:Route:yutreno:valle-lauro-monte-clanio-in" version="1">
+              <Name>Valle Lauro – Monte Clanio (ritorno)</Name>
+              <LineRef ref="IT:ITF3:Line:yutreno:valle-lauro-monte-clanio" version="1"/>
+              <DirectionType>inbound</DirectionType>
+            </Route>
+          </routes>
+          <lines>
+            <Line id="IT:ITF3:Line:yutreno:valle-lauro-monte-clanio" version="1">
+              <Name>Valle Lauro – Monte Clanio</Name>
+              <TransportMode>rail</TransportMode>
+              <PublicCode>Valle Lauro – Monte Clanio</PublicCode>
+              <OperatorRef ref="IT:ITF3:Operator:yutreno:yutreno" version="1"/>
+            </Line>
+          </lines>
+          <scheduledStopPoints>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-1" version="1">
+              <Name>Valle Lauro</Name>
+              <Location>
+                <Longitude>14.6337841</Longitude>
+                <Latitude>40.8789882</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-2" version="1">
+              <Name>Valle Lauro</Name>
+              <Location>
+                <Longitude>14.6337841</Longitude>
+                <Latitude>40.8789882</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-1" version="1">
+              <Name>Ponte Sabato</Name>
+              <Location>
+                <Longitude>14.6932772</Longitude>
+                <Latitude>40.8817194</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-2" version="1">
+              <Name>Ponte Sabato</Name>
+              <Location>
+                <Longitude>14.6932772</Longitude>
+                <Latitude>40.8817194</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-1" version="1">
+              <Name>San Felice Scalo</Name>
+              <Location>
+                <Longitude>14.7535535</Longitude>
+                <Latitude>40.8828649</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-2" version="1">
+              <Name>San Felice Scalo</Name>
+              <Location>
+                <Longitude>14.7535535</Longitude>
+                <Latitude>40.8828649</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-1" version="1">
+              <Name>Monte Clanio</Name>
+              <Location>
+                <Longitude>14.807922</Longitude>
+                <Latitude>40.8842096</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+            <ScheduledStopPoint id="IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-2" version="1">
+              <Name>Monte Clanio</Name>
+              <Location>
+                <Longitude>14.807922</Longitude>
+                <Latitude>40.8842096</Latitude>
+              </Location>
+              <StopType>railStation</StopType>
+            </ScheduledStopPoint>
+          </scheduledStopPoints>
+          <stopAssignments>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:valle-lauro-1" order="1" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-1" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:valle-lauro" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:valle-lauro-1" version="1"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:valle-lauro-2" order="2" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-2" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:valle-lauro" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:valle-lauro-2" version="1"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:ponte-sabato-1" order="3" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-1" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:ponte-sabato" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:ponte-sabato-1" version="1"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:ponte-sabato-2" order="4" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-2" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:ponte-sabato" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:ponte-sabato-2" version="1"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:san-felice-scalo-1" order="5" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-1" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:san-felice-scalo" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:san-felice-scalo-1" version="1"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:san-felice-scalo-2" order="6" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-2" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:san-felice-scalo" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:san-felice-scalo-2" version="1"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:monte-clanio-1" order="7" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-1" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:monte-clanio" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:monte-clanio-1" version="1"/>
+            </PassengerStopAssignment>
+            <PassengerStopAssignment id="IT:ITF3:PassengerStopAssignment:yutreno:monte-clanio-2" order="8" version="1">
+              <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-2" version="1"/>
+              <StopPlaceRef ref="IT:ITF3:StopPlace:yutreno:monte-clanio" version="1"/>
+              <QuayRef ref="IT:ITF3:Quay:yutreno:monte-clanio-2" version="1"/>
+            </PassengerStopAssignment>
+          </stopAssignments>
+          <journeyPatterns>
+            <ServiceJourneyPattern id="IT:ITF3:ServiceJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio" version="1">
+              <Name>Valle Lauro – Monte Clanio</Name>
+              <RouteView>
+                <LineRef ref="IT:ITF3:Line:yutreno:valle-lauro-monte-clanio" version="1"/>
+              </RouteView>
+              <pointsInSequence>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-1" order="1" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-1" version="1"/>
+                  <ForAlighting>false</ForAlighting>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-2" order="2" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-1" version="1"/>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-3" order="3" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-1" version="1"/>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-4" order="4" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-1" version="1"/>
+                  <ForBoarding>false</ForBoarding>
+                </StopPointInJourneyPattern>
+              </pointsInSequence>
+            </ServiceJourneyPattern>
+            <ServiceJourneyPattern id="IT:ITF3:ServiceJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro" version="1">
+              <Name>Monte Clanio – Valle Lauro</Name>
+              <RouteView>
+                <LineRef ref="IT:ITF3:Line:yutreno:valle-lauro-monte-clanio" version="1"/>
+              </RouteView>
+              <pointsInSequence>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-1" order="1" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-2" version="1"/>
+                  <ForAlighting>false</ForAlighting>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-2" order="2" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-2" version="1"/>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-3" order="3" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-2" version="1"/>
+                </StopPointInJourneyPattern>
+                <StopPointInJourneyPattern id="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-4" order="4" version="1">
+                  <ScheduledStopPointRef ref="IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-2" version="1"/>
+                  <ForBoarding>false</ForBoarding>
+                </StopPointInJourneyPattern>
+              </pointsInSequence>
+            </ServiceJourneyPattern>
+          </journeyPatterns>
+        </ServiceFrame>
+        <TimetableFrame id="epd:IT:ITF3:TimetableFrame_EU_PI_TIMETABLE:yutreno" version="1">
+          <TypeOfFrameRef ref="epip:EU_PI_TIMETABLE" versionRef="1"/>
+          <vehicleJourneys>
+            <ServiceJourney id="IT:ITF3:ServiceJourney:yutreno:r-2001" version="1">
+              <Name>R 2001 Valle Lauro – Monte Clanio</Name>
+              <TransportMode>rail</TransportMode>
+              <DepartureTime>08:00:00</DepartureTime>
+              <JourneyDuration>PT880S</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="IT:ITF3:DayType:yutreno:2026-11-05" version="1"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="IT:ITF3:ServiceJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio" version="1"/>
+              <OperatorRef ref="IT:ITF3:Operator:yutreno:yutreno" version="1"/>
+              <trainNumbers>
+                <TrainNumberRef ref="IT:ITF3:TrainNumber:yutreno:r-2001" version="1"/>
+              </trainNumbers>
+              <passingTimes>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2001-1" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-1" version="1"/>
+                  <DepartureTime>08:00:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2001-2" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-2" version="1"/>
+                  <ArrivalTime>08:04:20</ArrivalTime>
+                  <DepartureTime>08:04:50</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2001-3" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-3" version="1"/>
+                  <ArrivalTime>08:10:20</ArrivalTime>
+                  <DepartureTime>08:10:50</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2001-4" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio-4" version="1"/>
+                  <ArrivalTime>08:14:40</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+            <ServiceJourney id="IT:ITF3:ServiceJourney:yutreno:r-2101" version="1">
+              <Name>R 2101 Monte Clanio – Valle Lauro</Name>
+              <TransportMode>rail</TransportMode>
+              <DepartureTime>08:05:00</DepartureTime>
+              <JourneyDuration>PT890S</JourneyDuration>
+              <dayTypes>
+                <DayTypeRef ref="IT:ITF3:DayType:yutreno:2026-11-05" version="1"/>
+              </dayTypes>
+              <ServiceJourneyPatternRef ref="IT:ITF3:ServiceJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro" version="1"/>
+              <OperatorRef ref="IT:ITF3:Operator:yutreno:yutreno" version="1"/>
+              <trainNumbers>
+                <TrainNumberRef ref="IT:ITF3:TrainNumber:yutreno:r-2101" version="1"/>
+              </trainNumbers>
+              <passingTimes>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2101-1" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-1" version="1"/>
+                  <DepartureTime>08:05:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2101-2" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-2" version="1"/>
+                  <ArrivalTime>08:09:20</ArrivalTime>
+                  <DepartureTime>08:11:00</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2101-3" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-3" version="1"/>
+                  <ArrivalTime>08:15:20</ArrivalTime>
+                  <DepartureTime>08:15:50</DepartureTime>
+                </TimetabledPassingTime>
+                <TimetabledPassingTime id="IT:ITF3:TimetabledPassingTime:yutreno:r-2101-4" version="1">
+                  <StopPointInJourneyPatternRef ref="IT:ITF3:StopPointInJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro-4" version="1"/>
+                  <ArrivalTime>08:19:50</ArrivalTime>
+                </TimetabledPassingTime>
+              </passingTimes>
+            </ServiceJourney>
+          </vehicleJourneys>
+          <trainNumbers>
+            <TrainNumber id="IT:ITF3:TrainNumber:yutreno:r-2001" version="1">
+              <ForAdvertisement>R 2001</ForAdvertisement>
+            </TrainNumber>
+            <TrainNumber id="IT:ITF3:TrainNumber:yutreno:r-2101" version="1">
+              <ForAdvertisement>R 2101</ForAdvertisement>
+            </TrainNumber>
+          </trainNumbers>
+        </TimetableFrame>
+      </frames>
+    </CompositeFrame>
+  </dataObjects>
+</PublicationDelivery>

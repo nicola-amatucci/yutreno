@@ -1,0 +1,122 @@
+{
+ "open#drive": {
+  "text": "90219145e9c22a64",
+  "fields": "49bbe38db3fe690f",
+  "text_start": "SIGNALLING ERTMS/ETCS level 2 Automatic block + SCMT ETCS ONBOARD Simplified internal Reference, balises and messages Ex"
+ },
+ "open#line": {
+  "text": "8286fc4253ab1031",
+  "fields": "31444ff309024a6a",
+  "text_start": "LINE — line in use — Valle Lauro – Monte Clanio (built-in) Valico dell'Appennino (built-in) San Felice Scalo – Rocca Sab"
+ },
+ "open#train": {
+  "text": "801e8e9ce91a218d",
+  "fields": "8b5f1b0146450df8",
+  "text_start": "MODEL — train in use — Regional EMU (4 cars) High-speed train (8 cars) Heavy freight (loco + 1200 t) NAME Apply and rest"
+ },
+ "open#scenarios": {
+  "text": "a5d108738676018b",
+  "fields": "04abd87c9aae3fe4",
+  "text_start": "SCENARIO Speed restriction for a worksite Wet rail and a worksite on the descent Loss of the radio link Moving block beh"
+ },
+ "open#timetable": {
+  "text": "7313f1e0b6fa87e2",
+  "fields": "e32453d8c25c1825",
+  "text_start": "SPACE-TIME DIAGRAM Time runs to the right, the line downwards. Dashed: planned timetable; solid: what the trains have d"
+ },
+ "open#control": {
+  "text": "79c3214a61cc9d6e",
+  "fields": "fced9c1a4c0cfeb7",
+  "text_start": "NETWORK 08:00:00 Resume Time ×1 Copy the snapshot as JSON Valle Lauro – Monte Clanio Valle Lauro Ponte Sabato San Felice"
+ },
+ "open#controller": {
+  "text": "ffa979c3cc00ec39",
+  "fields": "a537022227dafa74",
+  "text_start": "WHO DRIVES THE TRAIN Driver In-browser controller External controller CONTROL PERIOD 0.1 s (10 Hz) 0.2 s (5 Hz) 0.5 s (2"
+ },
+ "open#data": {
+  "text": "27800fa4e3c3cb0d",
+  "fields": "97ab2a2a7b7fa7a3",
+  "text_start": "RUN INDICATORS Running time 0 min 00 s Traction energy 0.0 kWh Energy regenerated in braking 0.0 kWh Net energy 0.0 kWh "
+ },
+ "open#scene": {
+  "objects": 503,
+  "scene": "0ad1586cfea7aac5",
+  "ride": ""
+ },
+ "default-300s#drive": {
+  "text": "5d58dc39238f0a5f",
+  "fields": "49bbe38db3fe690f",
+  "text_start": "SIGNALLING ERTMS/ETCS level 2 Automatic block + SCMT ETCS ONBOARD Simplified internal Reference, balises and messages Ex"
+ },
+ "default-300s#timetable": {
+  "text": "7313f1e0b6fa87e2",
+  "fields": "e32453d8c25c1825",
+  "text_start": "SPACE-TIME DIAGRAM Time runs to the right, the line downwards. Dashed: planned timetable; solid: what the trains have d"
+ },
+ "default-300s#control": {
+  "text": "2d105951823f989a",
+  "fields": "fced9c1a4c0cfeb7",
+  "text_start": "NETWORK 08:05:00 Resume Time ×1 Copy the snapshot as JSON Valle Lauro – Monte Clanio Valle Lauro Ponte Sabato San Felice"
+ },
+ "default-300s#scene": {
+  "objects": 503,
+  "scene": "13ceb376ce7b5b33",
+  "ride": ""
+ },
+ "branch-1000s#drive": {
+  "text": "57d29ba0afca9f92",
+  "fields": "ee8802a442cfcfca",
+  "text_start": "SIGNALLING ERTMS/ETCS level 2 Automatic block + SCMT ETCS ONBOARD Simplified internal Reference, balises and messages Ex"
+ },
+ "branch-1000s#timetable": {
+  "text": "3fd3426ca436c799",
+  "fields": "5b65fdfbe6abbe23",
+  "text_start": "SPACE-TIME DIAGRAM Time runs to the right, the line downwards. Dashed: planned timetable; solid: what the trains have d"
+ },
+ "branch-1000s#control": {
+  "text": "1ea7b3aa2d409881",
+  "fields": "fced9c1a4c0cfeb7",
+  "text_start": "NETWORK 08:16:40 Resume Time ×1 Copy the snapshot as JSON Valle Lauro – Monte Clanio Valle Lauro Ponte Sabato San Felice"
+ },
+ "branch-1000s#scene": {
+  "objects": 501,
+  "scene": "fe173962e039c288",
+  "ride": ""
+ },
+ "branch-1000s-ride-R3101#drive": {
+  "text": "7661431276017185",
+  "fields": "9691f93cf13bf1f9",
+  "text_start": "SIGNALLING ERTMS/ETCS level 2 Automatic block + SCMT ETCS ONBOARD Simplified internal Reference, balises and messages Ex"
+ },
+ "branch-1000s-ride-R3101#scene": {
+  "objects": 404,
+  "scene": "adcc436df6704b7d",
+  "ride": "In the cab of R 3101 on San Felice Scalo – Rocca Sabato"
+ },
+ "rain-400s#drive": {
+  "text": "7902cd5509d6f91f",
+  "fields": "1d238c9f848bde14",
+  "text_start": "SIGNALLING ERTMS/ETCS level 2 Automatic block + SCMT ETCS ONBOARD Simplified internal Reference, balises and messages Ex"
+ },
+ "rain-400s#scene": {
+  "objects": 507,
+  "scene": "c5a08e2b25917eef",
+  "ride": ""
+ },
+ "benevento-1500s-ride-R7101#drive": {
+  "text": "96981abe72b6db00",
+  "fields": "12e2ae3bdc39982b",
+  "text_start": "SIGNALLING ERTMS/ETCS level 2 Automatic block + SCMT ETCS ONBOARD Simplified internal Reference, balises and messages Ex"
+ },
+ "benevento-1500s-ride-R7101#control": {
+  "text": "34acd6a01ea56eb3",
+  "fields": "fced9c1a4c0cfeb7",
+  "text_start": "NETWORK 08:25:00 Resume Time ×1 Copy the snapshot as JSON Cancello – Benevento Cancello San Felice a Cancello Santa Mari"
+ },
+ "benevento-1500s-ride-R7101#scene": {
+  "objects": 1048,
+  "scene": "215e52103bd8b813",
+  "ride": "In the cab of R 7101 on Avellino – Benevento"
+ }
+}

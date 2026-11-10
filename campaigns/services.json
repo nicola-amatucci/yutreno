@@ -1,0 +1,12 @@
+{
+  "name": "services",
+  "description": "Sweep of the service on a built-in line and on a real one: number of trains, headway and passenger demand, trains in both directions, with punctuality, passenger and energy measures.",
+  "lines": ["valle-lauro", "../examples/infra/salerno-mercato-s-severino/line.json"],
+  "trains": [2, 4],
+  "headways_s": [600, 900],
+  "directions": ["both"],
+  "signalling": ["ETCS"],
+  "demand_per_station_per_hour": [0, 600, 1200],
+  "arrivals": "uniform",
+  "on_time_s": 180
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Siri xmlns="http://www.siri.org.uk/siri" version="2.1">
+  <ServiceDelivery>
+    <ResponseTimestamp>2026-11-05T08:10:00+01:00</ResponseTimestamp>
+    <ProducerRef>yutreno</ProducerRef>
+    <VehicleMonitoringDelivery version="2.1">
+      <ResponseTimestamp>2026-11-05T08:10:00+01:00</ResponseTimestamp>
+      <VehicleActivity>
+        <RecordedAtTime>2026-11-05T08:10:00+01:00</RecordedAtTime>
+        <ValidUntilTime>2026-11-05T08:10:30+01:00</ValidUntilTime>
+        <ProgressBetweenStops>
+          <LinkDistance>5200</LinkDistance>
+          <Percentage>100.0</Percentage>
+        </ProgressBetweenStops>
+        <MonitoredVehicleJourney>
+          <LineRef>IT:ITF3:Line:yutreno:valle-lauro-monte-clanio</LineRef>
+          <DirectionRef>outbound</DirectionRef>
+          <FramedVehicleJourneyRef>
+            <DataFrameRef>2026-11-05</DataFrameRef>
+            <DatedVehicleJourneyRef>IT:ITF3:ServiceJourney:yutreno:r-2001</DatedVehicleJourneyRef>
+          </FramedVehicleJourneyRef>
+          <JourneyPatternRef>IT:ITF3:ServiceJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio</JourneyPatternRef>
+          <VehicleMode>rail</VehicleMode>
+          <PublishedLineName>Valle Lauro – Monte Clanio</PublishedLineName>
+          <OperatorRef>IT:ITF3:Operator:yutreno:yutreno</OperatorRef>
+          <OriginRef>IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-1</OriginRef>
+          <OriginName>Valle Lauro</OriginName>
+          <DestinationRef>IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-1</DestinationRef>
+          <DestinationName>Monte Clanio</DestinationName>
+          <VehicleJourneyName>R 2001</VehicleJourneyName>
+          <Monitored>true</Monitored>
+          <VehicleLocation>
+            <Longitude>14.753579</Longitude>
+            <Latitude>40.8828621</Latitude>
+          </VehicleLocation>
+          <Bearing>98.1</Bearing>
+          <Velocity>0</Velocity>
+          <Delay>-PT106S</Delay>
+          <VehicleRef>IT:ITF3:Vehicle:yutreno:r-2001</VehicleRef>
+          <MonitoredCall>
+            <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-1</StopPointRef>
+            <VisitNumber>1</VisitNumber>
+            <Order>3</Order>
+            <StopPointName>San Felice Scalo</StopPointName>
+            <VehicleAtStop>true</VehicleAtStop>
+            <AimedArrivalTime>2026-11-05T08:10:20+01:00</AimedArrivalTime>
+            <ActualArrivalTime>2026-11-05T08:08:34+01:00</ActualArrivalTime>
+            <AimedDepartureTime>2026-11-05T08:10:50+01:00</AimedDepartureTime>
+            <ExpectedDepartureTime>2026-11-05T08:10:50+01:00</ExpectedDepartureTime>
+          </MonitoredCall>
+        </MonitoredVehicleJourney>
+      </VehicleActivity>
+      <VehicleActivity>
+        <RecordedAtTime>2026-11-05T08:10:00+01:00</RecordedAtTime>
+        <ValidUntilTime>2026-11-05T08:10:30+01:00</ValidUntilTime>
+        <ProgressBetweenStops>
+          <LinkDistance>4600</LinkDistance>
+          <Percentage>100.0</Percentage>
+        </ProgressBetweenStops>
+        <MonitoredVehicleJourney>
+          <LineRef>IT:ITF3:Line:yutreno:valle-lauro-monte-clanio</LineRef>
+          <DirectionRef>inbound</DirectionRef>
+          <FramedVehicleJourneyRef>
+            <DataFrameRef>2026-11-05</DataFrameRef>
+            <DatedVehicleJourneyRef>IT:ITF3:ServiceJourney:yutreno:r-2101</DatedVehicleJourneyRef>
+          </FramedVehicleJourneyRef>
+          <JourneyPatternRef>IT:ITF3:ServiceJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro</JourneyPatternRef>
+          <VehicleMode>rail</VehicleMode>
+          <PublishedLineName>Valle Lauro – Monte Clanio</PublishedLineName>
+          <OperatorRef>IT:ITF3:Operator:yutreno:yutreno</OperatorRef>
+          <OriginRef>IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-2</OriginRef>
+          <OriginName>Monte Clanio</OriginName>
+          <DestinationRef>IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-2</DestinationRef>
+          <DestinationName>Valle Lauro</DestinationName>
+          <VehicleJourneyName>R 2101</VehicleJourneyName>
+          <Monitored>true</Monitored>
+          <VehicleLocation>
+            <Longitude>14.7535474</Longitude>
+            <Latitude>40.8828655</Latitude>
+          </VehicleLocation>
+          <Bearing>278.2</Bearing>
+          <Velocity>0</Velocity>
+          <Delay>-PT54S</Delay>
+          <VehicleRef>IT:ITF3:Vehicle:yutreno:r-2101</VehicleRef>
+          <MonitoredCall>
+            <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-2</StopPointRef>
+            <VisitNumber>1</VisitNumber>
+            <Order>2</Order>
+            <StopPointName>San Felice Scalo</StopPointName>
+            <VehicleAtStop>true</VehicleAtStop>
+            <AimedArrivalTime>2026-11-05T08:09:20+01:00</AimedArrivalTime>
+            <ActualArrivalTime>2026-11-05T08:08:26+01:00</ActualArrivalTime>
+            <AimedDepartureTime>2026-11-05T08:11:00+01:00</AimedDepartureTime>
+            <ExpectedDepartureTime>2026-11-05T08:11:00+01:00</ExpectedDepartureTime>
+          </MonitoredCall>
+        </MonitoredVehicleJourney>
+      </VehicleActivity>
+    </VehicleMonitoringDelivery>
+  </ServiceDelivery>
+</Siri>

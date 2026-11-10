@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false,
+    "resolveJsonModule": true
+  },
+  "include": ["src/web/**/*.ts", "src/docs/**/*.ts", "src/core/**/*.ts", "src/trackside/**/*.ts", "src/feeds/**/*.ts"]
+}

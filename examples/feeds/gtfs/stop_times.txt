@@ -1,0 +1,9 @@
+trip_id,arrival_time,departure_time,stop_id,stop_sequence,shape_dist_traveled
+IT:ITF3:ServiceJourney:yutreno:r-2001,08:00:00,08:00:00,IT:ITF3:Quay:yutreno:valle-lauro-1,1,0.0
+IT:ITF3:ServiceJourney:yutreno:r-2001,08:04:20,08:04:50,IT:ITF3:Quay:yutreno:ponte-sabato-1,2,5050.0
+IT:ITF3:ServiceJourney:yutreno:r-2001,08:10:20,08:10:50,IT:ITF3:Quay:yutreno:san-felice-scalo-1,3,10250.0
+IT:ITF3:ServiceJourney:yutreno:r-2001,08:14:40,08:14:40,IT:ITF3:Quay:yutreno:monte-clanio-1,4,14850.0
+IT:ITF3:ServiceJourney:yutreno:r-2101,08:05:00,08:05:00,IT:ITF3:Quay:yutreno:monte-clanio-2,1,0.0
+IT:ITF3:ServiceJourney:yutreno:r-2101,08:09:20,08:11:00,IT:ITF3:Quay:yutreno:san-felice-scalo-2,2,4600.0
+IT:ITF3:ServiceJourney:yutreno:r-2101,08:15:20,08:15:50,IT:ITF3:Quay:yutreno:ponte-sabato-2,3,9800.0
+IT:ITF3:ServiceJourney:yutreno:r-2101,08:19:50,08:19:50,IT:ITF3:Quay:yutreno:valle-lauro-2,4,14850.0

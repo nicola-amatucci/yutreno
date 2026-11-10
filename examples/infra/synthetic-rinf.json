@@ -1,0 +1,194 @@
+{
+ "head": {
+  "vars": [
+   "sol",
+   "opStart",
+   "opEnd",
+   "opStartName",
+   "opEndName",
+   "length",
+   "maxSpeed",
+   "etcsLevel",
+   "protection",
+   "contactLine",
+   "gradient",
+   "lineId"
+  ]
+ },
+ "results": {
+  "bindings": [
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/sol1"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITBORGOALTO"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITCASENUOVE"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "BORGO ALTO"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "CASE NUOVE"
+    },
+    "length": {
+     "type": "literal",
+     "value": "4700"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "100"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "overhead 3 kV DC"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "999"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/sol2"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITCASENUOVE"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITPMKM7000"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "CASE NUOVE"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "PM KM 7+000"
+    },
+    "length": {
+     "type": "literal",
+     "value": "2000"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "110"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "overhead 3 kV DC"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "999"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/sol3"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITSELVAPIANA"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITPMKM7000"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "SELVA PIANA"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "PM KM 7+000"
+    },
+    "length": {
+     "type": "literal",
+     "value": "2000"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "105"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "overhead 3 kV DC"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "999"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/sol4"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITSELVAPIANA"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/functionalInfrastructure/operationalPoints/ITRIPABASSA"
+    },
+    "opStartName": {
+     "type": "literal",
+     "value": "SELVA PIANA"
+    },
+    "opEndName": {
+     "type": "literal",
+     "value": "RIPA BASSA"
+    },
+    "length": {
+     "type": "literal",
+     "value": "4950"
+    },
+    "maxSpeed": {
+     "type": "literal",
+     "value": "90"
+    },
+    "protection": {
+     "type": "literal",
+     "value": "SCMT"
+    },
+    "contactLine": {
+     "type": "literal",
+     "value": "overhead 3 kV DC"
+    },
+    "gradient": {
+     "type": "literal",
+     "value": "-5.4"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "999"
+    }
+   }
+  ]
+ }
+}

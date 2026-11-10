@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<railML xmlns="https://www.railml.org/schemas/3.2" version="3.2">
+  <infrastructure id="is-valle-lauro-monte-clanio">
+    <functionalInfrastructure>
+      <operationalPoints>
+        <operationalPoint id="op-valle-lauro">
+          <name name="Valle Lauro" language="it"/>
+          <designator register="yutreno" entry="IT:ITF3:StopPlace:yutreno:valle-lauro"/>
+          <opOperations>
+            <opOperation operationalType="station"/>
+          </opOperations>
+        </operationalPoint>
+        <operationalPoint id="op-ponte-sabato">
+          <name name="Ponte Sabato" language="it"/>
+          <designator register="yutreno" entry="IT:ITF3:StopPlace:yutreno:ponte-sabato"/>
+          <opOperations>
+            <opOperation operationalType="station"/>
+          </opOperations>
+        </operationalPoint>
+        <operationalPoint id="op-san-felice-scalo">
+          <name name="San Felice Scalo" language="it"/>
+          <designator register="yutreno" entry="IT:ITF3:StopPlace:yutreno:san-felice-scalo"/>
+          <opOperations>
+            <opOperation operationalType="station"/>
+          </opOperations>
+        </operationalPoint>
+        <operationalPoint id="op-monte-clanio">
+          <name name="Monte Clanio" language="it"/>
+          <designator register="yutreno" entry="IT:ITF3:StopPlace:yutreno:monte-clanio"/>
+          <opOperations>
+            <opOperation operationalType="station"/>
+          </opOperations>
+        </operationalPoint>
+      </operationalPoints>
+    </functionalInfrastructure>
+  </infrastructure>
+  <timetable>
+    <validities>
+      <validity id="va-1">
+        <name name="2026-11-05" language="it"/>
+        <bitmaskValidity bitmask="1" fromDate="2026-11-05"/>
+      </validity>
+    </validities>
+    <baseItineraries>
+      <baseItinerary id="bi-r-2001">
+        <baseItineraryPoint id="bip-r-2001-1" locationRef="op-valle-lauro">
+          <times scope="commercial">
+            <departure time="08:00:00"/>
+          </times>
+          <stop/>
+        </baseItineraryPoint>
+        <baseItineraryPoint id="bip-r-2001-2" locationRef="op-ponte-sabato">
+          <times scope="commercial">
+            <arrival time="08:04:20"/>
+            <departure time="08:04:50"/>
+          </times>
+          <stop minDwellTime="PT20S"/>
+        </baseItineraryPoint>
+        <baseItineraryPoint id="bip-r-2001-3" locationRef="op-san-felice-scalo">
+          <times scope="commercial">
+            <arrival time="08:10:20"/>
+            <departure time="08:10:50"/>
+          </times>
+          <stop minDwellTime="PT20S"/>
+        </baseItineraryPoint>
+        <baseItineraryPoint id="bip-r-2001-4" locationRef="op-monte-clanio">
+          <times scope="commercial">
+            <arrival time="08:14:40"/>
+          </times>
+          <stop/>
+        </baseItineraryPoint>
+      </baseItinerary>
+      <baseItinerary id="bi-r-2101">
+        <baseItineraryPoint id="bip-r-2101-1" locationRef="op-monte-clanio">
+          <times scope="commercial">
+            <departure time="08:05:00"/>
+          </times>
+          <stop/>
+        </baseItineraryPoint>
+        <baseItineraryPoint id="bip-r-2101-2" locationRef="op-san-felice-scalo">
+          <times scope="commercial">
+            <arrival time="08:09:20"/>
+            <departure time="08:11:00"/>
+          </times>
+          <stop minDwellTime="PT20S"/>
+        </baseItineraryPoint>
+        <baseItineraryPoint id="bip-r-2101-3" locationRef="op-ponte-sabato">
+          <times scope="commercial">
+            <arrival time="08:15:20"/>
+            <departure time="08:15:50"/>
+          </times>
+          <stop minDwellTime="PT20S"/>
+        </baseItineraryPoint>
+        <baseItineraryPoint id="bip-r-2101-4" locationRef="op-valle-lauro">
+          <times scope="commercial">
+            <arrival time="08:19:50"/>
+          </times>
+          <stop/>
+        </baseItineraryPoint>
+      </baseItinerary>
+    </baseItineraries>
+    <itineraries>
+      <itinerary id="it-r-2001">
+        <range baseItineraryRef="bi-r-2001"/>
+      </itinerary>
+      <itinerary id="it-r-2101">
+        <range baseItineraryRef="bi-r-2101"/>
+      </itinerary>
+    </itineraries>
+    <operationalTrains>
+      <operationalTrain id="ot-r-2001">
+        <name name="R 2001" language="it"/>
+        <operationalTrainVariant id="otv-r-2001" itineraryRef="it-r-2001" validityRef="va-1">
+          <identifiers>
+            <identifier number="R 2001" type="OperationalTrainNumber"/>
+          </identifiers>
+          <operationalTrainSection>
+            <range start="bip-r-2001-1" end="bip-r-2001-4"/>
+          </operationalTrainSection>
+        </operationalTrainVariant>
+      </operationalTrain>
+      <operationalTrain id="ot-r-2101">
+        <name name="R 2101" language="it"/>
+        <operationalTrainVariant id="otv-r-2101" itineraryRef="it-r-2101" validityRef="va-1">
+          <identifiers>
+            <identifier number="R 2101" type="OperationalTrainNumber"/>
+          </identifiers>
+          <operationalTrainSection>
+            <range start="bip-r-2101-1" end="bip-r-2101-4"/>
+          </operationalTrainSection>
+        </operationalTrainVariant>
+      </operationalTrain>
+    </operationalTrains>
+  </timetable>
+</railML>

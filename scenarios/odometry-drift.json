@@ -1,0 +1,14 @@
+{
+  "name": "Odometry drift behind the freight train",
+  "description": "The odometer of the regional train reads 5 % less than the distance it runs, from the departure, without telling anyone. The reference onboard locates the train from the last balise group, so the error starts again from zero at every group, but between groups it grows to 57 m while the confidence interval of the onboard is 14 m. Behind the freight train the regional train believes it is further back than it is: it stops 2 m before the end of its authority, where with an exact odometer it stops 37 m before.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "events": [
+    {
+      "type": "odometry_drift",
+      "slope": -0.05
+    }
+  ]
+}

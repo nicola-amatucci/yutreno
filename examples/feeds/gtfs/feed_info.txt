@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_url
+YuTreno,https://github.com/nicola-amatucci/yutreno,it,20261105,20261105,valle-lauro-monte-clanio-2026-11-05,https://github.com/nicola-amatucci/yutreno

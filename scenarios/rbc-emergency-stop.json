@@ -1,0 +1,12 @@
+{
+  "name": "Emergency stop from the RBC",
+  "description": "A person is reported close to the track: the RBC sends an emergency stop order while the train runs at full speed towards San Felice Scalo. After the stop the train starts again.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "events": [
+    {"type": "rbc_emergency_stop", "when": {"pos": 8500}},
+    {"type": "message", "when": {"pos": 8500, "t": 1}, "text": "Stop for persons reported on the line. Wait for the restart"}
+  ],
+  "criteria": {"delay_max_s": 240}
+}

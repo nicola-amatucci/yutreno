@@ -1,0 +1,11 @@
+{
+  "name": "Train stopped on the line, ETCS level 2",
+  "description": "The same failure of the freight train ahead, on the same line, with ETCS level 2: the movement authority is shortened to the occupied section. Comparing the two scenarios measures the effect of the train separation system.",
+  "line": "appennino",
+  "train": "regional",
+  "signalling": "ETCS",
+  "events": [
+    {"type": "leader_stopped", "when": {"t": 420}, "duration_s": 180}
+  ],
+  "criteria": {"delay_max_s": 540}
+}

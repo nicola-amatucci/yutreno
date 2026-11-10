@@ -1,0 +1,21 @@
+# YuTreno demo with Docker Compose, from the docker/ folder:
+#   docker compose up --build          (demo, then simulator and bridges; Ctrl+C to stop)
+#   docker compose run --rm yutreno demo
+services:
+  yutreno:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      args:
+        WITH_OCTAVE: "1"      # 0 for a lighter image, without the Octave demo
+        WITH_OPENETCS: "1"    # 0 to skip downloading and compiling openETCS
+    image: yutreno-demo
+    ports:
+      - "8000:8000"   # simulator and demo report
+      - "8766:8766"   # bridge to the external dynamics (Python)
+      - "8767:8767"   # bridge to the external ETCS onboard (Python)
+    environment:
+      DEMO: "1"
+      # programs connected to the bridges, can be changed:
+      BRIDGE_ONBOARD: "python3 examples/onboard/minimal_onboard.py"
+      BRIDGE_DYNAMICS: "python3 examples/python/yutreno_dynamics.py --stdio"

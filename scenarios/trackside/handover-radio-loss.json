@@ -1,0 +1,26 @@
+{
+  "name": "Interlocking: radio of the accepting RBC lost",
+  "description": "Like the handover run, without the freight train ahead, but the radio of RBC 2 is lost at 200 s for 300 s. The onboard cannot open its session with RBC 2, which does not give RBC 1 any route beyond the border: the train stops before the border and continues when the radio of RBC 2 is back.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "leader": {
+    "on": false
+  },
+  "rbc_borders_m": [
+    7600
+  ],
+  "events": [
+    {
+      "type": "radio_loss",
+      "rbc": 2,
+      "when": {
+        "t": 200
+      },
+      "duration_s": 300,
+      "announced": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Train stopped on the line, automatic block",
+  "description": "On the summit the freight train ahead stops for three minutes because of a failure. With the automatic block the signals behind it drop to yellow and red; they must be respected, and the train restarts when the section clears.",
+  "line": "appennino",
+  "train": "regional",
+  "signalling": "BACC",
+  "events": [
+    {"type": "leader_stopped", "when": {"t": 420}, "duration_s": 180}
+  ],
+  "criteria": {"delay_max_s": 540}
+}

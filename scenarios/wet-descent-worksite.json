@@ -1,0 +1,14 @@
+{
+  "name": "Wet rail and a worksite on the descent",
+  "description": "Rain on the Appennino line: wet rail all along and, after the summit station of Valico, a 60 km/h worksite restriction on the descent towards Piano Alto, announced to the driver as he leaves Valico.",
+  "line": "appennino",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "weather": "rain",
+  "events": [
+    { "type": "message", "when": { "pos": 12900 }, "text": "Worksite ahead: 60 km/h from km 14+000 to km 15+500" },
+    { "type": "speed_restriction", "from_m": 14000, "to_m": 15500, "v_kmh": 60, "when": { "pos": 12900 } }
+  ],
+  "criteria": { "delay_max_s": 540, "stop_error_max_m": 3 }
+}

@@ -1,0 +1,365 @@
+requirement,test,script,title
+S026-3.4,verify-onboard#O1,scripts/verify-onboard.ts,"balise groups of the lines, one before every stop and marker board"
+S026-3.4,verify-subset026#S23,scripts/verify-subset026.ts,linking information (packet 5) received and not used
+S026-3.4.1,verify-onboard#O1,scripts/verify-onboard.ts,"balise groups of the lines, one before every stop and marker board"
+S026-3.4.1,verify-subset026#S1,scripts/verify-subset026.ts,balise groups and telegrams from the trackside
+S026-3.4.2,verify-onboard#O8,scripts/verify-onboard.ts,"one RBC session per train, trains in both directions, each with its own LRBG and orientation"
+S026-3.4.2,verify-subset026#S2,scripts/verify-subset026.ts,location referred to the first balise of the group
+S026-3.4.2,verify-subset026#S26,scripts/verify-subset026.ts,"orientation with respect to the LRBG from the order of the balises, and validity direction of the packets"
+S026-3.4.3,verify-subset026#S1,scripts/verify-subset026.ts,balise groups and telegrams from the trackside
+S026-3.4.4,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-3.4.4,verify-subset026#S23,scripts/verify-subset026.ts,linking information (packet 5) received and not used
+S026-3.5,verify-subset026#S22,scripts/verify-subset026.ts,"loss of radio contact, T_NVCONTACT and M_NVCONTACT"
+S026-3.5.1,verify-subset026#S22,scripts/verify-subset026.ts,"loss of radio contact, T_NVCONTACT and M_NVCONTACT"
+S026-3.5.2,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-3.5.2,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-3.5.3,verify-onboard#O8,scripts/verify-onboard.ts,"one RBC session per train, trains in both directions, each with its own LRBG and orientation"
+S026-3.5.3,verify-services#SVC-P1,scripts/verify-services.ts,overtaking on the passing track with the interlocking trackside
+S026-3.5.3,verify-trackside#T8,scripts/verify-trackside.ts,"the train ahead in session with the interlocking: routes, authority, end of session"
+S026-3.5.4,verify-onboard#O5,scripts/verify-onboard.ts,fault scenarios give the same verdicts with the reference onboard
+S026-3.5.4,verify-scenarios#SC2,scripts/verify-scenarios.ts,"radio loss, braking after the timeout and restart"
+S026-3.5.4,verify-subset026#S22,scripts/verify-subset026.ts,"loss of radio contact, T_NVCONTACT and M_NVCONTACT"
+S026-3.6.1,verify-subset026#S2,scripts/verify-subset026.ts,location referred to the first balise of the group
+S026-3.6.2,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-3.6.2,verify-subset026#S2,scripts/verify-subset026.ts,location referred to the first balise of the group
+S026-3.6.3,verify-onboard#O8,scripts/verify-onboard.ts,"one RBC session per train, trains in both directions, each with its own LRBG and orientation"
+S026-3.6.3,verify-services#SVC-X1,scripts/verify-services.ts,crossing with the interlocking trackside: reverse routes and block consent
+S026-3.6.3,verify-subset026#S6,scripts/verify-subset026.ts,data referred to an unknown balise group are rejected
+S026-3.6.3,verify-subset026#S26,scripts/verify-subset026.ts,"orientation with respect to the LRBG from the order of the balises, and validity direction of the packets"
+S026-3.6.4,verify-onboard#O10,scripts/verify-onboard.ts,"odometry drift: the onboard locates the train from the last balise group, so the error starts again at every group and grows with the distance from it; within the confidence interval up to 1 %, beyond it the train stops closer to the end of authority, and reading 10 % less it passes a marker at danger"
+S026-3.6.4,verify-subset026#S3,scripts/verify-subset026.ts,confidence interval of the train position
+S026-3.6.5,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-3.6.5,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-3.6.5.1.4-c,verify-onboard#O9,scripts/verify-onboard.ts,"the train integrity from the train interface is reported to the RBC: confirmed with its length, lost in every report from its loss, confirmed again"
+S026-3.6.5.1.5-c,verify-moving-block#MB5,scripts/verify-moving-block.ts,the period of the position reports is asked with packet 58 and a shorter one brings the follower closer; a delay of the reports keeps it further; equal runs give equal data
+S026-3.6.5.2.3-c,verify-onboard#O9,scripts/verify-onboard.ts,"the train integrity from the train interface is reported to the RBC: confirmed with its length, lost in every report from its loss, confirmed again"
+S026-3.6.5.2.4-c,verify-moving-block#MB1,scripts/verify-moving-block.ts,"behind the freight train the authority ends the margin behind its confirmed rear end: the follower comes closer than at fixed block, never closer than the margin, and arrives earlier"
+S026-3.6.5.2.4-c,verify-onboard#O9,scripts/verify-onboard.ts,"the train integrity from the train interface is reported to the RBC: confirmed with its length, lost in every report from its loss, confirmed again"
+S026-3.6.5.2.5-c,verify-onboard#O9,scripts/verify-onboard.ts,"the train integrity from the train interface is reported to the RBC: confirmed with its length, lost in every report from its loss, confirmed again"
+S026-3.6.5.2.9-c,verify-moving-block#MB3,scripts/verify-moving-block.ts,"with integrity lost, or with the radio of the train ahead lost, its confirmed rear end stays frozen and the follower stops behind it, then goes on"
+S026-3.6.5.2.9-c,verify-onboard#O9,scripts/verify-onboard.ts,"the train integrity from the train interface is reported to the RBC: confirmed with its length, lost in every report from its loss, confirmed again"
+S026-3.7,verify-subset026#S6,scripts/verify-subset026.ts,data referred to an unknown balise group are rejected
+S026-3.7.1,verify-subset026#S6,scripts/verify-subset026.ts,data referred to an unknown balise group are rejected
+S026-3.7.2,verify-subset026#S6,scripts/verify-subset026.ts,data referred to an unknown balise group are rejected
+S026-3.7.3,verify-subset026#S7,scripts/verify-subset026.ts,"MA update replaces the previous one, extension and shortening"
+S026-3.8,verify-network#NET-9,scripts/verify-network.ts,the message-based reference onboard on a network: balise groups and RBC along the corridor of each train
+S026-3.8.1,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-3.8.3,verify-network#NET-10,scripts/verify-network.ts,"separate interlockings on a network: one per line, node routes with junction points, boundary consent, RBC along the corridors, reroute by the regulator"
+S026-3.8.3,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-3.8.3,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-3.8.3,verify-trackside#T5,scripts/verify-trackside.ts,nominal runs with the authority built from the routes
+S026-3.8.4,verify-onboard#O4,scripts/verify-onboard.ts,"complete runs with the reference onboard, no intervention, deterministic"
+S026-3.8.4,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-3.8.5,verify-subset026#S7,scripts/verify-subset026.ts,"MA update replaces the previous one, extension and shortening"
+S026-3.8.5,verify-trackside#T5,scripts/verify-trackside.ts,nominal runs with the authority built from the routes
+S026-3.10,verify-subset026#S21,scripts/verify-subset026.ts,"unconditional emergency stop, message 16"
+S026-3.10.1,verify-subset026#S21,scripts/verify-subset026.ts,"unconditional emergency stop, message 16"
+S026-3.10.2,verify-onboard#O3,scripts/verify-onboard.ts,temporary speed restriction as packet 65 and emergency stop as message 16
+S026-3.10.2,verify-scenarios#SC3,scripts/verify-scenarios.ts,"RBC emergency stop at the given position, not counted as an intervention"
+S026-3.10.2,verify-subset026#S21,scripts/verify-subset026.ts,"unconditional emergency stop, message 16"
+S026-3.11,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.11.1,verify-subset026#S8,scripts/verify-subset026.ts,static speed profile from packet 27
+S026-3.11.2,verify-subset026#S8,scripts/verify-subset026.ts,static speed profile from packet 27
+S026-3.11.3,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-3.11.3,verify-subset026#S8,scripts/verify-subset026.ts,static speed profile from packet 27
+S026-3.11.5,verify-onboard#O3,scripts/verify-onboard.ts,temporary speed restriction as packet 65 and emergency stop as message 16
+S026-3.11.5,verify-onboard#O5,scripts/verify-onboard.ts,fault scenarios give the same verdicts with the reference onboard
+S026-3.11.5,verify-scenarios#SC1,scripts/verify-scenarios.ts,speed restriction respected by the controller
+S026-3.11.5,verify-subset026#S9,scripts/verify-subset026.ts,temporary speed restriction (packet 65) and its revocation (packet 66)
+S026-3.11.8,verify-subset026#S10,scripts/verify-subset026.ts,train-related speed restriction and maximum train speed
+S026-3.11.12,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-3.11.12,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.13,verify-onboard#O4,scripts/verify-onboard.ts,"complete runs with the reference onboard, no intervention, deterministic"
+S026-3.13.1,verify-curve-validation#C1,scripts/verify-curve-validation.ts,"EBD, EBI and SBD towards the EOA in closed form, curve order and gradient effect"
+S026-3.13.2,verify-subset026#S15,scripts/verify-subset026.ts,deceleration values of the train data in the EBD and SBD
+S026-3.13.6,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.13.7,verify-subset026#S8,scripts/verify-subset026.ts,static speed profile from packet 27
+S026-3.13.8,verify-subset026#S16,scripts/verify-subset026.ts,"EBI position before the EBD by the reaction time, N_LOC_EBI"
+S026-3.13.9,verify-subset026#S16,scripts/verify-subset026.ts,"EBI position before the EBD by the reaction time, N_LOC_EBI"
+S026-3.13.10,verify-onboard#O6,scripts/verify-onboard.ts,a driver who never brakes is stopped by the onboard before the end of authority
+S026-3.13.10,verify-subset026#S13,scripts/verify-subset026.ts,ceiling supervision states and commands
+S026-3.14,verify-subset026#S13,scripts/verify-subset026.ts,ceiling supervision states and commands
+S026-3.14.1,verify-onboard#O4,scripts/verify-onboard.ts,"complete runs with the reference onboard, no intervention, deterministic"
+S026-3.14.1,verify-onboard#O6,scripts/verify-onboard.ts,a driver who never brakes is stopped by the onboard before the end of authority
+S026-3.14.1,verify-subset026#S13,scripts/verify-subset026.ts,ceiling supervision states and commands
+S026-3.15.1,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.1.1-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.1.1-c,verify-trackside#HO3,scripts/verify-trackside.ts,"handover in both directions and with two trains, the same runs as with one RBC"
+S026-3.15.1.1.6-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.2.1-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.2.3-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.2.4-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.2.4-c,verify-trackside#HO2,scripts/verify-trackside.ts,"without the RBC/RBC link or the radio of the accepting RBC the train stops before the border, then continues"
+S026-3.15.1.2.6-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.2.7-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.2.8-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.2.9-c,verify-trackside#HO6,scripts/verify-trackside.ts,an End of Mission during the transaction cancels it: the Accepting RBC orders the onboard to terminate the session opened with it
+S026-3.15.1.3.1-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.3.3-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.3.4-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.3.5-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.3.5-c,verify-trackside#HO3,scripts/verify-trackside.ts,"handover in both directions and with two trains, the same runs as with one RBC"
+S026-3.15.1.3.6-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.3.7-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.3.7-c,verify-trackside#HO7,scripts/verify-trackside.ts,a radio message for an RBC that does not exist is discarded with a warning
+S026-3.15.1.3.9-c,verify-trackside#HO5,scripts/verify-trackside.ts,"without the order to terminate, the onboard repeats the report of its rear end past the border, then ends the session by itself"
+S026-3.15.1.4.1-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.4.2-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.4.3-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.4.4-c,verify-trackside#HO6,scripts/verify-trackside.ts,an End of Mission during the transaction cancels it: the Accepting RBC orders the onboard to terminate the session opened with it
+S026-3.15.1.4.5-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.1.5.1-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-3.15.11,verify-ato-s130#A3,scripts/verify-ato-s130.ts,same Subset-130 data from the onboard as an external process
+S026-3.15.11,verify-ato-s130#A4,scripts/verify-ato-s130.ts,the Subset-130 ATO drives without interventions using the onboard data
+S026-3.15.11,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S026-3.16,verify-subset026#S22,scripts/verify-subset026.ts,"loss of radio contact, T_NVCONTACT and M_NVCONTACT"
+S026-3.16.3,verify-onboard#O5,scripts/verify-onboard.ts,fault scenarios give the same verdicts with the reference onboard
+S026-3.16.3,verify-scenarios#SC2,scripts/verify-scenarios.ts,"radio loss, braking after the timeout and restart"
+S026-3.16.3,verify-subset026#S22,scripts/verify-subset026.ts,"loss of radio contact, T_NVCONTACT and M_NVCONTACT"
+S026-3.18,verify-subset026#S15,scripts/verify-subset026.ts,deceleration values of the train data in the EBD and SBD
+S026-3.18.1,verify-subset026#S12,scripts/verify-subset026.ts,"ceiling supervision margins dV_ebi, dV_sbi, dV_warning"
+S026-3.18.2,verify-subset026#S12,scripts/verify-subset026.ts,"ceiling supervision margins dV_ebi, dV_sbi, dV_warning"
+S026-3.18.3,verify-subset026#S15,scripts/verify-subset026.ts,deceleration values of the train data in the EBD and SBD
+S026-4.3.2,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-4.4,verify-subset026#S20,scripts/verify-subset026.ts,"trip when passing the EOA, post trip and new MA"
+S026-4.4.2,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-4.4.7,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-4.4.9,verify-onboard#O4,scripts/verify-onboard.ts,"complete runs with the reference onboard, no intervention, deterministic"
+S026-4.4.9,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-4.4.13,verify-subset026#S20,scripts/verify-subset026.ts,"trip when passing the EOA, post trip and new MA"
+S026-4.4.14,verify-subset026#S20,scripts/verify-subset026.ts,"trip when passing the EOA, post trip and new MA"
+S026-5.11,verify-subset026#S20,scripts/verify-subset026.ts,"trip when passing the EOA, post trip and new MA"
+S026-5.15,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-5.15.1.1-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-5.15.1.4-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-5.15.2-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-5.15.4.2-c,verify-trackside#HO2,scripts/verify-trackside.ts,"without the RBC/RBC link or the radio of the accepting RBC the train stops before the border, then continues"
+S026-7.3,verify-onboard#O7,scripts/verify-onboard.ts,the onboard as an external process on stdin/stdout gives the same data
+S026-7.3.1,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-7.3.2,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-7.3.3,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-7.4,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-7.4.1,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-7.4.2,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-7.4.2,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-7.4.2.27-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-7.4.2.10-c,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S026-7.4.3,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-7.4.2.15-c,verify-moving-block#MB5,scripts/verify-moving-block.ts,the period of the position reports is asked with packet 58 and a shorter one brings the follower closer; a delay of the reports keeps it further; equal runs give equal data
+S026-7.4.3.1-c,verify-onboard#O9,scripts/verify-onboard.ts,"the train integrity from the train interface is reported to the RBC: confirmed with its length, lost in every report from its loss, confirmed again"
+S026-7.5,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-8.4,verify-onboard#O7,scripts/verify-onboard.ts,the onboard as an external process on stdin/stdout gives the same data
+S026-8.4.2,verify-subset026#S1,scripts/verify-subset026.ts,balise groups and telegrams from the trackside
+S026-8.4.4,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-8.5,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-8.5.1,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-8.5.2,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-8.5.3,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-8.6,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-8.6.4,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-8.6.4,verify-onboard#O8,scripts/verify-onboard.ts,"one RBC session per train, trains in both directions, each with its own LRBG and orientation"
+S026-8.6.4,verify-subset026#S4,scripts/verify-subset026.ts,"position report, message 136 with packet 0"
+S026-8.7,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-8.7.2,verify-onboard#O2,scripts/verify-onboard.ts,"RBC session, message 136 then message 3 with packets 15, 21, 27, 5 referred to the LRBG"
+S026-8.7.2,verify-subset026#S5,scripts/verify-subset026.ts,"movement authority from message 3 and packet 15, stand by to full supervision"
+S026-8.7.2,verify-trackside#T5,scripts/verify-trackside.ts,nominal runs with the authority built from the routes
+S026-8.7.7,verify-onboard#O3,scripts/verify-onboard.ts,temporary speed restriction as packet 65 and emergency stop as message 16
+S026-8.7.7,verify-subset026#S21,scripts/verify-subset026.ts,"unconditional emergency stop, message 16"
+S026-3.13.2.2.3.1-c,verify-subset026#S15,scripts/verify-subset026.ts,deceleration values of the train data in the EBD and SBD
+S026-3.13.2.2.3.2-c,verify-subset026#S16,scripts/verify-subset026.ts,"EBI position before the EBD by the reaction time, N_LOC_EBI"
+S026-3.13.2.2.7-c,verify-subset026#S13,scripts/verify-subset026.ts,ceiling supervision states and commands
+S026-3.13.2.2.8-c,verify-subset026#S13,scripts/verify-subset026.ts,ceiling supervision states and commands
+S026-3.13.2.2.10-c,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.13.2.2.11-c,verify-subset026#S11,scripts/verify-subset026.ts,the MRSP holds until the tail clears the restriction
+S026-3.13.2.2.13-c,verify-subset026#S10,scripts/verify-subset026.ts,train-related speed restriction and maximum train speed
+S026-3.13.2.3.2-c,verify-subset026#S8,scripts/verify-subset026.ts,static speed profile from packet 27
+S026-3.13.2.3.3-c,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.13.2.3.7-c,verify-subset026#S12,scripts/verify-subset026.ts,"ceiling supervision margins dV_ebi, dV_sbi, dV_warning"
+S026-3.13.4.1.3-c,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.13.4.3.2-c,verify-curve-validation#C1,scripts/verify-curve-validation.ts,"EBD, EBI and SBD towards the EOA in closed form, curve order and gradient effect"
+S026-3.13.4.3.2-c,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.13.6.2.1.3-c,verify-subset026#S14,scripts/verify-subset026.ts,"gradients from packet 21, default outside the profile, rotating mass correction"
+S026-3.13.6.2.1.4-c,verify-subset026#S15,scripts/verify-subset026.ts,deceleration values of the train data in the EBD and SBD
+S026-3.13.6.2.2.3-c,verify-subset026#S16,scripts/verify-subset026.ts,"EBI position before the EBD by the reaction time, N_LOC_EBI"
+S026-3.13.6.3.1.3-c,verify-subset026#S15,scripts/verify-subset026.ts,deceleration values of the train data in the EBD and SBD
+S026-3.13.6.3.2.4-c,verify-subset026#S17,scripts/verify-subset026.ts,SBI1 from the SBD towards the EOA and SBI2 from the EBD
+S026-3.13.7.2-c,verify-subset026#S11,scripts/verify-subset026.ts,the MRSP holds until the tail clears the restriction
+S026-3.13.8.1.3-c,verify-curve-validation#C1,scripts/verify-curve-validation.ts,"EBD, EBI and SBD towards the EOA in closed form, curve order and gradient effect"
+S026-3.13.8.1.3-c,verify-subset026#S18,scripts/verify-subset026.ts,EBD towards a speed reduction crosses the target at V_target + dV_ebi
+S026-3.13.8.2.1-c,verify-subset026#S18,scripts/verify-subset026.ts,EBD towards a speed reduction crosses the target at V_target + dV_ebi
+S026-3.13.8.2.3-c,verify-subset026#S11,scripts/verify-subset026.ts,the MRSP holds until the tail clears the restriction
+S026-3.13.8.3.1-c,verify-subset026#S18,scripts/verify-subset026.ts,EBD towards a speed reduction crosses the target at V_target + dV_ebi
+S026-3.13.8.3.2-c,verify-curve-validation#C1,scripts/verify-curve-validation.ts,"EBD, EBI and SBD towards the EOA in closed form, curve order and gradient effect"
+S026-3.13.8.3.2-c,verify-subset026#S16,scripts/verify-subset026.ts,"EBI position before the EBD by the reaction time, N_LOC_EBI"
+S026-3.13.8.4.1-c,verify-curve-validation#C1,scripts/verify-curve-validation.ts,"EBD, EBI and SBD towards the EOA in closed form, curve order and gradient effect"
+S026-3.13.8.4.1-c,verify-subset026#S17,scripts/verify-subset026.ts,SBI1 from the SBD towards the EOA and SBI2 from the EBD
+S026-3.13.9.2.3-c,verify-subset026#S12,scripts/verify-subset026.ts,"ceiling supervision margins dV_ebi, dV_sbi, dV_warning"
+S026-3.13.9.3.2.12-c,verify-ato-s130#A2,scripts/verify-ato-s130.ts,the protection intervenes where N_LOC_EBI announced it
+S026-3.13.9.3.2.12-c,verify-curve-validation#C1,scripts/verify-curve-validation.ts,"EBD, EBI and SBD towards the EOA in closed form, curve order and gradient effect"
+S026-3.13.9.3.2.12-c,verify-subset026#S16,scripts/verify-subset026.ts,"EBI position before the EBD by the reaction time, N_LOC_EBI"
+S026-3.13.9.3.3.1-c,verify-subset026#S17,scripts/verify-subset026.ts,SBI1 from the SBD towards the EOA and SBI2 from the EBD
+S026-3.13.9.3.3.2-c,verify-subset026#S25,scripts/verify-subset026.ts,"SBI2, W, P and I of an MRSP target from its EBD, T_indication with T_driver"
+S026-3.13.9.3.3.3-c,verify-subset026#S17,scripts/verify-subset026.ts,SBI1 from the SBD towards the EOA and SBI2 from the EBD
+S026-3.13.9.3.4.1-c,verify-subset026#S25,scripts/verify-subset026.ts,"SBI2, W, P and I of an MRSP target from its EBD, T_indication with T_driver"
+S026-3.13.9.3.5.1-c,verify-subset026#S25,scripts/verify-subset026.ts,"SBI2, W, P and I of an MRSP target from its EBD, T_indication with T_driver"
+S026-3.13.9.3.6.1-c,verify-subset026#S25,scripts/verify-subset026.ts,"SBI2, W, P and I of an MRSP target from its EBD, T_indication with T_driver"
+S026-3.13.9.3.6.2-c,verify-subset026#S25,scripts/verify-subset026.ts,"SBI2, W, P and I of an MRSP target from its EBD, T_indication with T_driver"
+S026-3.13.9.4.3-c,verify-subset026#S19,scripts/verify-subset026.ts,release speed from the trackside and its supervision near the EOA
+S026-3.13.9.4.6-c,verify-subset026#S19,scripts/verify-subset026.ts,release speed from the trackside and its supervision near the EOA
+S026-3.13.10.2.2-c,verify-subset026#S13,scripts/verify-subset026.ts,ceiling supervision states and commands
+S026-3.13.10.2.6-c,verify-onboard#O6,scripts/verify-onboard.ts,a driver who never brakes is stopped by the onboard before the end of authority
+S026-3.13.10.2.6-c,verify-subset026#S20,scripts/verify-subset026.ts,"trip when passing the EOA, post trip and new MA"
+S026-3.13.10.3.3-c,verify-subset026#S13,scripts/verify-subset026.ts,ceiling supervision states and commands
+S026-3.13.10.4-c,verify-subset026#S18,scripts/verify-subset026.ts,EBD towards a speed reduction crosses the target at V_target + dV_ebi
+S130-Packet-6-M_MODE,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-V_EST-A_EST,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-V_PERMITTED,verify-ato-s130#A4,scripts/verify-ato-s130.ts,the Subset-130 ATO drives without interventions using the onboard data
+S130-Packet-6-V_PERMITTED,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-V_MRSP-and-iterations-N_LOC_MRSP,verify-ato-s130#A4,scripts/verify-ato-s130.ts,the Subset-130 ATO drives without interventions using the onboard data
+S130-Packet-6-V_MRSP-and-iterations-N_LOC_MRSP,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-N_LOC_EBI,verify-ato-s130#A2,scripts/verify-ato-s130.ts,the protection intervenes where N_LOC_EBI announced it
+S130-Packet-6-N_LOC_EBI,verify-subset026#S16,scripts/verify-subset026.ts,"EBI position before the EBD by the reaction time, N_LOC_EBI"
+S130-Packet-6-N_LOC_EOALOA-V_EOALOA-N_LOC_SVL,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-V_RELEASE_ATO,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-A_GRADIENT-and-iterations,verify-ato-s130#A4,scripts/verify-ato-s130.ts,the Subset-130 ATO drives without interventions using the onboard data
+S130-Packet-6-A_GRADIENT-and-iterations,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-L_UNCERTAINTY_OVERREADING-UNDERREADING,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-6-T_TRACTION-T_BE_REACT,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Packet-11-A_BRAKE_SAFE,verify-ato-s130#A4,scripts/verify-ato-s130.ts,the Subset-130 ATO drives without interventions using the onboard data
+S130-Packet-11-A_BRAKE_SAFE,verify-subset026#S24,scripts/verify-subset026.ts,Subset-130 data for ATO in full supervision
+S130-Transport-cycles-and-timeouts,verify-ato-s130#A1,scripts/verify-ato-s130.ts,"observation versions, etcs_ato only from version 2, legacy names kept"
+S130-Transport-cycles-and-timeouts,verify-ato-s130#A3,scripts/verify-ato-s130.ts,same Subset-130 data from the onboard as an external process
+S039-4.3.1.1,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-4.3.1.1,verify-trackside#HO3,scripts/verify-trackside.ts,"handover in both directions and with two trains, the same runs as with one RBC"
+S039-4.4,verify-trackside#HO2,scripts/verify-trackside.ts,"without the RBC/RBC link or the radio of the accepting RBC the train stops before the border, then continues"
+S039-4.4,verify-trackside#HO4,scripts/verify-trackside.ts,"the trackside with two RBCs as an external program gives an identical run, deterministic"
+S039-4.5.1,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-4.5.2,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-4.6.2,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-4.6.2,verify-trackside#HO2,scripts/verify-trackside.ts,"without the RBC/RBC link or the radio of the accepting RBC the train stops before the border, then continues"
+S039-4.6.3,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-4.6.3,verify-trackside#HO2,scripts/verify-trackside.ts,"without the RBC/RBC link or the radio of the accepting RBC the train stops before the border, then continues"
+S039-5.2,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-5.3,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-5.4,verify-trackside#HO1,scripts/verify-trackside.ts,"nominal handover, the same run as with one RBC, with the Subset-039 sequence and the session closed"
+S039-5.4,verify-trackside#HO6,scripts/verify-trackside.ts,an End of Mission during the transaction cancels it: the Accepting RBC orders the onboard to terminate the session opened with it
+EU38-SCI-P,verify-network#NET-10,scripts/verify-network.ts,"separate interlockings on a network: one per line, node routes with junction points, boundary consent, RBC along the corridors, reroute by the regulator"
+EU38-SCI-P,verify-trackside#T2,scripts/verify-trackside.ts,"interlocking against the field: setting, conflicts, cancellation, point unable to move, no detection"
+EU38-SCI-P,verify-trackside#T6,scripts/verify-trackside.ts,the trackside as an external program gives an identical run
+EU38-Cd_Move_Point,verify-trackside#T2,scripts/verify-trackside.ts,"interlocking against the field: setting, conflicts, cancellation, point unable to move, no detection"
+EU38-Msg_Point_Position,verify-trackside#T2,scripts/verify-trackside.ts,"interlocking against the field: setting, conflicts, cancellation, point unable to move, no detection"
+EU38-Msg_Point_Position,verify-trackside#T4,scripts/verify-trackside.ts,trailed point reported as unintended position and unable to move
+EU38-Msg_Movement_Failed,verify-trackside#T2,scripts/verify-trackside.ts,"interlocking against the field: setting, conflicts, cancellation, point unable to move, no detection"
+EU38-Msg_Ability_To_Move_Point,verify-trackside#T2,scripts/verify-trackside.ts,"interlocking against the field: setting, conflicts, cancellation, point unable to move, no detection"
+EU38-Msg_Ability_To_Move_Point,verify-trackside#T4,scripts/verify-trackside.ts,trailed point reported as unintended position and unable to move
+EU44-SCI-TDS,verify-network#NET-10,scripts/verify-network.ts,"separate interlockings on a network: one per line, node routes with junction points, boundary consent, RBC along the corridors, reroute by the regulator"
+EU44-SCI-TDS,verify-trackside#T3,scripts/verify-trackside.ts,sectional release driven by the occupancy of the sections
+EU44-SCI-TDS,verify-trackside#T6,scripts/verify-trackside.ts,the trackside as an external program gives an identical run
+EU44-Msg_TVPS_Occupancy_Status,verify-trackside#T3,scripts/verify-trackside.ts,sectional release driven by the occupancy of the sections
+EU-SCI-RBC,verify-capacity#CAP2,scripts/verify-capacity.ts,"trains in both directions, disruptions, external trackside and regulator: the same run as in process"
+EU-SCI-RBC,verify-services#SVC-P1,scripts/verify-services.ts,overtaking on the passing track with the interlocking trackside
+EU-SCI-RBC,verify-services#SVC-X1,scripts/verify-services.ts,crossing with the interlocking trackside: reverse routes and block consent
+EU-SCI-RBC,verify-trackside#T8,scripts/verify-trackside.ts,"the train ahead in session with the interlocking: routes, authority, end of session"
+EU-SCI-CC,verify-services#SVC-P2,scripts/verify-services.ts,conflict rule timetable and first_come at the exit of a station
+YT-CT,verify-services#SVC-X1,scripts/verify-services.ts,crossing with the interlocking trackside: reverse routes and block consent
+YT-CT,verify-trackside#T1,scripts/verify-trackside.ts,"translation of the control tables, continuous route chains, conflicting routes"
+YT-CT,verify-trackside#T8,scripts/verify-trackside.ts,"the train ahead in session with the interlocking: routes, authority, end of session"
+YT-CT,verify-trackside#T7,scripts/verify-trackside.ts,"block consent on a single-track segment, exchanged between the stations at its ends"
+YT-ARS,verify-regulator#RG2,scripts/verify-regulator.ts,reference regulator on a breakdown in a station with the interlocking trackside
+YT-ARS,verify-services#SVC-P1,scripts/verify-services.ts,overtaking on the passing track with the interlocking trackside
+YT-ARS,verify-services#SVC-P2,scripts/verify-services.ts,conflict rule timetable and first_come at the exit of a station
+YT-ARS,verify-services#SVC-X1,scripts/verify-services.ts,crossing with the interlocking trackside: reverse routes and block consent
+YT-ARS,verify-trackside#T8,scripts/verify-trackside.ts,"the train ahead in session with the interlocking: routes, authority, end of session"
+YT-DISRUPT,verify-regulator#RG5,scripts/verify-regulator.ts,a train broken down for good is taken out of service at its station
+YT-DISRUPT,verify-regulator#RG3,scripts/verify-regulator.ts,reference regulator holds the trains in the station before a blocked stretch
+YT-DISRUPT,verify-services#SVC-D1,scripts/verify-services.ts,line blocked: the trains stop before it and go on when it is open again
+YT-DISRUPT,verify-services#SVC-D2,scripts/verify-services.ts,train stopped and traction reduced on a chosen service
+YT-REG,verify-capacity#CAP2,scripts/verify-capacity.ts,"trains in both directions, disruptions, external trackside and regulator: the same run as in process"
+YT-REG,verify-feeds#FD-REG,scripts/verify-feeds.ts,"rescheduled times, skipped stops and cancelled trips in GTFS-Realtime and SIRI"
+YT-REG,verify-regulator#RG1,scripts/verify-regulator.ts,"regulator protocol: request, decisions applied, invalid decisions logged"
+YT-REG,verify-regulator#RG2,scripts/verify-regulator.ts,reference regulator on a breakdown in a station with the interlocking trackside
+YT-REG,verify-regulator#RG5,scripts/verify-regulator.ts,a train broken down for good is taken out of service at its station
+YT-REG,verify-regulator#RG3,scripts/verify-regulator.ts,reference regulator holds the trains in the station before a blocked stretch
+YT-REG,verify-regulator#RG4,scripts/verify-regulator.ts,the reference regulator as an external program gives an identical run
+YT-REG,verify-regulator#RG6,scripts/verify-regulator.ts,on a network the reference regulator reroutes a train around a blocked stretch of the main line
+YT-REG,verify-regulator#RG7,scripts/verify-regulator.ts,"a connection the feeder can no longer make is released, the departing train leaves on time"
+YT-REG,verify-regulator#RG8,scripts/verify-regulator.ts,on a network the external regulator gives the same run as the in-process one
+YT-CONSENT,verify-capacity#CAP2,scripts/verify-capacity.ts,"trains in both directions, disruptions, external trackside and regulator: the same run as in process"
+YT-CONSENT,verify-network#NET-12,scripts/verify-network.ts,a late train into the branch meets the train coming out of it: no wait for each other across the node
+YT-CONSENT,verify-services#SVC-X1,scripts/verify-services.ts,crossing with the interlocking trackside: reverse routes and block consent
+YT-CONSENT,verify-trackside#T7,scripts/verify-trackside.ts,"block consent on a single-track segment, exchanged between the stations at its ends"
+YT-CAP,verify-capacity#CAP1,scripts/verify-capacity.ts,"minimum headway measured against the blocking times, simplified UIC 406"
+YT-CAP,verify-capacity#CAP4,scripts/verify-capacity.ts,"time held by the signalling, zero for a train alone and above a threshold headway that matches the measured one"
+YT-CAP,verify-capacity#CAP5,scripts/verify-capacity.ts,"moving block, minimum headway measured against the one computed from the confirmed rear ends of the first train"
+YT-CAP,verify-capacity#CAP3,scripts/verify-capacity.ts,"capacity of a node with separate interlockings, UIC 406 with two different trains on the routes they share"
+YT-SIG-TIME,verify-capacity#CAP4,scripts/verify-capacity.ts,"time held by the signalling, zero for a train alone and above a threshold headway that matches the measured one"
+YT-DRIVER,verify-ato#DRV1,scripts/verify-ato.ts,"model of a human driver, the same seed gives the same run and another seed a different one"
+YT-DRIVER,verify-ato#DRV2,scripts/verify-ato.ts,"model of a human driver, an ideal one stays between its curves, a slow one is caught by the protection"
+YT-NET,verify-network#NET-1,scripts/verify-network.ts,"network and corridors: nodes, common plan, one-line corridors are the lines, corridors of two lines match their sources"
+YT-NET,verify-network#NET-2,scripts/verify-network.ts,"itineraries: route through shared stations, stops in running order, errors"
+YT-NET,verify-network#NET-3,scripts/verify-network.ts,"trains through a node with the trackside of the engine: crossing on the branch, no shared track, determinism"
+YT-NET,verify-network#NET-5,scripts/verify-network.ts,what a network does not support yet is refused
+YT-NET,verify-network#NET-9,scripts/verify-network.ts,the message-based reference onboard on a network: balise groups and RBC along the corridor of each train
+YT-NET,verify-network#NET-8,scripts/verify-network.ts,"open data of a network: lines, stations of every line, positions on the common plan, blocks and connections"
+YT-NET,verify-network#NET-13,scripts/verify-network.ts,"a network of two real imported lines meeting at Benevento: crossing, connection, determinism"
+YT-NET,verify-regulator#RG6,scripts/verify-regulator.ts,on a network the reference regulator reroutes a train around a blocked stretch of the main line
+YT-NET,verify-regulator#RG8,scripts/verify-regulator.ts,on a network the external regulator gives the same run as the in-process one
+YT-NODE,verify-network#NET-3,scripts/verify-network.ts,"trains through a node with the trackside of the engine: crossing on the branch, no shared track, determinism"
+YT-NODE,verify-network#NET-4,scripts/verify-network.ts,trains joining a line at a node: the node route is given to one train at a time
+YT-NODE,verify-network#NET-10,scripts/verify-network.ts,"separate interlockings on a network: one per line, node routes with junction points, boundary consent, RBC along the corridors, reroute by the regulator"
+YT-IXL-NET,verify-capacity#CAP3,scripts/verify-capacity.ts,"capacity of a node with separate interlockings, UIC 406 with two different trains on the routes they share"
+YT-IXL-NET,verify-network#NET-5,scripts/verify-network.ts,what a network does not support yet is refused
+YT-IXL-NET,verify-network#NET-10,scripts/verify-network.ts,"separate interlockings on a network: one per line, node routes with junction points, boundary consent, RBC along the corridors, reroute by the regulator"
+YT-IXL-NET,verify-network#NET-12,scripts/verify-network.ts,a late train into the branch meets the train coming out of it: no wait for each other across the node
+YT-IXL-NET,verify-network#NET-11,scripts/verify-network.ts,the interlockings of a network as an external program give the same run
+YT-BLOCK,verify-imports#IMP-B,scripts/verify-imports.ts,blocks of the rolling stock circulation through GTFS block_id
+YT-BLOCK,verify-network#NET-6,scripts/verify-network.ts,rolling stock circulation: the next service of a block leaves not before the arrival of the previous one plus the turnaround
+YT-BLOCK,verify-network#NET-8,scripts/verify-network.ts,"open data of a network: lines, stations of every line, positions on the common plan, blocks and connections"
+YT-CONN,verify-network#NET-7,scripts/verify-network.ts,"connections: the departing train waits for the feeder within the maximum wait, kept or lost"
+YT-CONN,verify-network#NET-8,scripts/verify-network.ts,"open data of a network: lines, stations of every line, positions on the common plan, blocks and connections"
+YT-CONN,verify-regulator#RG7,scripts/verify-regulator.ts,"a connection the feeder can no longer make is released, the departing train leaves on time"
+YT-REROUTE,verify-network#NET-10,scripts/verify-network.ts,"separate interlockings on a network: one per line, node routes with junction points, boundary consent, RBC along the corridors, reroute by the regulator"
+YT-REROUTE,verify-regulator#RG6,scripts/verify-regulator.ts,on a network the reference regulator reroutes a train around a blocked stretch of the main line
+YT-CR,verify-control-room#CR1,scripts/verify-control-room.ts,"the control room snapshot matches the engine and is deterministic, on a line and on a network, with both tracksides"
+YT-CR,verify-control-room#CR2,scripts/verify-control-room.ts,"dispatcher commands from the control room, repeatable"
+YT-CR,verify-control-room#CR3,scripts/verify-control-room.ts,"dispatcher commands written into the scenario as events, the same run"
+YT-INFRA,verify-infra#INF1,scripts/verify-infra.ts,"path, plan and chainage of an OSM extract"
+YT-INFRA,verify-infra#INF2,scripts/verify-infra.ts,stations and stop positions of an OSM extract
+YT-INFRA,verify-infra#INF3,scripts/verify-infra.ts,"speed, tunnels, block and gradient with their provenance"
+YT-INFRA,verify-infra#INF4,scripts/verify-infra.ts,RINF sections laid on the imported line
+YT-INFRA,verify-infra#INF5,scripts/verify-infra.ts,the import is deterministic
+YT-INFRA,verify-infra#INF6,scripts/verify-infra.ts,an imported line runs with the example controller
+YT-INFRA,verify-infra#INF7,scripts/verify-infra.ts,railML 3.2 infrastructure round trip
+YT-INFRA,verify-infra#INF8,scripts/verify-infra.ts,plausibility of the running times against a timetable
+YT-INFRA,verify-infra#INF9,scripts/verify-infra.ts,gradients from a digital elevation model
+YT-INFRA,verify-infra#INF10,scripts/verify-infra.ts,import of a real line from OpenStreetMap and EU-DEM
+YT-INFRA,verify-infra#INF11,scripts/verify-infra.ts,"a real line from OpenStreetMap, RINF and EU-DEM, consistency of the sources"
+YT-INFRA,verify-infra#INF12,scripts/verify-infra.ts,"the line from the sources in one command, with resume"
+YT-INFRA,verify-infra#INF13,scripts/verify-infra.ts,a real line against its real timetable
+YT-INFRA,verify-infra#INF14,scripts/verify-infra.ts,the RINF gradient profile placed by the kilometres of the stations
+YT-INFRA,verify-network#NET-13,scripts/verify-network.ts,"a network of two real imported lines meeting at Benevento: crossing, connection, determinism"
+YT-SCENCFG,verify-scenario-config#SCF1,scripts/verify-scenario-config.ts,services generated from the line timetable
+YT-SCENCFG,verify-scenario-config#SCF2,scripts/verify-scenario-config.ts,errors of a scenario configuration
+YT-SCENCFG,verify-scenario-config#SCF3,scripts/verify-scenario-config.ts,services from a real timetable extract
+YT-SCENCFG,verify-scenario-config#SCF4,scripts/verify-scenario-config.ts,a scenario configuration runs with the example controller
+YT-SCENCFG,verify-scenario-config#SCF5,scripts/verify-scenario-config.ts,service campaign over trains and passenger demand
+YT-PAX,verify-passengers#PAX1,scripts/verify-passengers.ts,conservation of the passengers
+YT-PAX,verify-passengers#PAX2,scripts/verify-passengers.ts,dwell from boarding and alighting in closed form
+YT-PAX,verify-passengers#PAX3,scripts/verify-passengers.ts,capacity of the trains and passengers left behind
+YT-PAX,verify-passengers#PAX4,scripts/verify-passengers.ts,mass of the passengers on acceleration and braking
+YT-PAX,verify-passengers#PAX5,scripts/verify-passengers.ts,"determinism with the seed, no change without demand"
+YT-PAX,verify-passengers#PAX6,scripts/verify-passengers.ts,external dynamics with the mass of the passengers
+YT-PAX,verify-passengers#PAX7,scripts/verify-passengers.ts,occupancy in SIRI-ET and GTFS-Realtime
+YT-PAX,verify-passengers#PAX8,scripts/verify-passengers.ts,the controlled train waits for its passengers
+YT-PAX,verify-passengers#PAX9,scripts/verify-passengers.ts,passengers in the control room snapshot
+YT-PAX,verify-passengers#PAX10,scripts/verify-passengers.ts,passengers changing train and the cost of a lost connection
+X2R5-MB-CRE,verify-capacity#CAP5,scripts/verify-capacity.ts,"moving block, minimum headway measured against the one computed from the confirmed rear ends of the first train"
+X2R5-MB-CRE,verify-moving-block#MB1,scripts/verify-moving-block.ts,"behind the freight train the authority ends the margin behind its confirmed rear end: the follower comes closer than at fixed block, never closer than the margin, and arrives earlier"
+X2R5-MB-CRE,verify-moving-block#MB2,scripts/verify-moving-block.ts,"with a wide headway the follower runs as with the fixed block, never held by the signalling"
+X2R5-MB-CRE,verify-moving-block#MB4,scripts/verify-moving-block.ts,"the train ahead stopped on the line: the follower stops behind it, the margin away, closer than at fixed block"
+X2R5-MB-CRE,verify-moving-block#MB6,scripts/verify-moving-block.ts,"outside its conditions the moving block is ignored with a warning, and the run is the fixed block one"
+X2R5-MB-MARGIN,verify-capacity#CAP5,scripts/verify-capacity.ts,"moving block, minimum headway measured against the one computed from the confirmed rear ends of the first train"
+X2R5-MB-MARGIN,verify-moving-block#MB1,scripts/verify-moving-block.ts,"behind the freight train the authority ends the margin behind its confirmed rear end: the follower comes closer than at fixed block, never closer than the margin, and arrives earlier"
+X2R5-MB-MARGIN,verify-moving-block#MB4,scripts/verify-moving-block.ts,"the train ahead stopped on the line: the follower stops behind it, the margin away, closer than at fixed block"
+X2R5-MB-NOINT,verify-moving-block#MB3,scripts/verify-moving-block.ts,"with integrity lost, or with the radio of the train ahead lost, its confirmed rear end stays frozen and the follower stops behind it, then goes on"
+X2R5-MB-SILENT,verify-moving-block#MB3,scripts/verify-moving-block.ts,"with integrity lost, or with the radio of the train ahead lost, its confirmed rear end stays frozen and the follower stops behind it, then goes on"

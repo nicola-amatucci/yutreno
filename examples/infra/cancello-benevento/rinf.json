@@ -1,0 +1,744 @@
+{
+ "head": {
+  "vars": [
+   "sol",
+   "opStart",
+   "opEnd",
+   "opStartName",
+   "opEndName",
+   "length",
+   "maxSpeed",
+   "etcsLevel",
+   "protection",
+   "contactLine",
+   "lineId",
+   "gradientProfile",
+   "opStartKm",
+   "opEndKm"
+  ]
+ },
+ "results": {
+  "bindings": [
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/92e9d17887"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/2376328be8"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/c2985d197b"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO APPIA"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "2735.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+0.0(45.733) +3.5(46.463) +4.1(47.937)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 45+733"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C202 | 101+58;C197 | 101+58;F71-F72 | 101+58;CANCELLO-BENEVENTO | 48+468"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/92e9d17887"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/2376328be8"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/c2985d197b"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO APPIA"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO CENTRALE"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "2735.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+0.0(45.733) +3.5(46.463) +4.1(47.937)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 45+733"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "C202 | 101+58;C197 | 101+58;F71-F72 | 101+58;CANCELLO-BENEVENTO | 48+468"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/7092452d47"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/1bfa67da7b"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/ab466153ee"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "S.MARIA A VICO"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "ARPAIA"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "12374.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+20.9(12.277) +0.0(8.203) +12.5(11.990) +20.0(18.290) +19.9(19.008) +19.0(17.451) +5.5(20.007) -5.5(20.115) +17.4(17.962) +20.0(19.907) +18.4(12.501) -15.0(21.821) +20.0(12.961) -21.9(22.050) +19.0(11.791)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 8+203"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 20+577"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/368c7a71ed"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/ab466153ee"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/4ed759c240"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "ARPAIA"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "ROTONDI PAOLISI"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "3298.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "-12.0(23.784) -6.0(22.808) +0.0(20.577)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 20+577"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 23+875"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/89fff8fdc7"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/da91207707"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/bf0efee25d"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "CANCELLO"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "S.FELICE A CANCELLO"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "5689.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+0.0(0.000) +10.0(5.430) +6.0(3.234) +10.0(2.934) +6.4(1.774)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "C143 | 227+467;C203 | 227+467;F61-F62 | 227+467;C138 | 227+467;0000 | 0+0;CANCELLO-BENEVENTO | 0+0"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 5+689"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/44c992e5de"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/4ed759c240"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/07e2283b29"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "ROTONDI PAOLISI"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "CERVINARA"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "2148.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+0.0(23.875) -8.3(24.428) +5.0(25.714) +12.1(25.641)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 23+875"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 26+23"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/d5cee8ae40"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/07e2283b29"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/2aa33b2ed3"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "CERVINARA"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "S.MARTINO VALLE CAUDINA"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "3376.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+9.7(27.266) +11.2(26.477) +10.0(29.118) -12.2(26.755) +0.0(26.023) +8.0(27.026) +3.3(28.428) -1.7(27.928) +8.6(27.529)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 26+23"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 29+399"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/3e650f1208"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/bbfa10c5d6"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/2376328be8"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO RIONE LIBERTÀ"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO APPIA"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "955000.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "-15.0(45.374) +0.0(44.778)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 44+778"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 45+733"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/ee20672ca4"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/cf8c9e0ce6"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/e2a1ba10aa"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "TUFARA VALLE"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO PONTE CORVO"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "7242.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+10.0(36.198) -16.9(41.393) -4.5(35.305) -18.8(36.681) +0.0(35.055) -15.0(37.704) -17.0(37.112) -15.0(35.619) -10.0(38.770) -17.0(40.381) -5.0(39.494) -13.0(40.649)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 35+55"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 42+297"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/63497e943d"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/e2a1ba10aa"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/bbfa10c5d6"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO PONTE CORVO"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "BENEVENTO RIONE LIBERTÀ"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "2481.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "-10.0(44.590) +0.0(42.297) -15.8(42.328) +9.3(43.116) +4.0(44.115)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 42+297"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 44+778"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/a2814a81b0"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/2aa33b2ed3"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/cf8c9e0ce6"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "S.MARTINO VALLE CAUDINA"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "TUFARA VALLE"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "5656.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "-14.0(30.450) -17.0(33.847) -17.0(30.139) -10.0(33.347) -10.0(33.047) -17.0(34.704) -17.0(32.947) +0.0(29.399) -15.0(29.762) -5.8(34.799) -8.5(32.516) -18.0(132.411)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 29+399"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 35+55"
+    }
+   },
+   {
+    "sol": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/sectionOfLine/d914735dee"
+    },
+    "opStart": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/bf0efee25d"
+    },
+    "opEnd": {
+     "type": "uri",
+     "value": "http://data.europa.eu/949/operationalPoint/1bfa67da7b"
+    },
+    "opStartName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "S.FELICE A CANCELLO"
+    },
+    "opEndName": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "S.MARIA A VICO"
+    },
+    "length": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#double",
+     "type": "literal",
+     "value": "2514.0"
+    },
+    "maxSpeed": {
+     "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+     "type": "literal",
+     "value": "80"
+    },
+    "protection": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "None"
+    },
+    "contactLine": {
+     "xml:lang": "en",
+     "type": "literal",
+     "value": "DC 3kV"
+    },
+    "lineId": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO"
+    },
+    "gradientProfile": {
+     "type": "literal",
+     "value": "+3.0(6.515) +4.3(7.645) +2.0(5.860) +20.0(10.827) -10.0(8.894) +5.0(9.129) +0.0(5.689) -0.9(7.375) +16.0(9.733)"
+    },
+    "opStartKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 5+689"
+    },
+    "opEndKm": {
+     "type": "literal",
+     "value": "CANCELLO-BENEVENTO | 8+203"
+    }
+   }
+  ]
+ }
+}

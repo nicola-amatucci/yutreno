@@ -1,0 +1,63 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": 1793862600
+  },
+  "entity": [
+    {
+      "id": "vp-r-2001",
+      "vehicle": {
+        "trip": {
+          "trip_id": "IT:ITF3:ServiceJourney:yutreno:r-2001",
+          "start_date": "20261105",
+          "schedule_relationship": "SCHEDULED",
+          "route_id": "IT:ITF3:Line:yutreno:valle-lauro-monte-clanio",
+          "direction_id": 0
+        },
+        "vehicle": {
+          "id": "IT:ITF3:Vehicle:yutreno:r-2001",
+          "label": "R 2001"
+        },
+        "position": {
+          "latitude": 40.8828621,
+          "longitude": 14.753579,
+          "bearing": 98.1,
+          "odometer": 10252.2,
+          "speed": 0
+        },
+        "current_stop_sequence": 3,
+        "stop_id": "IT:ITF3:Quay:yutreno:san-felice-scalo-1",
+        "current_status": "STOPPED_AT",
+        "timestamp": 1793862600
+      }
+    },
+    {
+      "id": "vp-r-2101",
+      "vehicle": {
+        "trip": {
+          "trip_id": "IT:ITF3:ServiceJourney:yutreno:r-2101",
+          "start_date": "20261105",
+          "schedule_relationship": "SCHEDULED",
+          "route_id": "IT:ITF3:Line:yutreno:valle-lauro-monte-clanio",
+          "direction_id": 1
+        },
+        "vehicle": {
+          "id": "IT:ITF3:Vehicle:yutreno:r-2101",
+          "label": "R 2101"
+        },
+        "position": {
+          "latitude": 40.8828655,
+          "longitude": 14.7535474,
+          "bearing": 278.2,
+          "odometer": 4600.5,
+          "speed": 0
+        },
+        "current_stop_sequence": 2,
+        "stop_id": "IT:ITF3:Quay:yutreno:san-felice-scalo-2",
+        "current_status": "STOPPED_AT",
+        "timestamp": 1793862600
+      }
+    }
+  ]
+}

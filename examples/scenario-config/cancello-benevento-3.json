@@ -1,0 +1,6 @@
+{
+ "name": "Cancello – Benevento: three trains following the controlled one",
+ "line": "../infra/cancello-benevento/line.json",
+ "signalling": "BACC",
+ "trains": { "count": 3, "headway_s": 1200 }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Leaves approaching Ponte Sabato",
+  "description": "Autumn: in the kilometre before Ponte Sabato leaves on the rails reduce adhesion to μ 0.05. The onboard does not know it and computes its curves with the nominal adhesion; the driver or the controller finds out from wheel slide while braking.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "events": [
+    {"type": "low_adhesion", "from_m": 4300, "to_m": 5300, "mu": 0.05}
+  ]
+}

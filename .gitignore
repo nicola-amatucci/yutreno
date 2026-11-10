@@ -1,0 +1,12 @@
+node_modules/
+dist/
+runs/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+corsa_*.csv
+openetcs-build/
+risultati/
+results/
+ext/

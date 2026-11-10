@@ -1,0 +1,12 @@
+{
+  "name": "Interlocking: overtaking at Ponte Sabato",
+  "description": "A freight train stops on track I of Ponte Sabato for almost seven minutes. Automatic route setting, finding track I occupied, routes the regional train onto track II with a diverging entry at 60 km/h; the regional train calls at the station and departs from track II when the section after the station is clear.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "leader": {"stopAt": 5420, "wait": 400},
+  "events": [],
+  "criteria": {"delay_max_s": 600}
+}

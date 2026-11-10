@@ -1,0 +1,52 @@
+{
+  "name": "Precedence at San Felice Scalo",
+  "description": "Valle Lauro line, ETCS with the reference onboard and the interlocking trackside. The controlled train breaks down after Ponte Sabato and stays still for 200 s; R 5101, timetabled to leave San Felice Scalo after it, arrives there first and waits on track I. When both want the exit towards Monte Clanio, the rule decides: with «timetable» the interlocking holds R 5101 for the controlled train, timetabled earlier; with «first_come» R 5101 leaves first and, slowed by a traction fault, delays the controlled train behind it.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "leader": {
+    "on": false
+  },
+  "conflict_rule": "timetable",
+  "services": [
+    {
+      "id": "R 5101",
+      "train": "regional",
+      "stops": [
+        {
+          "station": "Ponte Sabato",
+          "departure_s": 100
+        },
+        {
+          "station": "San Felice Scalo",
+          "arrival_s": 440,
+          "departure_s": 660,
+          "track": "I"
+        },
+        {
+          "station": "Monte Clanio",
+          "arrival_s": 1000
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "train_stopped",
+      "when": {
+        "t": 300
+      },
+      "duration_s": 200
+    },
+    {
+      "type": "traction_reduced",
+      "factor": 0.3,
+      "train": "R 5101",
+      "when": {
+        "t": 661
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Interlocking: RBC/RBC link lost before the handover",
+  "description": "Like the handover run, without the freight train ahead, but the link between RBC 1 and RBC 2 is lost at 200 s for 300 s. Without the route related information of RBC 2, RBC 1 gives an authority only up to the border: the train stops before it and continues when the link is back, the handover then runs as usual.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "leader": {
+    "on": false
+  },
+  "rbc_borders_m": [
+    7600
+  ],
+  "events": [
+    {
+      "type": "operator_command",
+      "when": {
+        "t": 200
+      },
+      "duration_s": 300,
+      "command": {
+        "type": "rbc_link",
+        "up": false
+      },
+      "announced": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "yutreno",
+  "version": "0.1.0",
+  "private": true,
+  "license": "EUPL-1.2",
+  "author": "Nicola Amatucci",
+  "description": "YuTreno: train driving simulator for research and teaching, with ERTMS/ETCS level 2, SCMT and an API for automatic controllers.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --serve",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.web.json",
+    "verify": "node scripts/run-verify.mjs",
+    "golden": "tsx scripts/golden.ts",
+    "headless": "tsx src/server/headless.ts",
+    "bridge": "tsx src/server/bridge.ts",
+    "campaign": "tsx scripts/campaign.ts",
+    "ponte": "tsx src/server/bridge.ts",
+    "agent-env": "tsx src/server/agent-env.ts",
+    "feeds": "tsx src/server/feeds-server.ts",
+    "import": "tsx src/server/import-timetable.ts",
+    "import-infra": "tsx src/server/import-infra.ts",
+    "plausibility": "tsx src/server/plausibility.ts",
+    "line-from-sources": "tsx src/server/line-from-sources.ts",
+    "make-scenario": "tsx src/server/make-scenario.ts",
+    "service-campaign": "tsx scripts/service-campaign.ts",
+    "driver-campaign": "tsx scripts/driver-campaign.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/three": "^0.187.0",
+    "esbuild": "^0.28.2",
+    "gtfs-realtime-bindings": "^2.2.0",
+    "three": "^0.187.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "headway-sweep",
+  "description": "Two trains in the same direction on the Valle Lauro line, the second h seconds after the first, with the automatic block and with ETCS: the headway from which the second train is no longer held by the signalling (docs/CAPACITY.md).",
+  "lines": ["valle-lauro"],
+  "trains": [1],
+  "headways_s": [180, 200, 220, 230, 240, 245, 250, 260, 280, 300],
+  "directions": ["forward"],
+  "signalling": ["BACC", "ETCS"],
+  "demand_per_station_per_hour": [0],
+  "on_time_s": 180
+}

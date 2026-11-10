@@ -1,0 +1,17 @@
+{
+  "name": "Interlocking: control centre commands",
+  "description": "The control centre operator switches off automatic route setting, sets by hand the entry route on track II of Ponte Sabato (diverging at 60 km/h) and then switches automation back on, which sets the departure from track II. Further on the operator imposes an emergency stop on the train (RBC message 16) and revokes it at 660 s, with the train at standstill on the line.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "events": [
+    {"type": "operator_command", "when": {"pos": 500}, "command": {"type": "ars", "active": false}},
+    {"type": "operator_command", "when": {"pos": 3000}, "command": {"type": "set_route", "id": "Ponte Sabato/2"}},
+    {"type": "operator_command", "when": {"pos": 3500}, "command": {"type": "ars", "active": true}},
+    {"type": "operator_command", "when": {"pos": 9000}, "command": {"type": "emergency_stop"}},
+    {"type": "operator_command", "when": {"t": 660}, "command": {"type": "revoke_emergency_stop"}}
+  ],
+  "criteria": {"delay_max_s": 300, "interventions_max": 1}
+}

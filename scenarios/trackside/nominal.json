@@ -1,0 +1,10 @@
+{
+  "name": "Interlocking: nominal run",
+  "description": "The same Valle Lauro run, but with the complete trackside: the interlocking sets the entry and departure routes in every station with automatic route setting (ARS) and the automatic block on the line, and the RBC builds the movement authority from the routes set and sends it to the reference onboard.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "events": []
+}

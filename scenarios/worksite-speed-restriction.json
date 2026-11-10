@@ -1,0 +1,13 @@
+{
+  "name": "Speed restriction for a worksite",
+  "description": "A worksite between Ponte Sabato and San Felice Scalo imposes 50 km/h over 1.5 km. The restriction is in force at departure and appears in the speed profile. A second restriction, at 30 km/h, is imposed while the train is on the line.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "events": [
+    {"type": "speed_restriction", "from_m": 6500, "to_m": 8000, "v_kmh": 50},
+    {"type": "message", "when": {"pos": 10600}, "text": "From km 12+000 to km 12+800 speed restriction to 30 km/h for a track inspection"},
+    {"type": "speed_restriction", "when": {"pos": 10600}, "from_m": 12000, "to_m": 12800, "v_kmh": 30}
+  ],
+  "criteria": {"delay_max_s": 360}
+}

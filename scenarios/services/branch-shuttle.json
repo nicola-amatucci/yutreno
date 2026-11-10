@@ -1,0 +1,26 @@
+{
+  "name": "Branch shuttle with a connection",
+  "description": "Network of the Valle Lauro line and of the Rocca Sabato branch, automatic block with SCMT. One train runs the branch back and forth as three services of the same rolling stock circulation (block B1), with at least 300 s at each end. The first service waits at San Felice Scalo for the controlled train coming from Valle Lauro: 120 s to change train, at most 300 s of wait beyond its departure.",
+  "network": "valle-lauro-rocca",
+  "train": "regional",
+  "signalling": "BACC",
+  "leader": { "on": false },
+  "min_turnaround_s": 300,
+  "services": [
+    { "id": "S 4101", "train": "regional", "block": "B1", "stops": [
+      { "station": "San Felice Scalo", "departure_s": 700 },
+      { "station": "Pietrarsa", "arrival_s": 950, "departure_s": 980 },
+      { "station": "Rocca Sabato", "arrival_s": 1240 } ] },
+    { "id": "S 4102", "block": "B1", "stops": [
+      { "station": "Rocca Sabato", "departure_s": 1560 },
+      { "station": "Pietrarsa", "arrival_s": 1820, "departure_s": 1850 },
+      { "station": "San Felice Scalo", "arrival_s": 2100 } ] },
+    { "id": "S 4103", "block": "B1", "stops": [
+      { "station": "San Felice Scalo", "departure_s": 2420 },
+      { "station": "Pietrarsa", "arrival_s": 2670, "departure_s": 2700 },
+      { "station": "Rocca Sabato", "arrival_s": 2960 } ] }
+  ],
+  "connections": [
+    { "station": "San Felice Scalo", "from_service": "train", "to_service": "S 4101", "transfer_s": 120, "max_wait_s": 300 }
+  ]
+}

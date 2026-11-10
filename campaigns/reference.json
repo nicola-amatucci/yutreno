@@ -1,0 +1,32 @@
+{
+  "name": "reference",
+  "description": "Matrix onboard × ATO × scenario, with and without hidden faults, to separate the effect of the ETCS onboard from that of the ATO.",
+  "scenarios": [
+    "scenarios/rbc-emergency-stop.json",
+    "scenarios/leaves-ponte-sabato.json",
+    "scenarios/degraded-brake.json",
+    "scenarios/leader-stopped-etcs.json",
+    "scenarios/radio-loss.json",
+    "scenarios/worksite-speed-restriction.json"
+  ],
+  "onboards": ["internal", "reference"],
+  "ato": {
+    "simple": "examples/ato.js",
+    "s130": "examples/ato_s130.js"
+  },
+  "faults": [true, false],
+  "period_s": 0.2,
+  "parameters": [
+    {
+      "name": "base",
+      "description": "Default national values (speed margins of Subset-026 §A.3.1), train with fixed decelerations (gamma model)",
+      "braking_model": "gamma",
+      "national_values": {}
+    }
+  ],
+  "determinism": {
+    "scenario": "scenarios/degraded-brake.json",
+    "ato": "s130",
+    "external_onboard": "exec:npx --no-install tsx examples/onboard/onboard_stdio.ts"
+  }
+}

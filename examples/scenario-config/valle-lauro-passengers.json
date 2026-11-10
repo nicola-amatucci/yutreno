@@ -1,0 +1,19 @@
+{
+ "name": "Valle Lauro: morning peak with passengers",
+ "description": "Four service trains in both directions and the controlled train, with an origin–destination demand of the morning peak: most people travel from Valle Lauro and Ponte Sabato to Monte Clanio. Boarding and alighting set the dwell times, the people on board add to the mass of the trains.",
+ "line": "valle-lauro",
+ "signalling": "ETCS",
+ "trains": { "count": 4, "headway_s": 600, "directions": "both" },
+ "passengers": {
+  "arrivals": "poisson",
+  "seed": 1,
+  "demand": [
+   { "from": "Valle Lauro", "to": "Monte Clanio", "per_hour": 900 },
+   { "from": "Valle Lauro", "to": "San Felice Scalo", "per_hour": 300 },
+   { "from": "Ponte Sabato", "to": "Monte Clanio", "per_hour": 700 },
+   { "from": "San Felice Scalo", "to": "Monte Clanio", "per_hour": 400 },
+   { "from": "Monte Clanio", "to": "Valle Lauro", "per_hour": 250 },
+   { "from": "Monte Clanio", "to": "Ponte Sabato", "per_hour": 150 }
+  ]
+ }
+}

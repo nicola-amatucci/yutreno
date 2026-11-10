@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Siri xmlns="http://www.siri.org.uk/siri" version="2.1">
+  <ServiceDelivery>
+    <ResponseTimestamp>2026-11-05T08:10:00+01:00</ResponseTimestamp>
+    <ProducerRef>yutreno</ProducerRef>
+    <EstimatedTimetableDelivery version="2.1">
+      <ResponseTimestamp>2026-11-05T08:10:00+01:00</ResponseTimestamp>
+      <EstimatedJourneyVersionFrame>
+        <RecordedAtTime>2026-11-05T08:10:00+01:00</RecordedAtTime>
+        <EstimatedVehicleJourney>
+          <LineRef>IT:ITF3:Line:yutreno:valle-lauro-monte-clanio</LineRef>
+          <DirectionRef>outbound</DirectionRef>
+          <FramedVehicleJourneyRef>
+            <DataFrameRef>2026-11-05</DataFrameRef>
+            <DatedVehicleJourneyRef>IT:ITF3:ServiceJourney:yutreno:r-2001</DatedVehicleJourneyRef>
+          </FramedVehicleJourneyRef>
+          <JourneyPatternRef>IT:ITF3:ServiceJourneyPattern:yutreno:out-valle-lauro_ponte-sabato_san-felice-scalo_monte-clanio</JourneyPatternRef>
+          <VehicleMode>rail</VehicleMode>
+          <PublishedLineName>Valle Lauro – Monte Clanio</PublishedLineName>
+          <OriginRef>IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-1</OriginRef>
+          <OriginName>Valle Lauro</OriginName>
+          <DestinationRef>IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-1</DestinationRef>
+          <DestinationName>Monte Clanio</DestinationName>
+          <OperatorRef>IT:ITF3:Operator:yutreno:yutreno</OperatorRef>
+          <VehicleJourneyName>R 2001</VehicleJourneyName>
+          <Monitored>true</Monitored>
+          <VehicleRef>IT:ITF3:Vehicle:yutreno:r-2001</VehicleRef>
+          <RecordedCalls>
+            <RecordedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-1</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>1</Order>
+              <StopPointName>Valle Lauro</StopPointName>
+              <AimedDepartureTime>2026-11-05T08:00:00+01:00</AimedDepartureTime>
+              <ActualDepartureTime>2026-11-05T08:00:01+01:00</ActualDepartureTime>
+            </RecordedCall>
+            <RecordedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-1</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>2</Order>
+              <StopPointName>Ponte Sabato</StopPointName>
+              <AimedArrivalTime>2026-11-05T08:04:20+01:00</AimedArrivalTime>
+              <ActualArrivalTime>2026-11-05T08:03:44+01:00</ActualArrivalTime>
+              <AimedDepartureTime>2026-11-05T08:04:50+01:00</AimedDepartureTime>
+              <ActualDepartureTime>2026-11-05T08:04:51+01:00</ActualDepartureTime>
+            </RecordedCall>
+          </RecordedCalls>
+          <EstimatedCalls>
+            <EstimatedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-1</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>3</Order>
+              <StopPointName>San Felice Scalo</StopPointName>
+              <AimedArrivalTime>2026-11-05T08:10:20+01:00</AimedArrivalTime>
+              <ExpectedArrivalTime>2026-11-05T08:08:34+01:00</ExpectedArrivalTime>
+              <AimedDepartureTime>2026-11-05T08:10:50+01:00</AimedDepartureTime>
+              <ExpectedDepartureTime>2026-11-05T08:10:50+01:00</ExpectedDepartureTime>
+            </EstimatedCall>
+            <EstimatedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-1</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>4</Order>
+              <StopPointName>Monte Clanio</StopPointName>
+              <AimedArrivalTime>2026-11-05T08:14:40+01:00</AimedArrivalTime>
+              <ExpectedArrivalTime>2026-11-05T08:14:40+01:00</ExpectedArrivalTime>
+            </EstimatedCall>
+          </EstimatedCalls>
+          <IsCompleteStopSequence>true</IsCompleteStopSequence>
+        </EstimatedVehicleJourney>
+        <EstimatedVehicleJourney>
+          <LineRef>IT:ITF3:Line:yutreno:valle-lauro-monte-clanio</LineRef>
+          <DirectionRef>inbound</DirectionRef>
+          <FramedVehicleJourneyRef>
+            <DataFrameRef>2026-11-05</DataFrameRef>
+            <DatedVehicleJourneyRef>IT:ITF3:ServiceJourney:yutreno:r-2101</DatedVehicleJourneyRef>
+          </FramedVehicleJourneyRef>
+          <JourneyPatternRef>IT:ITF3:ServiceJourneyPattern:yutreno:in-monte-clanio_san-felice-scalo_ponte-sabato_valle-lauro</JourneyPatternRef>
+          <VehicleMode>rail</VehicleMode>
+          <PublishedLineName>Valle Lauro – Monte Clanio</PublishedLineName>
+          <OriginRef>IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-2</OriginRef>
+          <OriginName>Monte Clanio</OriginName>
+          <DestinationRef>IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-2</DestinationRef>
+          <DestinationName>Valle Lauro</DestinationName>
+          <OperatorRef>IT:ITF3:Operator:yutreno:yutreno</OperatorRef>
+          <VehicleJourneyName>R 2101</VehicleJourneyName>
+          <Monitored>true</Monitored>
+          <VehicleRef>IT:ITF3:Vehicle:yutreno:r-2101</VehicleRef>
+          <RecordedCalls>
+            <RecordedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:monte-clanio-2</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>1</Order>
+              <StopPointName>Monte Clanio</StopPointName>
+              <AimedDepartureTime>2026-11-05T08:05:00+01:00</AimedDepartureTime>
+              <ActualDepartureTime>2026-11-05T08:05:01+01:00</ActualDepartureTime>
+            </RecordedCall>
+          </RecordedCalls>
+          <EstimatedCalls>
+            <EstimatedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:san-felice-scalo-2</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>2</Order>
+              <StopPointName>San Felice Scalo</StopPointName>
+              <AimedArrivalTime>2026-11-05T08:09:20+01:00</AimedArrivalTime>
+              <ExpectedArrivalTime>2026-11-05T08:08:26+01:00</ExpectedArrivalTime>
+              <AimedDepartureTime>2026-11-05T08:11:00+01:00</AimedDepartureTime>
+              <ExpectedDepartureTime>2026-11-05T08:11:00+01:00</ExpectedDepartureTime>
+            </EstimatedCall>
+            <EstimatedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:ponte-sabato-2</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>3</Order>
+              <StopPointName>Ponte Sabato</StopPointName>
+              <AimedArrivalTime>2026-11-05T08:15:20+01:00</AimedArrivalTime>
+              <ExpectedArrivalTime>2026-11-05T08:15:20+01:00</ExpectedArrivalTime>
+              <AimedDepartureTime>2026-11-05T08:15:50+01:00</AimedDepartureTime>
+              <ExpectedDepartureTime>2026-11-05T08:15:50+01:00</ExpectedDepartureTime>
+            </EstimatedCall>
+            <EstimatedCall>
+              <StopPointRef>IT:ITF3:ScheduledStopPoint:yutreno:valle-lauro-2</StopPointRef>
+              <VisitNumber>1</VisitNumber>
+              <Order>4</Order>
+              <StopPointName>Valle Lauro</StopPointName>
+              <AimedArrivalTime>2026-11-05T08:19:50+01:00</AimedArrivalTime>
+              <ExpectedArrivalTime>2026-11-05T08:19:50+01:00</ExpectedArrivalTime>
+            </EstimatedCall>
+          </EstimatedCalls>
+          <IsCompleteStopSequence>true</IsCompleteStopSequence>
+        </EstimatedVehicleJourney>
+      </EstimatedJourneyVersionFrame>
+    </EstimatedTimetableDelivery>
+  </ServiceDelivery>
+</Siri>

@@ -1,0 +1,129 @@
+{
+  "header": {
+    "gtfs_realtime_version": "2.0",
+    "incrementality": "FULL_DATASET",
+    "timestamp": 1793862600
+  },
+  "entity": [
+    {
+      "id": "tu-r-2001",
+      "trip_update": {
+        "trip": {
+          "trip_id": "IT:ITF3:ServiceJourney:yutreno:r-2001",
+          "start_date": "20261105",
+          "schedule_relationship": "SCHEDULED",
+          "route_id": "IT:ITF3:Line:yutreno:valle-lauro-monte-clanio",
+          "direction_id": 0
+        },
+        "vehicle": {
+          "id": "IT:ITF3:Vehicle:yutreno:r-2001",
+          "label": "R 2001"
+        },
+        "timestamp": 1793862600,
+        "delay": -106,
+        "stop_time_update": [
+          {
+            "stop_sequence": 1,
+            "stop_id": "IT:ITF3:Quay:yutreno:valle-lauro-1",
+            "departure": {
+              "delay": 1,
+              "time": 1793862001
+            }
+          },
+          {
+            "stop_sequence": 2,
+            "stop_id": "IT:ITF3:Quay:yutreno:ponte-sabato-1",
+            "arrival": {
+              "delay": -36,
+              "time": 1793862224
+            },
+            "departure": {
+              "delay": 1,
+              "time": 1793862291
+            }
+          },
+          {
+            "stop_sequence": 3,
+            "stop_id": "IT:ITF3:Quay:yutreno:san-felice-scalo-1",
+            "arrival": {
+              "delay": -106,
+              "time": 1793862514
+            },
+            "departure": {
+              "delay": 0,
+              "time": 1793862650
+            }
+          },
+          {
+            "stop_sequence": 4,
+            "stop_id": "IT:ITF3:Quay:yutreno:monte-clanio-1",
+            "arrival": {
+              "delay": 0,
+              "time": 1793862880
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "tu-r-2101",
+      "trip_update": {
+        "trip": {
+          "trip_id": "IT:ITF3:ServiceJourney:yutreno:r-2101",
+          "start_date": "20261105",
+          "schedule_relationship": "SCHEDULED",
+          "route_id": "IT:ITF3:Line:yutreno:valle-lauro-monte-clanio",
+          "direction_id": 1
+        },
+        "vehicle": {
+          "id": "IT:ITF3:Vehicle:yutreno:r-2101",
+          "label": "R 2101"
+        },
+        "timestamp": 1793862600,
+        "delay": -54,
+        "stop_time_update": [
+          {
+            "stop_sequence": 1,
+            "stop_id": "IT:ITF3:Quay:yutreno:monte-clanio-2",
+            "departure": {
+              "delay": 1,
+              "time": 1793862301
+            }
+          },
+          {
+            "stop_sequence": 2,
+            "stop_id": "IT:ITF3:Quay:yutreno:san-felice-scalo-2",
+            "arrival": {
+              "delay": -54,
+              "time": 1793862506
+            },
+            "departure": {
+              "delay": 0,
+              "time": 1793862660
+            }
+          },
+          {
+            "stop_sequence": 3,
+            "stop_id": "IT:ITF3:Quay:yutreno:ponte-sabato-2",
+            "arrival": {
+              "delay": 0,
+              "time": 1793862920
+            },
+            "departure": {
+              "delay": 0,
+              "time": 1793862950
+            }
+          },
+          {
+            "stop_sequence": 4,
+            "stop_id": "IT:ITF3:Quay:yutreno:valle-lauro-2",
+            "arrival": {
+              "delay": 0,
+              "time": 1793863190
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

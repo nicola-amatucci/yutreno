@@ -1,0 +1,13 @@
+{
+  "name": "Interlocking: RBC/RBC handover",
+  "description": "The Valle Lauro line is divided between two RBCs at the main signal near 7.7 km. As the authority of RBC 1 reaches the border, RBC 1 pre-announces the train to RBC 2 (Subset-039), receives from it the route related information beyond the border and sends the onboard an authority that runs on into the area of RBC 2, with packet 131 to order the handover. The onboard opens a second session with RBC 2, reports its position to both, switches supervision when its front passes the border balise group and closes the session with RBC 1 when its rear has passed. The run is the same as the one with a single RBC.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "rbc_borders_m": [
+    7600
+  ],
+  "events": []
+}

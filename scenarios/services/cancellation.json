@@ -1,0 +1,18 @@
+{
+  "name": "Train taken out of service at San Felice Scalo",
+  "description": "Valle Lauro line, ETCS with the reference onboard and the interlocking trackside, with the reference regulator. R 5101 breaks down on track I of San Felice Scalo while waiting for its departure, and nobody can say when it will move again. The regulator lowers its priority and keeps moving its departure ahead, so the controlled train passes it on track II; after ten minutes it takes R 5101 out of service there, cancelling its stop at Monte Clanio. The open data feeds show the cancelled stop: SKIPPED in GTFS-Realtime, a cancelled call in SIRI.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "regulator": "reference",
+  "leader": { "on": false },
+  "services": [
+    { "id": "R 5101", "train": "regional", "stops": [
+      { "station": "Ponte Sabato", "departure_s": 100 },
+      { "station": "San Felice Scalo", "arrival_s": 440, "departure_s": 560 },
+      { "station": "Monte Clanio", "arrival_s": 900 } ] }
+  ],
+  "events": [ { "type": "train_stopped", "train": "R 5101", "when": { "t": 400 } } ]
+}

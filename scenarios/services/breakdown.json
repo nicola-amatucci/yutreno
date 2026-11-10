@@ -1,0 +1,44 @@
+{
+  "name": "Breakdown at San Felice Scalo",
+  "description": "Valle Lauro line, ETCS with the reference onboard and the interlocking trackside, with the reference regulator. R 5101 breaks down in San Felice Scalo on track I while waiting for its departure, and stays still for 600 s; the controlled train arrives behind it on track II. Without a regulator route setting gives the exit to R 5101 at its timetabled time and the controlled train waits until the fault ends. The regulator lowers the priority of R 5101, moves its departure after the end of the fault and lets the controlled train leave first.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "regulator": "reference",
+  "leader": {
+    "on": false
+  },
+  "services": [
+    {
+      "id": "R 5101",
+      "train": "regional",
+      "stops": [
+        {
+          "station": "Ponte Sabato",
+          "departure_s": 100
+        },
+        {
+          "station": "San Felice Scalo",
+          "arrival_s": 440,
+          "departure_s": 560
+        },
+        {
+          "station": "Monte Clanio",
+          "arrival_s": 900
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "train_stopped",
+      "train": "R 5101",
+      "when": {
+        "t": 400
+      },
+      "duration_s": 600
+    }
+  ]
+}

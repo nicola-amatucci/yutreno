@@ -1,0 +1,3 @@
+route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,shape_id
+IT:ITF3:Line:yutreno:valle-lauro-monte-clanio,2026-11-05,IT:ITF3:ServiceJourney:yutreno:r-2001,Monte Clanio,R 2001,0,shape-0
+IT:ITF3:Line:yutreno:valle-lauro-monte-clanio,2026-11-05,IT:ITF3:ServiceJourney:yutreno:r-2101,Valle Lauro,R 2101,1,shape-1

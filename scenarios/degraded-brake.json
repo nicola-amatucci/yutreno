@@ -1,0 +1,10 @@
+{
+  "name": "Degraded brake on a descent",
+  "description": "After the summit part of the brake is isolated: the braking force drops to 60%. The fault is not announced and the line descends at 12 ‰ towards Piano Alto.",
+  "line": "appennino",
+  "train": "regional",
+  "signalling": "ETCS",
+  "events": [
+    {"type": "brake_degraded", "when": {"pos": 13000}, "factor": 0.6}
+  ]
+}

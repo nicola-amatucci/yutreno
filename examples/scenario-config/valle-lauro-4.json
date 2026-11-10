@@ -1,0 +1,7 @@
+{
+ "name": "Valle Lauro: four trains in both directions",
+ "line": "valle-lauro",
+ "train": "regional",
+ "signalling": "ETCS",
+ "trains": { "count": 4, "headway_s": 900, "directions": "both" }
+}

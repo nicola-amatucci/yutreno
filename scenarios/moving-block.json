@@ -1,0 +1,10 @@
+{
+  "name": "Moving block behind the freight train, ETCS level 2",
+  "description": "The Valle Lauro line with ETCS Level 2 and the moving block: the movement authority of the regional train ends 50 m behind the confirmed rear end the freight train ahead reports every 6 s, not at the signal before its block section. Compared with the same run at fixed block (the scenario without `spacing`), the regional train follows closer and arrives earlier.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "spacing": "moving_block",
+  "events": []
+}

@@ -1,0 +1,9 @@
+{
+ "name": "Salerno – Mercato San Severino: the real morning timetable",
+ "description": "Line imported from OpenStreetMap, RINF and EU-DEM; the first four trains of the real Trenitalia timetable from 06:00 (NAP, RAP Campania NeTEx), in both directions, plus the controlled train that leaves Salerno five minutes earlier.",
+ "line": "../infra/salerno-mercato-s-severino/line.json",
+ "signalling": "BACC",
+ "timetable": "../infra/salerno-mercato-s-severino/timetable.json",
+ "from": "06:00",
+ "trains": { "count": 4 }
+}

@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YuTreno</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Saira+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <h1>YuTreno</h1>
+      <p id="subTitle">—</p>
+    </div>
+    <div class="hdr-data">
+      <span><b>Time</b><em id="clock">08:00:00</em></span>
+      <span><b>Next stop</b><em id="nextSt">—</em></span>
+      <span><b>Position</b><em id="pos">km 0+000</em></span>
+      <span><b>Command</b><em id="cmdBy">driver</em></span>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="Sections">
+    <a href="#drive" data-tab="drive">Drive</a>
+    <a href="#line" data-tab="line">Line</a>
+    <a href="#train" data-tab="train">Train</a>
+    <a href="#scenarios" data-tab="scenarios">Scenarios</a>
+    <a href="#timetable" data-tab="timetable">Timetable</a>
+    <a href="#control" data-tab="control">Control room</a>
+    <a href="#controller" data-tab="controller">Controller and API</a>
+    <a href="#data" data-tab="data">Data</a>
+  </nav>
+
+  <!-- ================= DRIVE ================= -->
+  <section class="tab" id="tab-drive">
+    <div class="panel slim scen">
+      <label class="f">Signalling<select id="scSig"><option value="ETCS">ERTMS/ETCS level 2</option><option value="BACC">Automatic block + SCMT</option></select></label>
+      <label class="f">ETCS onboard<select id="scOnboard"><option value="internal">Simplified internal</option><option value="reference">Reference, balises and messages</option><option value="external">External via API</option></select></label>
+      <label class="f">Trackside<select id="scTrackside" title="With the reference or external onboard: interlocking and RBC with routes, points and track circuits"><option value="simple">Simple RBC of the engine</option><option value="interlocking">Interlocking and RBC</option></select></label>
+      <label class="f" id="obUrlL" hidden>Onboard address<input type="text" id="obUrl" size="20" value="ws://localhost:8767"></label>
+      <label class="f">Time of day<select id="scTod"><option value="day">Day</option><option value="dusk">Dusk</option><option value="night">Night</option></select></label>
+      <label class="f">Weather<select id="scMet"><option value="clear">Clear</option><option value="rain">Rain</option><option value="fog">Fog</option></select></label>
+      <label class="f">Rail adhesion<select id="scAdh"><option value="auto">From the weather</option><option value="dry">Dry (μ 0.30)</option><option value="wet">Wet (μ 0.20)</option><option value="leaves">Leaves (μ 0.09)</option></select></label>
+      <label class="f">View<select id="scView"><option value="3d">3D from the cab</option><option value="2d">Essential 2D</option></select></label>
+      <label class="f">Ride in<select id="scRide" title="The 3D view rides in the cab of another train on the main line; you keep driving your own"><option value="">your train</option></select></label>
+      <label class="f">3D quality<select id="scQual"><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select></label>
+      <span class="pill" id="pillMu">μ 0.30</span>
+      <a class="pill on" id="pillScen" href="#scenarios" hidden>Scenario</a>
+    </div>
+
+    <section class="view" aria-label="Cab view">
+      <canvas id="cvView"></canvas>
+      <div id="view3d" hidden></div>
+      <div class="hud"><span class="chip" id="hudGrade">i 0 ‰</span><span class="chip" id="hudTs">time ×1</span><span class="chip warn" id="hudPause">PAUSED</span><span class="chip warn" id="hudDyn" hidden></span><span class="chip" id="hudOb" hidden></span><span class="chip" id="hudPax" hidden></span><span class="chip" id="hudRide" hidden></span></div>
+      <div class="msg" id="msg" hidden></div>
+      <div class="overlay" id="brief">
+        <div class="card">
+          <p class="eyebrow" id="briefEye">SHIFT 08:00</p>
+          <h2 id="briefTitle">Drive the train to its destination</h2>
+          <p id="briefText"></p>
+          <div class="keys">
+            <kbd>↑ / W</kbd><span>lever towards traction</span>
+            <kbd>↓ / S</kbd><span>lever towards braking</span>
+            <kbd>N</kbd><span>neutral</span>
+            <kbd>Space</kbd><span>vigilance (every 55 s while running, 5 s to respond)</span>
+            <kbd>E</kbd><span>emergency braking</span>
+            <kbd>P</kbd><span>pause · <kbd>T</kbd> speeds up time · <kbd>M</kbd> audio</span>
+            <kbd>Controller</kbd><span>d-pad up/down lever, A vigilance, B emergency, Start pause</span>
+          </div>
+          <div class="ctrl"><button class="btn primary" id="startBtn">Start the service</button><button class="btn" id="startAuto">Let the controller drive</button></div>
+        </div>
+      </div>
+      <div class="overlay" id="summary" hidden>
+        <div class="card">
+          <p class="eyebrow">END OF RUN</p>
+          <h2>Run report</h2>
+          <div id="sumBody"></div>
+          <div class="ctrl"><button class="btn primary" id="againBtn">New run</button><button class="btn" id="closeSum">Review the data</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="desk">
+      <div class="panel dmi-p">
+        <h3 id="dmiTitle">ETCS DMI</h3>
+        <div class="dmi"><canvas id="cvDmi"></canvas></div>
+        <div class="lamps">
+          <span class="lamp" id="lProt">PROT</span>
+          <span class="lamp" id="lVig">VIG</span>
+          <span class="lamp" id="lDoor">DOORS</span>
+          <span class="lamp" id="lSlip">SLIP</span>
+          <span class="lamp" id="lWsp">WSP</span>
+          <span class="lamp" id="lUrg">EMG</span>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Lever</h3>
+        <div class="notch"><strong id="notchLbl">0</strong><span id="notchDesc">Neutral</span></div>
+        <div class="seg-lbl"><span>Braking</span><span>Traction</span></div>
+        <div class="seg" id="seg" role="group" aria-label="Lever positions"></div>
+        <div class="ctrl">
+          <button class="btn vig" id="vigBtn">Vigilance</button>
+          <button class="btn urg" id="urgBtn">Emergency</button>
+        </div>
+        <div class="ctrl">
+          <button class="btn" id="pauseBtn">Pause</button>
+          <button class="btn" id="tsBtn">Time ×1</button>
+          <button class="btn" id="resetBtn">Restart</button>
+        </div>
+        <p class="hint">Traction is inhibited with the doors open and when the brake is applied. If an automatic controller is driving, touching the lever gives the command back to the driver.</p>
+      </div>
+
+      <div class="panel">
+        <h3>Balance of forces</h3>
+        <div class="frow"><span>Traction F<sub>t</sub></span><div class="bar"><i id="bT"></i></div><span class="v" id="vT">0 kN</span></div>
+        <div class="frow"><span>Brake F<sub>b</sub></span><div class="bar"><i id="bB"></i></div><span class="v" id="vB">0 kN</span></div>
+        <div class="frow"><span>Resistance R(v)</span><div class="bar"><i id="bR"></i></div><span class="v" id="vR">0 kN</span></div>
+        <div class="frow"><span>Gradient m·g·i</span><div class="bar"><i id="bG"></i></div><span class="v" id="vG">0 kN</span></div>
+        <div class="frow"><span><b>Resultant</b></span><div class="bar"><i id="bN"></i></div><span class="v" id="vN">0 kN</span></div>
+        <div class="eq" id="eq">m·a = F<sub>t</sub> − F<sub>b</sub> − R(v) − m·g·i</div>
+        <p class="hint" id="forceHint">To the right the forces pushing the train, to the left those braking it.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Forces along the train</h3>
+      <div class="cv-coup"><canvas id="cvCoup"></canvas></div>
+      <div class="stats" id="coupStats"></div>
+    </section>
+
+    <section class="panel">
+      <h3>Line diagram</h3>
+      <div class="cv-line"><canvas id="cvLine"></canvas></div>
+      <div class="legend"><span><i style="background:var(--accent)"></i>your train</span><span><i style="background:var(--orange)"></i>train ahead</span><span><i style="background:var(--sig-r);opacity:.5"></i>occupied block section</span><span><i style="background:var(--sig-y)"></i>ETCS end of authority</span><span><i style="background:var(--muted)"></i>limits and altitude profile</span></div>
+    </section>
+
+    <section class="panel" id="panelP" hidden>
+      <h3>Control centre panel</h3>
+      <div id="panel"></div>
+      <p class="hint">State of the interlocking and of the RBC of the trackside as returned by the trackside protocol. A route can be set if its elements are free and its points able to move; a route already covered by an authority is cancelled only after the safety delay. The train ahead is not managed by the interlocking.</p>
+    </section>
+
+    <section class="panel">
+      <h3>Distance-speed chart</h3>
+      <div class="cv-chart"><canvas id="cvChart"></canvas></div>
+      <div class="legend"><span><i style="background:var(--fg)"></i>recorded speed</span><span><i style="background:var(--muted)"></i>line limit</span><span><i style="background:var(--accent)"></i>speed permitted by the protection</span><span><i style="background:var(--sig-r)"></i>intervention curve</span><span><i style="background:#3a4a54"></i>altitude</span></div>
+    </section>
+
+    <section class="panel">
+      <h3>Input devices and audio</h3>
+      <p class="hint" id="padTxt" aria-live="polite" style="margin-top:0">No device detected.</p>
+      <div class="ctrl" style="max-width:560px">
+        <button class="btn" id="calBtn">Calibrate physical lever</button>
+        <button class="btn" id="calClr" hidden>Disconnect lever</button>
+        <button class="btn" id="muteBtn">Audio off</button>
+      </div>
+      <p class="hint">The calibration recognises by itself the axis you move between the two ends. The centre of the lever is neutral, the forward half gives traction, the backward half braking with emergency at the end.</p>
+    </section>
+
+    <section class="panel">
+      <details class="prose">
+        <summary>Model and simplifications</summary>
+        <p>The motion follows the traction equation: the equivalent mass, that is the mass increased for the rotating parts, accelerates under the difference between the tractive effort and the sum of brake, Davis resistance R = A + B·v + C·v² and weight along the gradient. The gradient is the average one under the whole length of the train, so a long freight train feels a hump gradually. The physics advances with a fixed step of 5 ms: with the same commands two runs produce the same data.</p>
+        <p>The effort is limited first by the maximum force, then by the power (it decreases as 1/v) and finally by adhesion: μ times the weight on the motored axles in traction, μ times the total weight in braking. When the demand exceeds adhesion, SLIP or WSP light up and the force is cut. Braking uses the electric brake first, which regenerates energy, then the pneumatic one.</p>
+        <p>In ETCS level 2 mode there are no lineside signals: the RBC grants a movement authority up to the start of the first occupied section, with a danger point 50 m beyond. The internal onboard builds the indication, permitted, warning, service brake intervention and emergency brake intervention curves, correcting the deceleration for the steepest descent and for adhesion. With the reference onboard the curves follow the models of Subset-026 chapter 3.13. With the automatic block the protection is a simplified SCMT.</p>
+        <p>In the cab view the altitude profile is exaggerated twice to make climbs and descents perceptible.</p>
+      </details>
+    </section>
+  </section>
+
+  <!-- ================= LINE ================= -->
+  <section class="tab" id="tab-line" hidden>
+    <div class="panel slim scen">
+      <label class="f">Line<select id="lnPreset"></select></label>
+      <label class="f">Name<input type="text" id="lnName" size="26"></label>
+      <button class="btn sm" id="lnSave">Save in the library</button>
+      <button class="btn sm" id="lnDelete">Delete from the library</button>
+      <button class="btn sm primary" id="lnApply">Apply and restart</button>
+      <span class="pill" id="lnDirty">applied</span>
+    </div>
+    <div class="ed">
+      <div class="panel">
+        <h3>Plan</h3>
+        <div class="cv-plan"><canvas id="cvPlan"></canvas></div>
+        <div class="ctrl">
+          <button class="btn sm" id="plDel">Delete vertex</button>
+          <button class="btn sm" id="plRev">Reverse direction</button>
+          <button class="btn sm" id="plFit">Fit to view</button>
+          <button class="btn sm" id="plNew">New straight line</button>
+        </div>
+        <p class="hint">Drag a vertex to move it. Click near the alignment to insert a vertex, far from it to extend the line from its end. Double-click a vertex to delete it. Curves are fitted automatically; the orange sections have a radius below 400 m.</p>
+        <div class="stats" id="plStats"></div>
+      </div>
+      <div class="panel">
+        <h3>Stations and timetable</h3>
+        <div class="tblwrap"><table id="tbSt"></table></div>
+        <div class="ctrl"><button class="btn sm" id="addSt">Add station</button></div>
+        <h3 style="margin-top:16px">Speed limits</h3>
+        <div class="tblwrap"><table id="tbLim"></table></div>
+        <div class="ctrl"><button class="btn sm" id="addLim">Add limit</button></div>
+        <h3 style="margin-top:16px">Tunnels</h3>
+        <div class="tblwrap"><table id="tbTun"></table></div>
+        <div class="ctrl"><button class="btn sm" id="addTun">Add tunnel</button></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Altitude profile</h3>
+      <div class="cv-prof"><canvas id="cvProf"></canvas></div>
+      <div class="scen" style="margin-top:10px">
+        <label class="f">Selected vertex · km<input type="number" id="pvKm" step="0.01" style="width:110px"></label>
+        <label class="f">Altitude (m a.s.l.)<input type="number" id="pvAlt" step="0.5" style="width:110px"></label>
+        <button class="btn sm" id="pvDel">Delete vertex</button>
+        <button class="btn sm" id="pvFlat">Level line</button>
+      </div>
+      <p class="hint">Drag the vertices to create climbs and descents, click on an empty point to add one. The gradient in per mille appears next to every section; above 25 ‰ it is orange, above 35 ‰ red.</p>
+    </div>
+    <div class="two">
+      <div class="panel">
+        <h3>Signalling</h3>
+        <div class="grid-f">
+          <label class="f">Block section length (m)<input type="number" id="lnBlock" min="400" max="5000" step="50"></label>
+        </div>
+        <p class="hint" id="sigInfo">The signals (or the ETCS stop marker boards) are generated automatically: starting signal 250 m after every station, home signal 400 m before, intermediate sections of the given length.</p>
+      </div>
+      <div class="panel">
+        <h3>Train ahead</h3>
+        <div class="grid-f">
+          <label class="f">Present<select id="frOn"><option value="1">Yes</option><option value="0">No</option></select></label>
+          <label class="f">Head at departure (km)<input type="number" id="frS0" step="0.1"></label>
+          <label class="f">Max speed (km/h)<input type="number" id="frV" step="5"></label>
+          <label class="f">Length (m)<input type="number" id="frL" step="10"></label>
+          <label class="f">Stop at km (0 = none)<input type="number" id="frStop" step="0.1"></label>
+          <label class="f">Stop duration (s)<input type="number" id="frWait" step="10"></label>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>File exchange</h3>
+      <div class="ctrl" style="margin-top:0"><button class="btn sm" id="lnExport">Copy line as JSON</button><button class="btn sm" id="lnImport">Import from the box</button></div>
+      <textarea id="lnJson" rows="6" aria-label="Line in JSON format" placeholder="Paste a line in JSON format here and press Import from the box"></textarea>
+      <p class="hint" id="lnMsg">Positions in metres, times in seconds from departure. The same JSON can be generated by a script and imported here.</p>
+    </div>
+  </section>
+
+  <!-- ================= TRAIN ================= -->
+  <section class="tab" id="tab-train" hidden>
+    <div class="panel slim scen">
+      <label class="f">Model<select id="trPreset"></select></label>
+      <label class="f">Name<input type="text" id="trName" size="26"></label>
+      <button class="btn sm primary" id="trApply">Apply and restart</button>
+      <span class="pill" id="trDirty">applied</span>
+    </div>
+    <div class="ed">
+      <div class="panel">
+        <h3>Traction diagram</h3>
+        <div style="height:320px"><canvas id="cvTr"></canvas></div>
+        <div class="legend"><span><i style="background:var(--accent)"></i>maximum effort</span><span><i style="background:var(--sig-y)"></i>adhesion limit</span><span><i style="background:var(--muted)"></i>resistance on level track</span><span><i style="background:var(--orange)"></i>resistance on the steepest climb of the line</span></div>
+        <div class="stats" id="trStats"></div>
+      </div>
+      <div class="panel">
+        <h3>Parameters</h3>
+        <div class="grid-f" id="trForm"></div>
+        <p class="hint">Davis resistance: A in kN, B in N/(m/s), C in N/(m/s)². The decelerations are the nominal ones on dry rail; the simulator reduces them if adhesion is not enough.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Consist and couplers</h3>
+      <div class="scen">
+        <label class="f">Computation model<select id="trModel"><option value="multimass">Multi-mass (vehicles and couplers)</option><option value="point">Point mass (teaching)</option><option value="external">External via API (co-simulation)</option></select></label>
+        <label class="f" id="dynUrlL" hidden>Model address<input type="text" id="dynUrl" size="22" value="ws://localhost:8766"></label>
+        <label class="f" id="dynPerL" hidden>Coupling (s)<input type="number" id="dynPer" step="0.005" min="0.005" style="width:90px"></label>
+        <label class="f">Stiffness (MN/m)<input type="number" id="cpK" step="0.5" style="width:100px"></label>
+        <label class="f">Damping (kN·s/m)<input type="number" id="cpC" step="10" style="width:100px"></label>
+        <label class="f">Slack (mm)<input type="number" id="cpG" step="1" style="width:90px"></label>
+        <label class="f">Brake<select id="trEP"><option value="1">Electro-pneumatic</option><option value="0">Pneumatic</option></select></label>
+        <label class="f">Propagation (m/s)<input type="number" id="trVP" step="10" style="width:90px"></label>
+        <label class="f">Tunnel factor<input type="number" id="trKG" step="0.1" style="width:80px"></label>
+      </div>
+      <div class="tblwrap" style="margin-top:12px"><table id="tbVeh"></table></div>
+      <div class="ctrl"><button class="btn sm" id="vehAdd">Add vehicle</button><button class="btn sm" id="vehDup">Duplicate the last one</button></div>
+      <div class="stats" id="vehStats"></div>
+      <p class="hint" id="dynHint" hidden>With the external model the train dynamics is computed by an external program, for example MATLAB/Simulink, which the page queries at every coupling interval. The consist stays available to the model, which receives it at the start of the run. For MATLAB listening on TCP the bridge <code>npm run bridge</code> is needed; the protocol is in docs/EXTERNAL_DYNAMICS.md.</p>
+      <p class="hint" id="vehHint">With the multi-mass model, mass, length and motored share of the train are derived from the consist. The pneumatic brake reaches the vehicles with the propagation delay along the brake pipe; the electro-pneumatic one reaches all of them at once.</p>
+    </div>
+  </section>
+
+  <!-- ================= SCENARIOS ================= -->
+  <section class="tab" id="tab-scenarios" hidden>
+    <div class="panel slim scen">
+      <label class="f">Scenario<select id="scnSel"></select></label>
+      <button class="btn sm primary" id="scnApply">Apply and restart</button>
+      <button class="btn sm" id="scnNone">Run without scenario</button>
+      <span class="pill" id="scnPill">no scenario</span>
+    </div>
+    <div class="panel">
+      <h3>Make a scenario: line, trains, passengers</h3>
+      <div class="ctrl mk">
+        <label class="f">Line<select id="mkLine"></select></label>
+        <label class="f">Service trains<input id="mkCount" type="number" min="0" max="40" value="4"></label>
+        <label class="f">Every (min)<input id="mkHead" type="number" min="1" max="120" value="10"></label>
+        <label class="f">Directions<select id="mkDir"><option value="forward">as the driven train</option><option value="backward">opposite</option><option value="both" selected>both, alternating</option></select></label>
+        <label class="f" id="mkRealL" hidden>Trains<select id="mkReal"><option value="">generated</option><option value="real">from the real timetable</option></select></label>
+        <label class="f" id="mkFromL" hidden>From<input id="mkFrom" type="time" value="06:00"></label>
+        <label class="f">Passengers per hour from each station<input id="mkPax" type="number" min="0" max="5000" value="0" step="50"></label>
+        <label class="f">Arrivals<select id="mkArr"><option value="uniform">continuous flow</option><option value="poisson">random (Poisson)</option></select></label>
+        <button class="btn sm primary" id="mkApply">Make, apply and restart</button>
+      </div>
+      <p class="hint" id="mkMsg">The driven train keeps the timetable of the line; the service trains repeat it every given number of minutes, or are those of the real timetable when the line has one. With passengers, every station sends that many people an hour, spread evenly over the stations it can reach; they board, alight, set the dwell times and add to the mass of the trains (docs/PASSENGERS.md). The same scenario can be written as a short JSON and run without the page (docs/SCENARIO_CONFIG.md).</p>
+    </div>
+    <div class="two">
+      <div class="panel">
+        <h3>Description</h3>
+        <p class="scn-desc" id="scnDesc"></p>
+        <div class="stats" id="scnMeta"></div>
+        <h3 style="margin-top:16px">Events in the current run</h3>
+        <div class="tblwrap"><table id="scnEvents"></table></div>
+        <p class="hint">Events that are not announced, such as leaves or a degrading brake, are shown neither to the driver nor in the controllers' observations: they stay only in the log, for the analysis.</p>
+      </div>
+      <div class="panel">
+        <h3>Verdict</h3>
+        <p class="hint" id="scnVerdictHint" style="margin-top:0"></p>
+        <div class="tblwrap"><table id="scnVerdict"></table></div>
+        <p class="hint">The verdict uses the criteria of the scenario; those not given take the default values: run completed, no missed stop, stop error within 5 m, no protection intervention, no overrun, no missed vigilance.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>JSON definition</h3>
+      <textarea id="scnJson" rows="16" spellcheck="false" aria-label="Scenario definition in JSON"></textarea>
+      <div class="ctrl"><button class="btn sm primary" id="scnFromJson">Apply this JSON and restart</button><button class="btn sm" id="scnCopy">Copy JSON</button></div>
+      <p class="hint" id="scnMsg">Edit the JSON to create your own scenario. Event types: radio_loss, speed_restriction, low_adhesion, brake_degraded, traction_reduced, leader_stopped, rbc_emergency_stop, message, point_failure, tvps_failure, operator_command. The complete format is in docs/SCENARIOS.md, the step-by-step guide in docs/SCENARIO_GUIDE.md. Scenarios written with the Italian names of version 0.x are still accepted.</p>
+    </div>
+  </section>
+
+  <!-- ================= TIMETABLE ================= -->
+  <section class="tab" id="tab-timetable" hidden>
+    <div class="panel">
+      <h3>Space-time diagram</h3>
+      <div class="cv-tt"><canvas id="cvTt" aria-label="Space-time diagram: planned timetable dashed, realised timetable solid"></canvas></div>
+      <p class="hint">Time runs to the right, the line downwards. Dashed: planned timetable; solid: what the trains have done in the current run. Green the controlled train (its timetable is the one of the line), blue the services towards the end of the line, amber those running back. Drag a dashed service to move it in time.</p>
+    </div>
+    <div class="two">
+      <div class="panel">
+        <h3>Service trains</h3>
+        <div class="tblwrap"><table id="ttList" class="tt"></table></div>
+        <div class="ctrl"><button class="btn sm" id="ttAddF">+ Service towards the end</button><button class="btn sm" id="ttAddR">+ Service running back</button></div>
+        <h3 style="margin-top:14px" id="ttStopsTitle">Stops</h3>
+        <div class="tblwrap"><table id="ttStops" class="tt"></table></div>
+        <p class="hint">Times as hh:mm:ss. A service appears at its origin a minute before departure, waits for its departure time at every stop and leaves the line at the last one. Services are driven by the built-in ATO.</p>
+      </div>
+      <div class="panel">
+        <h3>Checks of the planned timetable</h3>
+        <ul class="ttchk" id="ttChecks"></ul>
+        <p class="hint">The line between stations is single track and every station has a track for each direction: two trains can cross or overtake only in a station.</p>
+        <div class="ctrl"><button class="btn sm primary" id="ttApply">Apply timetable and restart</button><button class="btn sm" id="ttRevert">Discard changes</button></div>
+        <p class="hint" id="ttState"></p>
+        <p class="hint" id="ttMsg"></p>
+        <h3 style="margin-top:14px">Import and export</h3>
+        <div class="ctrl"><button class="btn sm" id="ttImport">Import GTFS, NeTEx or railML…</button><input type="file" id="ttImportFile" accept=".zip,.xml,.railml" hidden></div>
+        <div class="ctrl"><button class="btn sm" id="ttGtfs">Download GTFS</button><button class="btn sm" id="ttNetex">Download NeTEx</button><button class="btn sm" id="ttRailml">Download railML</button></div>
+        <p class="hint">Import reads a GTFS archive, a NeTEx document (Italian profile or others) or a railML 2 or 3 timetable and replaces the services being edited: stops are matched to the stations of the line by name, the trip with the timetable of the line is the controlled train and is left out. Downloads contain the timetable in use, with the controlled train as R 2001; railML also carries the minimum dwells. GTFS and NeTEx use the same identifiers as the real-time feeds of <code>npm run feeds</code>.</p>
+        <ul class="ttchk" id="ttImportLog"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTROL ROOM ================= -->
+  <section class="tab" id="tab-control" hidden>
+    <div class="panel">
+      <h3>Network <span class="pill" id="crClock">00:00:00</span></h3>
+      <div class="ctrl cr-ctrl"><button class="btn sm" id="crPause">Resume</button><button class="btn sm" id="crTs">Time ×1</button><button class="btn sm" id="crJson">Copy the snapshot as JSON</button></div>
+      <div class="cr-wrap" id="crMap"></div>
+      <p class="hint">A schematic, not a map: every line is a band in its own chainages, aligned at the nodes. Stations with two tracks show track II below track I. Red: occupied sections (with the interlocking) or block sections (without, above the track for the trains towards the end of the line and below for those running back); green: routes set by the interlocking; amber: disturbed; hatched: line blocked. The dots above and below the track are the signals of the two directions, the arrows the direction a single-track stretch is open to, the circles the points (filled when reversed). Trains are coloured by delay: up to 1 min, up to 5 min, more. Click a train to highlight it.</p>
+      <p class="hint" id="crHint"></p>
+    </div>
+    <div class="two">
+      <div class="panel">
+        <h3>Trains</h3>
+        <div class="tblwrap"><table id="crTrains" class="tt cr-tt"></table></div>
+      </div>
+      <div class="panel">
+        <h3>Log</h3>
+        <label class="hint"><input type="checkbox" id="crVig"> also the vigilance calls</label>
+        <ul class="ev" id="crLog"></ul>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Dispatcher</h3>
+      <div class="ctrl dp">
+        <span class="hint">Train</span><span class="pill" id="dpTrain">click a train</span>
+        <button class="btn sm" id="dpHold" disabled>Hold 2 min at its next stop</button>
+        <button class="btn sm" id="dpSkip" disabled>Skip its next stop</button>
+        <button class="btn sm" id="dpCancel" disabled>End it at its next stop</button>
+        <button class="btn sm" id="dpPrio" disabled>Give it priority</button>
+      </div>
+      <div class="ctrl dp">
+        <span class="hint">Speed restriction on the main line</span>
+        <label class="f">From km<input id="dpFrom" type="number" step="0.1" min="0" value="2.0"></label>
+        <label class="f">To km<input id="dpTo" type="number" step="0.1" min="0" value="3.0"></label>
+        <label class="f">km/h<input id="dpV" type="number" step="5" min="5" value="30"></label>
+        <button class="btn sm" id="dpTsr">Put in force</button>
+        <button class="btn sm" id="dpTsrOff">Revoke</button>
+      </div>
+      <p class="hint" id="dpMsg">The dispatcher's decisions are those a traffic regulator can take, given now: the engine applies them or says why it cannot, and writes them in the log. A restriction is seen by every train, through its signalling. The commands given are kept with their time, so the run can be repeated (docs/CONTROL_ROOM.md).</p>
+      <details><summary class="hint">Commands given (<span id="dpCount">0</span>)</summary><pre class="dp-log" id="dpLog"></pre><button class="btn sm" id="dpCopy">Copy as JSON</button><button class="btn sm" id="dpScenario">Write into the scenario</button></details>
+    </div>
+    <div class="panel" id="crRoutesP" hidden>
+      <h3>Control centre commands</h3>
+      <div id="crRoutes"></div>
+      <p class="hint">The commands of the interlocking trackside: the page only sends them, the interlocking decides (docs/TRACKSIDE.md).</p>
+    </div>
+  </section>
+
+  <!-- ================= CONTROLLER ================= -->
+  <section class="tab" id="tab-controller" hidden>
+    <div class="two">
+      <div class="panel">
+        <h3>Who drives the train</h3>
+        <div class="mode" role="group" aria-label="Command mode">
+          <button class="btn" id="mdMan" aria-pressed="true">Driver</button>
+          <button class="btn" id="mdWorker" aria-pressed="false">In-browser controller</button>
+          <button class="btn" id="mdWs" aria-pressed="false">External controller</button>
+        </div>
+        <div class="scen" style="margin-top:12px">
+          <label class="f">Control period<select id="ctlPeriod"><option value="0.1">0.1 s (10 Hz)</option><option value="0.2" selected>0.2 s (5 Hz)</option><option value="0.5">0.5 s (2 Hz)</option><option value="1">1 s</option></select></label>
+          <label class="f">WebSocket address<input type="text" id="wsUrl" value="ws://localhost:8765" size="24"></label>
+        </div>
+        <p class="hint">Simulator and controller run in lockstep: at every period the simulator sends an observation and stops until the command arrives. The results therefore do not depend on the speed of the computer. The external controller works by opening the page locally (<code>dist/yutreno.html</code> or <code>npm run dev</code>), because inside a page published as an artifact network connections are blocked. For batch runs without graphics use <code>npm run headless</code>.</p>
+        <div class="ctlstat" id="ctlStat">Manual driving.</div>
+      </div>
+      <div class="panel">
+        <h3>Code of the in-browser controller</h3>
+        <textarea class="code" id="ctlCode" spellcheck="false" aria-label="Controller code"></textarea>
+        <div class="ctrl"><button class="btn sm primary" id="ctlRun">Load and start</button><button class="btn sm" id="ctlReset">Restore example</button><button class="btn sm" id="ctlS130" title="ATO that plans braking with the onboard data for ATO (Subset-130): MRSP, end of authority, EBI limit, safe deceleration">Subset-130 example</button></div>
+        <p class="hint">The code runs in a Web Worker separate from the simulation. It must define <code>function control(obs, mem)</code>, which receives the observation and a persistent <code>mem</code> object and returns the command. Code written for version 0.x with <code>function controllo(oss, mem)</code> still works and receives the observation with the Italian names (API version 2).</p>
+      </div>
+    </div>
+    <div class="panel prose" style="max-width:none">
+      <h3>API reference</h3>
+      <p>At every period the simulator sends a JSON observation object. The controller responds with a JSON command: omitted fields leave the previous command unchanged. Quantities are in SI units: metres, seconds, metres per second. Positions are chainages from the origin of the line and refer to the head of the train. This is API version 3; the full reference is in docs/API.md.</p>
+      <div class="two">
+        <div class="tblwrap"><table>
+          <tr><th>Observation</th><th>Content</th></tr>
+          <tr><td><code>t</code>, <code>dt</code></td><td>simulated time and control period (s)</td></tr>
+          <tr><td><code>pos_m</code>, <code>vel_ms</code>, <code>acc_ms2</code></td><td>head position, speed, acceleration</td></tr>
+          <tr><td><code>traction</code>, <code>brake</code>, <code>lever</code></td><td>current commands (0–1) and equivalent lever position (−8…10)</td></tr>
+          <tr><td><code>forces_kN</code></td><td>traction, brake, electric brake, resistance, gradient</td></tr>
+          <tr><td><code>supervision</code></td><td><code>state</code> (NOR, IND, OVS, WAR, SBI, INT), permitted, warning and intervention speed, MRSP, <code>target</code> with distance, speed and kind</td></tr>
+          <tr><td><code>ma</code></td><td>ETCS only: <code>eoa_m</code> end of authority, <code>svl_m</code> danger point, <code>v_release_ms</code>, <code>reason</code></td></tr>
+          <tr><td><code>signal</code></td><td>automatic block only: next signal with id, position and aspect (green, yellow, red)</td></tr>
+          <tr><td><code>speed_profile</code>, <code>gradient_profile</code></td><td>lists <code>[from_m, to_m, value]</code> for the next 8 km (m/s and ‰)</td></tr>
+          <tr><td><code>next_stop</code></td><td>name, position, timetabled arrival and departure (s)</td></tr>
+          <tr><td><code>doors_open</code>, <code>emergency</code>, <code>vigilance_alarm</code>, <code>adhesion_mu</code></td><td>onboard states</td></tr>
+          <tr><td><code>train</code>, <code>line</code></td><td>model parameters: masses, length, power, maximum force, decelerations, Davis; name and length of the line</td></tr>
+          <tr><td><code>etcs_ato</code></td><td>ETCS data for ATO (Subset-130): MRSP, EBI location, end of authority, safe deceleration, gradients, reaction times</td></tr>
+          <tr><td><code>events</code></td><td>events since the last step</td></tr>
+        </table></div>
+        <div><div class="tblwrap"><table>
+          <tr><th>Command</th><th>Effect</th></tr>
+          <tr><td><code>traction</code></td><td>0–1, fraction of the available effort</td></tr>
+          <tr><td><code>brake</code></td><td>0–1, fraction of the service brake; above 0.01 it cuts traction</td></tr>
+          <tr><td><code>lever</code></td><td>as an alternative to the previous two: −8 emergency, −7…−1 braking, 0 neutral, 1…10 traction</td></tr>
+          <tr><td><code>vigilance</code></td><td><code>true</code> to acknowledge the vigilance</td></tr>
+          <tr><td><code>emergency</code></td><td><code>true</code> for emergency braking</td></tr>
+          <tr><td><code>note</code></td><td>free text to write in the event log</td></tr>
+        </table></div>
+        <p>For a controller in Python run <code>examples/example_controller.py</code>, open the page locally, choose External controller and start the run. The script is a WebSocket server; the page connects as a client. The same script works with <code>npm run headless -- --controller ws://localhost:8765</code>.</p>
+        <p>From the browser console <code>YuTreno.observe()</code>, <code>YuTreno.command(cmd)</code> and <code>YuTreno.line()</code> are also available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DATA ================= -->
+  <section class="tab" id="tab-data" hidden>
+    <div class="two">
+      <div class="panel">
+        <h3>Run indicators</h3>
+        <div class="tblwrap"><table id="metrics"></table></div>
+        <h3 style="margin-top:14px">Stops</h3>
+        <div class="tblwrap"><table id="stops"></table></div>
+      </div>
+      <div class="panel">
+        <h3>Event log</h3>
+        <ul class="ev" id="events"></ul>
+        <div class="ctrl">
+          <button class="btn" id="csvBtn">Copy CSV data</button>
+          <button class="btn" id="evBtn">Copy events</button>
+        </div>
+        <p class="hint" id="csvHint">One sample every exact 0.5 s of simulated time: position, speed, supervision curves, commands, forces, adhesion, altitude, energy, vigilance.</p>
+        <textarea id="csvOut" hidden readonly rows="6" aria-label="Data to copy"></textarea>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

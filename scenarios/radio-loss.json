@@ -1,0 +1,11 @@
+{
+  "name": "Loss of the radio link",
+  "description": "After San Felice Scalo, on plain line, the GSM-R link with the RBC drops for 90 s. The movement authority stays the one received before the failure; after 20 s without messages the onboard commands the service brake, released when the link is back.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "events": [
+    {"type": "radio_loss", "when": {"pos": 11500}, "duration_s": 90, "timeout_s": 20}
+  ],
+  "criteria": {"delay_max_s": 240}
+}

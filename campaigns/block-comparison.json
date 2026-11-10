@@ -1,0 +1,13 @@
+{
+  "name": "block-comparison",
+  "description": "Fixed block against moving block (docs/MOVING_BLOCK.md): two trains in the same direction on the Valle Lauro line, the second h seconds after the first, with ETCS and the reference onboard on both: the headway from which the second train is no longer held by the signalling, with punctuality and energy.",
+  "lines": ["valle-lauro"],
+  "trains": [1],
+  "headways_s": [120, 140, 160, 180, 200, 210, 220, 230, 240, 260, 280, 300],
+  "directions": ["forward"],
+  "signalling": ["ETCS"],
+  "onboard": "reference",
+  "spacing": ["fixed_block", "moving_block"],
+  "demand_per_station_per_hour": [0],
+  "on_time_s": 180
+}

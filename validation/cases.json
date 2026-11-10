@@ -1,0 +1,15 @@
+{
+  "description": "Single-target cases to compare the curves of the reference onboard with the ERA braking curves tool. Distances in m from the target, speeds in km/h, gradients in ‰ (positive uphill). No odometry error and no correction factor (Kdry_rst = Kwet_rst = 1, M_NVAVADH = 0): these are the assumptions to reproduce in the tool.",
+  "train_data": {"NID_ENGINE": 1, "L_TRAIN": 150, "V_MAXTRAIN": 160, "A_brake_emergency": 1.3, "A_brake_service": 1, "T_brake_emergency": 1.6, "T_brake_service": 1.2, "T_traction_cut_off": 0.5, "M_rotating": 6},
+  "national_values": {"odo_error_fixed_m": 0, "odo_error_relative": 0},
+  "speed_kmh": [20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160],
+  "cases": [
+    {"id": "EOA-level", "description": "End of authority on level track, supervised location 50 m beyond", "target": "EOA", "distance_m": 6000, "D_DP": 50, "gradient_permille": 0},
+    {"id": "EOA-down-10", "description": "End of authority on a 10 ‰ descent", "target": "EOA", "distance_m": 6000, "D_DP": 50, "gradient_permille": -10},
+    {"id": "EOA-up-10", "description": "End of authority on a 10 ‰ ascent", "target": "EOA", "distance_m": 6000, "D_DP": 50, "gradient_permille": 10},
+    {"id": "EOA-down-25", "description": "End of authority on a 25 ‰ descent", "target": "EOA", "distance_m": 6000, "D_DP": 50, "gradient_permille": -25},
+    {"id": "V80-level", "description": "Reduction from 160 to 80 km/h on level track", "target": "speed", "distance_m": 6000, "v_target_kmh": 80, "gradient_permille": 0},
+    {"id": "V80-down-10", "description": "Reduction from 160 to 80 km/h on a 10 ‰ descent", "target": "speed", "distance_m": 6000, "v_target_kmh": 80, "gradient_permille": -10},
+    {"id": "V40-level", "description": "Reduction from 160 to 40 km/h on level track", "target": "speed", "distance_m": 6000, "v_target_kmh": 40, "gradient_permille": 0}
+  ]
+}

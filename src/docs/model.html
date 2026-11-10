@@ -1,0 +1,240 @@
+<title>YuTreno longitudinal dynamics</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@1,400;1,500&family=Saira+Condensed:wght@600;700&display=swap">
+<style>
+/* Layout: single-column technical notebook (text at ~68 characters) with figures and laboratory at full width */
+:root{
+  --bg:#f3f6f7; --surface:#ffffff; --ink:#13212a; --muted:#566872; --rule:#d3dde2;
+  --accent:#0d6b82; --warm:#b8560f; --tint:#e6eff2;
+  --f-display:'Saira Condensed','Arial Narrow',sans-serif;
+  --f-body:'IBM Plex Sans',system-ui,sans-serif;
+  --f-math:'IBM Plex Serif',Georgia,serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1216; --surface:#141c22; --ink:#e3e9ec; --muted:#8b9ca6; --rule:#2a3740;
+  --accent:#7fd0e6; --warm:#f08a2b; --tint:#18242c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1216; --surface:#141c22; --ink:#e3e9ec; --muted:#8b9ca6; --rule:#2a3740;
+  --accent:#7fd0e6; --warm:#f08a2b; --tint:#18242c; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink)}
+body{font:16px/1.65 var(--f-body);margin:0}
+.page{padding-block:40px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.col{max-width:700px;margin:0 auto}
+.wide{max-width:1040px;margin:28px auto}
+header.col{margin-bottom:8px}
+.eyebrow{font:600 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+h1{font:700 clamp(38px,6vw,60px)/1 var(--f-display);margin:0 0 16px;text-wrap:balance;letter-spacing:.005em}
+h2{font:700 30px/1.1 var(--f-display);margin:56px 0 12px;text-wrap:balance}
+h3{font:600 15px var(--f-body);margin:28px 0 6px}
+p{margin:0 0 14px}
+.lede{font-size:19px;line-height:1.55;color:var(--ink)}
+.muted{color:var(--muted)}
+a{color:var(--accent)}
+var,.v{font-family:var(--f-math);font-style:italic;font-size:1.06em}
+sub{font-size:.72em}
+.eq{font-family:var(--f-math);font-style:italic;font-size:19px;background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);border-radius:4px;padding:14px 18px;margin:18px 0;overflow-x:auto;white-space:nowrap}
+.eq .n{font-style:normal;font-family:var(--f-mono);font-size:13px;color:var(--muted);float:right;margin-left:18px}
+.eq + .eq{margin-top:-8px}
+figure{margin:0}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:8px;max-width:700px}
+.plot{position:relative;width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+.plot canvas{display:block;width:100%;height:100%}
+.h260{height:260px}.h220{height:220px}.h300{height:300px}.h140{height:150px}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+@media (max-width:760px){.pair{grid-template-columns:minmax(0,1fr)}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden;margin:18px 0}
+.facts div{background:var(--surface);padding:10px 14px}
+.facts b{display:block;font:600 20px var(--f-mono);font-variant-numeric:tabular-nums}
+.facts span{font-size:12.5px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:500;color:var(--muted);font-size:12.5px}
+td.n{font-family:var(--f-mono);text-align:right;white-space:nowrap}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:6px;margin:16px 0}
+.lab{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px}
+.lab-ctl{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end;margin-bottom:14px}
+label.f{display:grid;gap:4px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+select,input[type=range]{font:14px var(--f-body);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:6px 8px}
+input[type=range]{padding:0;accent-color:var(--accent);width:150px}
+.out{font:600 13px var(--f-mono);color:var(--ink)}
+button{font:600 14px var(--f-body);color:var(--bg);background:var(--accent);border:0;border-radius:6px;padding:9px 16px;cursor:pointer}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.scrub{display:flex;gap:12px;align-items:center;margin-top:10px}
+.scrub input{flex:1;width:auto}
+.legend{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12.5px;color:var(--muted);margin-top:8px}
+.legend i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:6px;border-radius:2px}
+ul.checks{list-style:none;padding:0;margin:14px 0}
+ul.checks li{padding:8px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px}
+ul.checks li b{font-family:var(--f-mono);font-weight:600;white-space:nowrap}
+ol.src{padding-left:20px;font-size:14px}
+ol.src li{margin-bottom:6px}
+.note{font-size:14px;color:var(--muted);border-top:1px solid var(--rule);padding-top:10px;margin-top:22px}
+@media (max-width:520px){.eq{font-size:16px;padding:12px}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<!--body-->
+<div class="page">
+<header class="col">
+  <p class="eyebrow">YuTreno · vehicle dynamics model</p>
+  <h1>Longitudinal train dynamics</h1>
+  <p class="lede">In YuTreno the train is a chain of vehicles, not a point. Every coach or wagon has its own mass, feels the gradient and the curve where it is and receives the brake when the command reaches it. They are all held together by couplers that extend, compress and have some slack. This page explains where the model comes from, which equations it solves, with which parameters and how we check it. The charts are computed in the browser by the same code that moves the simulator.</p>
+</header>
+
+<section class="wide">
+  <figure>
+    <div class="plot h140"><canvas id="cvHero" aria-label="Coupler forces of a freight train during emergency braking"></canvas></div>
+    <figcaption>A freight train of 25 vehicles makes an emergency brake application from 80 km/h with the pneumatic brake. The command runs along the brake pipe at 280 m/s: the locomotive brakes first and the wagons behind push it. The orange bars are coupler compressions, the blue ones tensions. The wave repeats in a loop.</figcaption>
+  </figure>
+</section>
+
+<article class="col">
+  <h2>Why a train is not a point</h2>
+  <p>The simplest model treats the train as a single mass: it adds up all the forces and derives the acceleration. To estimate a running time or a consumption it works well, and it was YuTreno's model at first. It remains available as the «point mass», because it is the clearest way to teach the traction equation.</p>
+  <p>The point mass, however, cannot say anything about what happens inside the train. In a half-kilometre freight train the locomotive and the last wagon can run at different speeds for a few seconds. Couplers can reach hundreds of kilonewtons, and an abrupt command is felt at the tail as a jerk. These are exactly the quantities of interest for whoever designs an automatic driving controller or studies comfort. To see them every vehicle needs its own equation.</p>
+
+  <h2>The starting point: the toy train</h2>
+  <p>The idea comes from a classic example of automatic control courses, the «toy train» of the Control Tutorials for MATLAB &amp; Simulink of the University of Michigan. Gîlcă and Borcoși took it up in 2019 to design a PID regulator in Simulink. A locomotive of mass <var>M</var><sub>1</sub> pulls a wagon of mass <var>M</var><sub>2</sub> through an elastic coupler of stiffness <var>k</var>. On both acts a friction proportional to weight and speed, with coefficient <var>μ</var>. The driving force <var>F</var> acts on the locomotive only.</p>
+  <div class="eq">M<sub>1</sub> ẍ<sub>1</sub> = F − k (x<sub>1</sub> − x<sub>2</sub>) − μ M<sub>1</sub> g ẋ<sub>1</sub><span class="n">(1)</span></div>
+  <div class="eq">M<sub>2</sub> ẍ<sub>2</sub> = k (x<sub>1</sub> − x<sub>2</sub>) − μ M<sub>2</sub> g ẋ<sub>2</sub><span class="n">(2)</span></div>
+  <p>With <var>M</var><sub>1</sub> = 1 kg, <var>M</var><sub>2</sub> = 0.5 kg, <var>k</var> = 1 N/m and <var>μ</var> = 0.02 s/m, the paper closes the loop with a proportional regulator of gain 1 on the locomotive speed. The reference is a step to 1 m/s. The speed settles just below 0.8 m/s after a small oscillation, because a purely proportional regulator leaves a steady-state error. The value follows from the equilibrium <var>F</var> = <var>μ g</var> (<var>M</var><sub>1</sub> + <var>M</var><sub>2</sub>) <var>v</var>, that is <var>v</var> = 1 / (1 + <var>μ g</var>(<var>M</var><sub>1</sub>+<var>M</var><sub>2</sub>)).</p>
+  <p>The YuTreno core can represent exactly this system. It is enough to give it two vehicles with those masses, a coupler without slack and without damping and a Davis resistance made only of the term proportional to speed, split by mass. The chart below is that simulation.</p>
+</article>
+
+<section class="wide">
+  <figure>
+    <div class="plot h260"><canvas id="cvToy" aria-label="Speed of the locomotive and of the wagon of the toy train"></canvas></div>
+    <div class="legend"><span><i style="background:var(--accent)"></i>locomotive ẋ₁</span><span><i style="background:var(--warm)"></i>wagon ẋ₂</span><span><i style="background:var(--muted)"></i>theoretical steady-state value</span></div>
+    <figcaption>The toy train simulated by the YuTreno core, with proportional regulator and a 1 m/s reference from second 10. It is the same behaviour as figure 6 of the paper.</figcaption>
+  </figure>
+  <div class="facts" id="toyFacts"></div>
+</section>
+
+<article class="col">
+  <h2>From the toy to the real train</h2>
+  <p>To move to a real train, equations (1) and (2) are generalised to <var>N</var> vehicles and the simplified forces are replaced by those that the railway literature uses for longitudinal dynamics. Vehicle <var>i</var>, counted from the head, has mass <var>m<sub>i</sub></var>. It is connected to the vehicle ahead by coupler <var>i</var>−1 and to the one behind by coupler <var>i</var>:</p>
+  <div class="eq">m<sub>i</sub> k<sub>r</sub> v̇<sub>i</sub> = F<sub>t,i</sub> − F<sub>b,i</sub> − R<sub>i</sub>(v<sub>i</sub>) − m<sub>i</sub> g i<sub>i</sub> − T<sub>i</sub> + T<sub>i−1</sub><span class="n">(3)</span></div>
+  <p>The factor <var>k<sub>r</sub></var> increases the mass to account for wheels and rotating parts. <var>F<sub>t,i</sub></var> is the traction, present only on motored vehicles. <var>F<sub>b,i</sub></var> is the brake, <var>R<sub>i</sub></var> the running resistances and <var>i<sub>i</sub></var> the gradient under the centre of gravity of the vehicle, in per mille. <var>T<sub>i</sub></var> is the coupler force, positive in tension. In the toy train the coupler was an ideal spring, while real ones have slack: for a few millimetres, or a few centimetres in freight trains, they transmit nothing. Then they work as spring and damper together:</p>
+  <div class="eq">T = k (e − s/2) + c ė &nbsp; if e &gt; s/2 ; &nbsp; T = 0 &nbsp; if |e| ≤ s/2 ; &nbsp; T = k (e + s/2) + c ė &nbsp; if e &lt; −s/2<span class="n">(4)</span></div>
+  <p>Here <var>e</var> is the extension from the rest position and <var>s</var> the total slack; <var>c</var> is the damping. The force never changes sign because of the damper: a coupler in tension does not push and one in compression does not pull. Slack is the detail that makes the difference in freight trains. When the train starts, the locomotive takes up the slack one coupler at a time and the last wagon moves with a small knock. When it brakes, the wagons «close up» on the head.</p>
+</article>
+
+<section class="wide pair">
+  <figure>
+    <div class="plot h220"><canvas id="cvCoupler" aria-label="Coupler law with slack"></canvas></div>
+    <figcaption>Law (4) for the freight train: 6 MN/m stiffness and 20 mm total slack. In the central zone the coupler is loose.</figcaption>
+  </figure>
+  <div class="tbl" style="margin:0">
+    <table>
+      <tr><th>Train</th><th>Vehicles</th><th style="text-align:right">k</th><th style="text-align:right">c</th><th style="text-align:right">slack</th><th>Brake</th></tr>
+      <tr><td>Electric regional</td><td>2 motor cars and 2 trailers, 160 t</td><td class="n">15 MN/m</td><td class="n">250 kN·s/m</td><td class="n">2 mm</td><td>electro-pneumatic</td></tr>
+      <tr><td>High speed</td><td>2 power cars and 6 coaches, 450 t</td><td class="n">20 MN/m</td><td class="n">300 kN·s/m</td><td class="n">2 mm</td><td>electro-pneumatic</td></tr>
+      <tr><td>Heavy freight</td><td>locomotive and 24 wagons, 1300 t</td><td class="n">6 MN/m</td><td class="n">120 kN·s/m</td><td class="n">20 mm</td><td>pneumatic, 280 m/s</td></tr>
+    </table>
+  </div>
+</section>
+
+<article class="col">
+  <p>The stiffnesses are of the order of magnitude used in the literature: about 10 MN/m for a draft gear, with slack from a few millimetres in the semi-permanent couplers of passenger trains up to about twenty in freight trains. The values can be changed in the Train tab of the simulator, vehicle by vehicle.</p>
+
+  <h2>Traction and adhesion</h2>
+  <p>The effort requested by the lever is a fraction of the maximum available. Up to a certain speed the maximum is the starting force, then it is the power at the wheel divided by the speed, so it decreases as 1/<var>v</var>. The commanded effort is reached with a ramp and split among the motored vehicles in proportion to their mass. Each of them, however, cannot transmit more than the wheel-rail adhesion allows, that is <var>μ m<sub>i</sub> g</var>. If the demand exceeds that limit the wheel slips and the effort is cut.</p>
+  <p>Adhesion is not constant: it decreases with speed. YuTreno uses the empirical formula of Curtius and Kniffler, which for dry rail is about 0.33 at standstill and goes down towards 0.2 at the highest speeds. The rail conditions (wet, with leaves) scale the curve proportionally. The same limit applies in braking, where wheel slide protection (WSP) prevents the brake from exceeding 95% of the available adhesion.</p>
+  <div class="eq">μ(v) = μ<sub>0</sub> · (0.161 + 7.5 / (44 + v)) / 0.331 &nbsp;&nbsp; with v in km/h<span class="n">(5)</span></div>
+</article>
+
+<section class="wide pair">
+  <figure>
+    <div class="plot h220"><canvas id="cvAdh" aria-label="Adhesion as a function of speed"></canvas></div>
+    <div class="legend"><span><i style="background:var(--accent)"></i>dry</span><span><i style="background:var(--muted)"></i>wet</span><span><i style="background:var(--warm)"></i>leaves</span></div>
+    <figcaption>Adhesion according to Curtius and Kniffler, scaled for the three rail conditions of the simulator.</figcaption>
+  </figure>
+  <figure>
+    <div class="plot h220"><canvas id="cvCurve" aria-label="Curve resistance according to Röckl"></canvas></div>
+    <figcaption>Curve resistance according to Röckl as a function of the radius, in per mille of the weight. Below 300 m the second formula applies.</figcaption>
+  </figure>
+</section>
+
+<article class="col">
+  <h2>Braking</h2>
+  <p>The commanded brake is a nominal deceleration: service and emergency, for example 1.0 and 1.3 m/s² for the regional train. Multiplied by the equivalent mass it gives the total force, split among the vehicles in proportion to their mass. In every vehicle the force does not appear at once: the cylinders fill and empty with a first-order response, slower in the freight train (G regime) than in passenger trains (P regime). The UIC rules give filling times of 3–6 s in P and around 6–10 s in G.</p>
+  <p>With the pneumatic brake there is a further delay. The command travels along the brake pipe as a pressure wave, at speeds slightly below the speed of sound in air: the rules require at least 285 m/s. The vehicle at distance <var>x</var> from the head receives the command after <var>x</var>/<var>c</var> seconds, that is about two seconds for the tail of a 550 m freight train. In those two seconds the head brakes and the tail does not: the tail pushes, and the couplers compress. The electro-pneumatic brake of passenger trains sends the command electrically and makes it reach all vehicles at the same instant. The laboratory below lets you compare the two cases.</p>
+  <div class="eq">F<sub>b,i</sub>(t) → F<sub>b,i</sub><sup>cmd</sup>(t − x<sub>i</sub>/c) &nbsp; with time constant τ<sub>application</sub> or τ<sub>release</sub><span class="n">(6)</span></div>
+
+  <h2>Running resistances</h2>
+  <p>The resistance on straight track follows the classic Davis form, <var>A</var> + <var>B v</var> + <var>C v</var>². In the multi-mass model every term goes to the right vehicle. <var>A</var> and <var>B</var>, related to rolling and bearings, are split in proportion to the mass. The aerodynamic term <var>C</var> weighs more on the leading vehicle, which opens the air: we assign it 35% and distribute the rest uniformly. In a tunnel the aerodynamic term of the vehicles inside is multiplied by a factor, 1.6 for regional and freight trains and 1.8 for high speed.</p>
+  <p>In a curve the wheel flange rubs on the rail and an extra force is needed, which depends on the radius. We use Röckl's formula, common in German and Central European texts: 650/(<var>R</var>−55) per mille of the weight above 300 m of radius and 500/(<var>R</var>−30) below. The gradient, finally, acts on every vehicle with the value under its centre of gravity. A long train going over a hump is therefore pushed at the head and held back at the tail at the same moment.</p>
+</article>
+
+<section class="wide" id="laboratory">
+  <h2 style="margin-top:40px">Laboratory</h2>
+  <div class="lab">
+    <div class="lab-ctl">
+      <label class="f">Train<select id="labTrain"><option value="freight">Heavy freight, 25 vehicles</option><option value="regional">Regional, 4 cars</option><option value="high_speed">High speed, 8 cars</option></select></label>
+      <label class="f">Manoeuvre<select id="labMan"><option value="emergency">Emergency from 80 km/h</option><option value="service">Full service braking from 80 km/h</option><option value="start">Start at full traction</option></select></label>
+      <label class="f">Brake<select id="labBrake"><option value="train">As the train</option><option value="pn">Pneumatic</option><option value="ep">Electro-pneumatic</option></select></label>
+      <label class="f">Slack <span class="out" id="labGapOut"></span><input type="range" id="labGap" min="0" max="60" step="1"></label>
+      <label class="f">Stiffness <span class="out" id="labKOut"></span><input type="range" id="labK" min="1" max="30" step="0.5"></label>
+      <button id="labRun">Simulate</button>
+    </div>
+    <div class="facts" id="labFacts" style="margin-top:0"></div>
+    <div class="pair">
+      <figure>
+        <div class="plot h260"><canvas id="cvLabV" aria-label="Speed of the head and of the tail"></canvas></div>
+        <div class="legend"><span><i style="background:var(--accent)"></i>speed of the head</span><span><i style="background:var(--warm)"></i>speed of the tail</span></div>
+      </figure>
+      <figure>
+        <div class="plot h260"><canvas id="cvLabHeat" aria-label="Coupler forces over time"></canvas></div>
+        <div class="legend"><span><i style="background:var(--accent)"></i>tension</span><span><i style="background:var(--warm)"></i>compression</span><span>every column is a coupler, from the head (left) to the tail; time goes down</span></div>
+      </figure>
+    </div>
+    <figure style="margin-top:14px">
+      <div class="plot h140"><canvas id="cvLabStrip" aria-label="Forces along the train at the chosen instant"></canvas></div>
+      <div class="scrub"><button class="ghost" id="labPlay">Play</button><input type="range" id="labT" min="0" max="1000" value="0" aria-label="Instant"><span class="out" id="labTOut">0.0 s</span></div>
+    </figure>
+    <p class="note">The simulation uses the YuTreno core with a fixed step of 5 ms, on a level straight without signalling. With the freight train try switching from pneumatic to electro-pneumatic brake: the maximum compression drops by an order of magnitude. Also try increasing the slack when starting.</p>
+  </div>
+</section>
+
+<article class="col">
+  <h2>Numerical integration</h2>
+  <p>Equations (3) of all vehicles are integrated together with a fixed step of 5 ms with the semi-implicit Euler method. At every step the coupler forces are computed from the current positions, then the speeds are updated and finally the positions with the new speeds. The method is stable if the step is small compared with the period of the fastest oscillation between two vehicles. For the regional train, with 15 MN/m between cars of about 40 t, that frequency is about 4 Hz: the product of angular frequency and step is 0.14, well within the margin. The fixed step also makes the simulation deterministic: the same run with the same commands always gives the same numbers, in the browser as in Node. It is a necessary condition for a fair comparison of two controllers.</p>
+  <p>The train does not roll back: a vehicle at standstill stays still until the force pushing it exceeds brake and breakaway resistance. It is as if every vehicle had an automatic parking brake. It is a deliberate simplification, which avoids handling backward motion when starting on a climb.</p>
+
+  <h2>How we check it</h2>
+  <p>The script <code>scripts/verify-dynamics.ts</code> runs at every commit and compares the model with known results. These are the values of the last run:</p>
+  <ul class="checks">
+    <li><span>Toy train, steady-state speed with proportional regulator</span><b>0.7726 m/s (theoretical 0.7726)</b></li>
+    <li><span>Toy train, response peak (figure 6 of the paper: about 0.81)</span><b>0.820 m/s</b></li>
+    <li><span>Toy train, steady-state coupler force</span><b>0.0758 N (theoretical 0.0758)</b></li>
+    <li><span>Toy train, period of the oscillation between the two masses, 2π/√(k(1/M₁+1/M₂))</span><b>3.628 s (theoretical 3.628)</b></li>
+    <li><span>Braked regional train standing on 25 ‰</span><b>does not move</b></li>
+    <li><span>Freight, emergency from 80 km/h: maximum compression pneumatic against electro-pneumatic</span><b>124 kN against 11 kN</b></li>
+    <li><span>Freight, stopping distance with 5 ms and 2.5 ms step</span><b>472.2 m and 472.3 m</b></li>
+    <li><span>Regional, emergency from 100 km/h: multi-mass against point mass</span><b>316.8 m and 316.8 m</b></li>
+    <li><span>Coasting for 10 s from 54 km/h, straight against 500 m curve</span><b>53.21 and 52.74 km/h</b></li>
+  </ul>
+  <p>The other checks verify that the point mass still gives exactly the results of the first version and that balancing speeds and starts on climbs match the values computed by hand in both models. The example controller must complete the lines without protection interventions, and the fault scenarios must give the expected outcomes.</p>
+
+  <h2>What the model does not do yet</h2>
+  <p>The draft gears of real freight wagons have friction hysteresis: they dissipate more energy when compressed than when extended. In the model dissipation is left to a viscous damper. Adhesion is an empirical curve and not a contact model with creep, like Polach's. The pneumatic brake is also simplified: the propagation delay is pure and the pressure along the brake pipe is not computed. Finally the model is longitudinal only, without vertical and lateral dynamics. These are the natural steps for an extension, and the checks exist precisely to find out at once if an extension changes results that already work.</p>
+
+  <h2>Sources</h2>
+  <ol class="src">
+    <li>G. Gîlcă, I. Borcoși, The control of a toy train system using the PID controller in Matlab/Simulink, Fiabilitate şi Durabilitate – Fiability &amp; Durability, no. 1/2019, pp. 271–276, Editura «Academica Brâncuşi», Târgu Jiu.</li>
+    <li>Control Tutorials for MATLAB &amp; Simulink, <a href="https://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&amp;section=SimulinkModeling">Introduction: Simulink Modeling, toy train example</a>, University of Michigan.</li>
+    <li>C. Cole, M. Spiryagin, Q. Wu, Y. Q. Sun, <a href="https://acquire.cqu.edu.au/articles/journal_contribution/Modelling_simulation_and_applications_of_longitudinal_train_dynamics/13397789">Modelling, simulation and applications of longitudinal train dynamics</a>, Vehicle System Dynamics, 2017.</li>
+    <li>V. S. Yadav, N. S. Vyas, <a href="https://link.springer.com/10.1007/s40534-022-00297-8">The influence of AAR coupler features on estimation of in-train forces</a>, Railway Engineering Science, 2023: review of coupler models, slack and stiffness.</li>
+    <li><a href="https://trid.trb.org/view/1310803">A review of dynamics modelling of friction draft gear</a>, Vehicle System Dynamics.</li>
+    <li>E. W. Curtius, A. Kniffler, Neue Erkenntnisse über die Haftung zwischen Treibrad und Schiene, Elektrische Bahnen, 1943: adhesion formula as a function of speed.</li>
+    <li><a href="https://en.wikipedia.org/wiki/Curve_resistance_(railroad)">Curve resistance (railroad)</a>: Röckl's formula and comparison with the other national formulas.</li>
+    <li><a href="https://railwaynews.net/uic-leaflet-no-540-chapter-5-rolling-stock-brakes-air-brakes-for-freight-trains-and-passenger-trains.html">UIC 540, air brakes for freight and passenger trains</a>: propagation speed and filling times, summary by Railway News.</li>
+  </ol>
+  <p class="note">The model code is in <code>src/core/consist.ts</code> and <code>src/core/simulation.ts</code> of the YuTreno repository; the checks in <code>scripts/verify-dynamics.ts</code>.</p>
+</article>
+</div>
+<script src="model.js"></script>

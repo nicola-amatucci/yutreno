@@ -1,0 +1,57 @@
+{
+  "name": "Reroute around a blocked line",
+  "description": "Network of the Valle Lauro line, of the Rocca Sabato branch and of the Ponte Sabato – Pietrarsa link, automatic block with SCMT and the reference regulator. Just after the controlled train has passed, the main line is blocked between Ponte Sabato and San Felice Scalo for 50 minutes. Regional R 3101 should run from Valle Lauro to Rocca Sabato through San Felice Scalo: before it appears the regulator sends it along the link, and it passes San Felice Scalo instead of waiting for the line to reopen.",
+  "network": "valle-lauro-anello",
+  "train": "regional",
+  "signalling": "BACC",
+  "regulator": "reference",
+  "leader": {
+    "on": false
+  },
+  "events": [
+    {
+      "type": "line_blocked",
+      "from_m": 7000,
+      "to_m": 7400,
+      "when": {
+        "t": 420
+      },
+      "duration_s": 3000
+    }
+  ],
+  "services": [
+    {
+      "id": "R 3101",
+      "train": "regional",
+      "route": [
+        "valle-lauro",
+        "rocca-sabato"
+      ],
+      "stops": [
+        {
+          "station": "Valle Lauro",
+          "departure_s": 600
+        },
+        {
+          "station": "Ponte Sabato",
+          "arrival_s": 880,
+          "departure_s": 910
+        },
+        {
+          "station": "San Felice Scalo",
+          "arrival_s": 1240,
+          "departure_s": 1280
+        },
+        {
+          "station": "Pietrarsa",
+          "arrival_s": 1530,
+          "departure_s": 1560
+        },
+        {
+          "station": "Rocca Sabato",
+          "arrival_s": 1820
+        }
+      ]
+    }
+  ]
+}

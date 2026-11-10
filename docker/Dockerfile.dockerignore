@@ -1,0 +1,7 @@
+node_modules
+dist
+runs
+openetcs-build
+.git
+**/__pycache__
+*.log

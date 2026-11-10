@@ -1,0 +1,18 @@
+{
+  "name": "Moving block: the train ahead stops on the line",
+  "description": "Like the moving block run, but the freight train ahead stops on the line at 150 s for 300 s, as in simulation A of Barbaro et al. (2026): the regional train stops 50 m behind its confirmed rear end, closer than the fixed block would let it, and leaves as soon as the freight train moves.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "spacing": "moving_block",
+  "events": [
+    {
+      "type": "leader_stopped",
+      "when": {
+        "t": 150
+      },
+      "duration_s": 300
+    }
+  ]
+}

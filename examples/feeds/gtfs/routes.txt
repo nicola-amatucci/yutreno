@@ -1,0 +1,2 @@
+route_id,agency_id,route_short_name,route_long_name,route_type
+IT:ITF3:Line:yutreno:valle-lauro-monte-clanio,yutreno,,Valle Lauro – Monte Clanio,2

@@ -1,0 +1,13 @@
+{
+  "name": "Interlocking: point without detection",
+  "description": "While the train approaches Ponte Sabato point 1 loses the detection of its position. The interlocking cannot set the entry route, the RBC does not extend the authority beyond the home signal and the train stops. After two and a half minutes the failure is repaired, the route is set and the run resumes; the timetable margin absorbs the delay.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "events": [
+    {"type": "point_failure", "when": {"pos": 1000}, "element": "Ponte Sabato/1", "mode": "no_detection", "duration_s": 150}
+  ],
+  "criteria": {"delay_max_s": 300}
+}

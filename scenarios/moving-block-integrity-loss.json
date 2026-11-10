@@ -1,0 +1,20 @@
+{
+  "name": "Moving block: the train ahead loses its integrity",
+  "description": "Like the moving block run, but the freight train ahead reports from 150 to 450 s that its integrity is lost: the RBC no longer moves its confirmed rear end, and the regional train stops behind the position where it was last known to be integer, until integrity is confirmed again.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "spacing": "moving_block",
+  "events": [
+    {
+      "type": "integrity_loss",
+      "train": "leader",
+      "when": {
+        "t": 150
+      },
+      "duration_s": 300,
+      "announced": true
+    }
+  ]
+}

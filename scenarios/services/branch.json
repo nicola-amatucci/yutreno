@@ -1,0 +1,78 @@
+{
+  "name": "Branch to Rocca Sabato",
+  "description": "Network of the Valle Lauro line and of the Rocca Sabato branch, which meet at San Felice Scalo; automatic block with SCMT. The controlled train runs its usual timetable to Monte Clanio. A regional service runs from Valle Lauro to Rocca Sabato through the node, behind the controlled train as far as San Felice Scalo; a second one comes back from Rocca Sabato to Valle Lauro, and the two cross on the single track of the branch at Pietrarsa.",
+  "network": "valle-lauro-rocca",
+  "train": "regional",
+  "signalling": "BACC",
+  "leader": {
+    "on": false
+  },
+  "services": [
+    {
+      "id": "R 3101",
+      "train": "regional",
+      "route": [
+        "valle-lauro",
+        "rocca-sabato"
+      ],
+      "stops": [
+        {
+          "station": "Valle Lauro",
+          "departure_s": 240
+        },
+        {
+          "station": "Ponte Sabato",
+          "arrival_s": 520,
+          "departure_s": 550
+        },
+        {
+          "station": "San Felice Scalo",
+          "arrival_s": 880,
+          "departure_s": 920
+        },
+        {
+          "station": "Pietrarsa",
+          "arrival_s": 1170,
+          "departure_s": 1200
+        },
+        {
+          "station": "Rocca Sabato",
+          "arrival_s": 1460
+        }
+      ]
+    },
+    {
+      "id": "R 3102",
+      "train": "regional",
+      "route": [
+        "rocca-sabato",
+        "valle-lauro"
+      ],
+      "stops": [
+        {
+          "station": "Rocca Sabato",
+          "departure_s": 900
+        },
+        {
+          "station": "Pietrarsa",
+          "arrival_s": 1160,
+          "departure_s": 1210
+        },
+        {
+          "station": "San Felice Scalo",
+          "arrival_s": 1460,
+          "departure_s": 1490
+        },
+        {
+          "station": "Ponte Sabato",
+          "arrival_s": 1800,
+          "departure_s": 1830
+        },
+        {
+          "station": "Valle Lauro",
+          "arrival_s": 2090
+        }
+      ]
+    }
+  ]
+}

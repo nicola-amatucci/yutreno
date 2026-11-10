@@ -1,0 +1,1984 @@
+{
+ "campaign/reference#degraded-brake|no|internal|s130|base|gamma": {
+  "output": "5a6db1f451ef419891fab0ceb13d61c2925f367aac8fee30a896b42bb7b3ccbf"
+ },
+ "campaign/reference#degraded-brake|no|internal|simple|base|gamma": {
+  "output": "585bd6d3505b3707be4608cb93cfe29a3d5930c11fc5ebc3c9d34471688858b1"
+ },
+ "campaign/reference#degraded-brake|no|reference|s130|base|gamma": {
+  "output": "395b258ede2141fb09d1b6e2b87e5becd873266e21fe28cf9ed49e65870e805e"
+ },
+ "campaign/reference#degraded-brake|no|reference|simple|base|gamma": {
+  "output": "b0140d50d416f5bd16ccb70ca100cf10c1712649f253f67323d727b14da64645"
+ },
+ "campaign/reference#degraded-brake|yes|internal|s130|base|gamma": {
+  "output": "769c65b2ae02637a62c62b3360b1caabef5e70083b9533a68096e0a6fe14f264"
+ },
+ "campaign/reference#degraded-brake|yes|internal|simple|base|gamma": {
+  "output": "66af052419e5d85f463d143665cc0f79138782b578f5c7a3f04ecab123a5346c"
+ },
+ "campaign/reference#degraded-brake|yes|reference|s130|base|gamma": {
+  "output": "a41b59b99b29cfae2645196d88bb9d20d0f138fde8bc04b215c2ff7509acfeee"
+ },
+ "campaign/reference#degraded-brake|yes|reference|simple|base|gamma": {
+  "output": "d4a8692906ac60de257cfcc737874cf804c05dead9ffab7433631961b9665487"
+ },
+ "campaign/reference#leader-stopped-etcs|no|internal|s130|base|gamma": {
+  "output": "5a6db1f451ef419891fab0ceb13d61c2925f367aac8fee30a896b42bb7b3ccbf"
+ },
+ "campaign/reference#leader-stopped-etcs|no|internal|simple|base|gamma": {
+  "output": "585bd6d3505b3707be4608cb93cfe29a3d5930c11fc5ebc3c9d34471688858b1"
+ },
+ "campaign/reference#leader-stopped-etcs|no|reference|s130|base|gamma": {
+  "output": "395b258ede2141fb09d1b6e2b87e5becd873266e21fe28cf9ed49e65870e805e"
+ },
+ "campaign/reference#leader-stopped-etcs|no|reference|simple|base|gamma": {
+  "output": "b0140d50d416f5bd16ccb70ca100cf10c1712649f253f67323d727b14da64645"
+ },
+ "campaign/reference#leader-stopped-etcs|yes|internal|s130|base|gamma": {
+  "output": "c84d7936024c57679e516ccbc8ca761b61f5279e8786135218ac056598750fe9"
+ },
+ "campaign/reference#leader-stopped-etcs|yes|internal|simple|base|gamma": {
+  "output": "1d733cda09d69a867dcddce11e570e27a0f18fa5d52ce6a81d3b8b8dba633963"
+ },
+ "campaign/reference#leader-stopped-etcs|yes|reference|s130|base|gamma": {
+  "output": "4d46abea8a65c3444d11bbda013c6851afc89de676f79e5050aa2fed7f5130b2"
+ },
+ "campaign/reference#leader-stopped-etcs|yes|reference|simple|base|gamma": {
+  "output": "fe2625f6ed5cd54b3e245bc3e2bb7bddde15a85bee7e6dfc91f67aeb40c0dbaf"
+ },
+ "campaign/reference#leaves-ponte-sabato|no|internal|s130|base|gamma": {
+  "output": "5f5cbc13300b138c3d37f3ac478d21bef0d67096f47c30edaa9e938b8040d246"
+ },
+ "campaign/reference#leaves-ponte-sabato|no|internal|simple|base|gamma": {
+  "output": "f6e33d01d9a032da897fdfa167ca046fda15b3f984aa5725b2ab53a6cbfb8a5d"
+ },
+ "campaign/reference#leaves-ponte-sabato|no|reference|s130|base|gamma": {
+  "output": "989269e47785f46046a9c285149a51007029dae517082fd39b58572d52b0f99d"
+ },
+ "campaign/reference#leaves-ponte-sabato|no|reference|simple|base|gamma": {
+  "output": "a50638a7e4a8e5d353f2ae0008aaf1fd3f2c642a46170d416d58bf80eba5440f"
+ },
+ "campaign/reference#leaves-ponte-sabato|yes|internal|s130|base|gamma": {
+  "output": "5f4eb9f5e39e905be04fdf7748fd7ed0de952ffa6d4e42a2eecaa9ce535531ab"
+ },
+ "campaign/reference#leaves-ponte-sabato|yes|internal|simple|base|gamma": {
+  "output": "50f2be59f19843ad6ab2b0005c6c0db42d1bbc1029e9f83ff3043cb12ffb9e37"
+ },
+ "campaign/reference#leaves-ponte-sabato|yes|reference|s130|base|gamma": {
+  "output": "1d50e9b8a7d52886184c110671484b35b8b7dc5a486d6effa5617b5049319463"
+ },
+ "campaign/reference#leaves-ponte-sabato|yes|reference|simple|base|gamma": {
+  "output": "7997bab07efe013d0de154f8f096cde2d1588d86a7155fbaf20f0c8b150412bd"
+ },
+ "campaign/reference#radio-loss|no|internal|s130|base|gamma": {
+  "output": "5f5cbc13300b138c3d37f3ac478d21bef0d67096f47c30edaa9e938b8040d246"
+ },
+ "campaign/reference#radio-loss|no|internal|simple|base|gamma": {
+  "output": "f6e33d01d9a032da897fdfa167ca046fda15b3f984aa5725b2ab53a6cbfb8a5d"
+ },
+ "campaign/reference#radio-loss|no|reference|s130|base|gamma": {
+  "output": "989269e47785f46046a9c285149a51007029dae517082fd39b58572d52b0f99d"
+ },
+ "campaign/reference#radio-loss|no|reference|simple|base|gamma": {
+  "output": "a50638a7e4a8e5d353f2ae0008aaf1fd3f2c642a46170d416d58bf80eba5440f"
+ },
+ "campaign/reference#radio-loss|yes|internal|s130|base|gamma": {
+  "output": "1c043af768d5a83cbb4e2dd4ab18cbf2a0af77a13a72599a74c4162b576318f2"
+ },
+ "campaign/reference#radio-loss|yes|internal|simple|base|gamma": {
+  "output": "d9ff69791d971d9327d13ddddb1bb3aa7c98e9b0a6775fb80d574b2676227789"
+ },
+ "campaign/reference#radio-loss|yes|reference|s130|base|gamma": {
+  "output": "46336d25343ebf31fd4e2d639df82d425e9a43b06876bc6cc227f8c74ed5c0f5"
+ },
+ "campaign/reference#radio-loss|yes|reference|simple|base|gamma": {
+  "output": "140395ec3d3f70a8e5c9b575b959b9de08f90d8fd32034ac2155959a9495c60f"
+ },
+ "campaign/reference#rbc-emergency-stop|no|internal|s130|base|gamma": {
+  "output": "5f5cbc13300b138c3d37f3ac478d21bef0d67096f47c30edaa9e938b8040d246"
+ },
+ "campaign/reference#rbc-emergency-stop|no|internal|simple|base|gamma": {
+  "output": "f6e33d01d9a032da897fdfa167ca046fda15b3f984aa5725b2ab53a6cbfb8a5d"
+ },
+ "campaign/reference#rbc-emergency-stop|no|reference|s130|base|gamma": {
+  "output": "989269e47785f46046a9c285149a51007029dae517082fd39b58572d52b0f99d"
+ },
+ "campaign/reference#rbc-emergency-stop|no|reference|simple|base|gamma": {
+  "output": "a50638a7e4a8e5d353f2ae0008aaf1fd3f2c642a46170d416d58bf80eba5440f"
+ },
+ "campaign/reference#rbc-emergency-stop|yes|internal|s130|base|gamma": {
+  "output": "3861c939872ee669855b6312776cff0121cd25dd388af08e884a4237cc9f77cd"
+ },
+ "campaign/reference#rbc-emergency-stop|yes|internal|simple|base|gamma": {
+  "output": "d349570a6ae953a4b59fe1c1c2528761dfa09c7f40307776939f7173a1234cb8"
+ },
+ "campaign/reference#rbc-emergency-stop|yes|reference|s130|base|gamma": {
+  "output": "83bf287b4fa2d4c0df63d986d3d4e31218a5aa7d75b961b4bc2232ac4b9da255"
+ },
+ "campaign/reference#rbc-emergency-stop|yes|reference|simple|base|gamma": {
+  "output": "811eed70f6d8e81d06884bc12794cb724d9fbf162ca4a400d90e1bd5b6b762b8"
+ },
+ "campaign/reference#worksite-speed-restriction|no|internal|s130|base|gamma": {
+  "output": "5f5cbc13300b138c3d37f3ac478d21bef0d67096f47c30edaa9e938b8040d246"
+ },
+ "campaign/reference#worksite-speed-restriction|no|internal|simple|base|gamma": {
+  "output": "f6e33d01d9a032da897fdfa167ca046fda15b3f984aa5725b2ab53a6cbfb8a5d"
+ },
+ "campaign/reference#worksite-speed-restriction|no|reference|s130|base|gamma": {
+  "output": "989269e47785f46046a9c285149a51007029dae517082fd39b58572d52b0f99d"
+ },
+ "campaign/reference#worksite-speed-restriction|no|reference|simple|base|gamma": {
+  "output": "a50638a7e4a8e5d353f2ae0008aaf1fd3f2c642a46170d416d58bf80eba5440f"
+ },
+ "campaign/reference#worksite-speed-restriction|yes|internal|s130|base|gamma": {
+  "output": "6b9de3a1556dcd53ea32712039a723864c2ddd729cc6e7fac26d99c6be624753"
+ },
+ "campaign/reference#worksite-speed-restriction|yes|internal|simple|base|gamma": {
+  "output": "b9ae1a7f48f06c61596b06703df9044f74b5be45f9cbba2223816c2c2ad61dc8"
+ },
+ "campaign/reference#worksite-speed-restriction|yes|reference|s130|base|gamma": {
+  "output": "c07c24e4f8442e89e7976db6ae6b51f224b1c2f6364ddfa71a0020226ef105bd"
+ },
+ "campaign/reference#worksite-speed-restriction|yes|reference|simple|base|gamma": {
+  "output": "f41f85f69cfb9c108fd7acee62e44c37f7582804740ca21143510cf5c96515a2"
+ },
+ "campaign/services#Salerno – Mercato San Severino|2|600|both|ETCS|0": {
+  "output": "7845c0b8af3f9180"
+ },
+ "campaign/services#Salerno – Mercato San Severino|2|600|both|ETCS|1200": {
+  "output": "b4b21212c6c2a858"
+ },
+ "campaign/services#Salerno – Mercato San Severino|2|600|both|ETCS|600": {
+  "output": "e5f113da52fa34ed"
+ },
+ "campaign/services#Salerno – Mercato San Severino|2|900|both|ETCS|0": {
+  "output": "f06fa53392b36561"
+ },
+ "campaign/services#Salerno – Mercato San Severino|2|900|both|ETCS|1200": {
+  "output": "c1636c142ef9857f"
+ },
+ "campaign/services#Salerno – Mercato San Severino|2|900|both|ETCS|600": {
+  "output": "9f42e04f7f75b8a2"
+ },
+ "campaign/services#Salerno – Mercato San Severino|4|600|both|ETCS|0": {
+  "output": "964fd31ea5df95b2"
+ },
+ "campaign/services#Salerno – Mercato San Severino|4|600|both|ETCS|1200": {
+  "output": "e3135ff7777e852a"
+ },
+ "campaign/services#Salerno – Mercato San Severino|4|600|both|ETCS|600": {
+  "output": "cd895e998698cd68"
+ },
+ "campaign/services#Salerno – Mercato San Severino|4|900|both|ETCS|0": {
+  "output": "1d9e7ae6edef4afe"
+ },
+ "campaign/services#Salerno – Mercato San Severino|4|900|both|ETCS|1200": {
+  "output": "87a588d9972e215b"
+ },
+ "campaign/services#Salerno – Mercato San Severino|4|900|both|ETCS|600": {
+  "output": "5631b5eabe87e957"
+ },
+ "campaign/services#valle-lauro|2|600|both|ETCS|0": {
+  "output": "32169507698eeebb"
+ },
+ "campaign/services#valle-lauro|2|600|both|ETCS|1200": {
+  "output": "746a830b8c732340"
+ },
+ "campaign/services#valle-lauro|2|600|both|ETCS|600": {
+  "output": "bdc93b3e3faf293e"
+ },
+ "campaign/services#valle-lauro|2|900|both|ETCS|0": {
+  "output": "f677352f8e471257"
+ },
+ "campaign/services#valle-lauro|2|900|both|ETCS|1200": {
+  "output": "6e179aec3f360313"
+ },
+ "campaign/services#valle-lauro|2|900|both|ETCS|600": {
+  "output": "744b29886214223e"
+ },
+ "campaign/services#valle-lauro|4|600|both|ETCS|0": {
+  "output": "25e4f381865ec54c"
+ },
+ "campaign/services#valle-lauro|4|600|both|ETCS|1200": {
+  "output": "ccb6692fcfe14b21"
+ },
+ "campaign/services#valle-lauro|4|600|both|ETCS|600": {
+  "output": "345c8ecea02ebda2"
+ },
+ "campaign/services#valle-lauro|4|900|both|ETCS|0": {
+  "output": "89ad2b146baa8068"
+ },
+ "campaign/services#valle-lauro|4|900|both|ETCS|1200": {
+  "output": "1491f9dacd1bbda3"
+ },
+ "campaign/services#valle-lauro|4|900|both|ETCS|600": {
+  "output": "9fcac975972fd949"
+ },
+ "examples/scenario-config/cancello-benevento-3.json#as_written": {
+  "conditions": "37217faaf984991b",
+  "samples": "14e4b257d5c77a48",
+  "events": "e401f81004619110",
+  "timetable": "e267d7857e8edfed",
+  "passengers": "74234e98afe7498f",
+  "summaries": "1d79ed20cca0b6f8",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "c50cdbfc77dfc4fe",
+  "end_s": "6995.385"
+ },
+ "examples/scenario-config/cancello-benevento-3.json#bacc": {
+  "same_as": "as_written"
+ },
+ "examples/scenario-config/cancello-benevento-3.json#etcs": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "2fcc8c13fec08b44",
+  "events": "322f52839ea797a1",
+  "timetable": "e267d7857e8edfed",
+  "passengers": "74234e98afe7498f",
+  "summaries": "a38ed442a274a35e",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "ad6db007c255c175",
+  "end_s": "6995.385"
+ },
+ "examples/scenario-config/cancello-benevento-3.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "96a566e9b2e641dc",
+  "events": "c846896c765b566a",
+  "timetable": "89c097c8cebb0cd7",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ffd3316df7ea04a1",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "d43484e9e6634b24",
+  "end_s": "7200.000"
+ },
+ "examples/scenario-config/cancello-benevento-3.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "4978ff9e2b9d0fdf",
+  "events": "51e5c407eef0e1ad",
+  "timetable": "2998cd06bab12bdc",
+  "passengers": "74234e98afe7498f",
+  "summaries": "65b7652ebca33958",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "8eb7183a6d7dce40",
+  "end_s": "6995.385"
+ },
+ "examples/scenario-config/cancello-benevento-3.json#regulator": {
+  "conditions": "a96fe4911b29d47b",
+  "samples": "14e4b257d5c77a48",
+  "events": "e401f81004619110",
+  "timetable": "e267d7857e8edfed",
+  "passengers": "74234e98afe7498f",
+  "summaries": "1d79ed20cca0b6f8",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "c50cdbfc77dfc4fe",
+  "end_s": "6995.385"
+ },
+ "examples/scenario-config/salerno-real-timetable.json#as_written": {
+  "conditions": "37217faaf984991b",
+  "samples": "4131941324b2b125",
+  "events": "29a8fe16a2dbb8d7",
+  "timetable": "e1a66b8bbb2fb568",
+  "passengers": "74234e98afe7498f",
+  "summaries": "0f2c7610821c8984",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9c06c2c297f2486b",
+  "end_s": "10977.680"
+ },
+ "examples/scenario-config/salerno-real-timetable.json#bacc": {
+  "same_as": "as_written"
+ },
+ "examples/scenario-config/salerno-real-timetable.json#etcs": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "a9bed74f673e3e56",
+  "events": "0e06a7025bc1af0c",
+  "timetable": "e1a66b8bbb2fb568",
+  "passengers": "74234e98afe7498f",
+  "summaries": "4cad83552112443f",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "25a0fb2ec4ad7d98",
+  "end_s": "10977.680"
+ },
+ "examples/scenario-config/salerno-real-timetable.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "aa2475cec1a2b495",
+  "events": "9ebb1302dd0853f1",
+  "timetable": "7bebe291ab3bedcd",
+  "passengers": "74234e98afe7498f",
+  "summaries": "2ed3f0012cb8fa18",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "fdc3b197e3ac312c",
+  "end_s": "14760.005"
+ },
+ "examples/scenario-config/salerno-real-timetable.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "3bdfbbc983a92d06",
+  "events": "b6221c7faa0ba95e",
+  "timetable": "a03149b6dfd7fd8c",
+  "passengers": "74234e98afe7498f",
+  "summaries": "e3fc8bf5566e3a66",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "806af1ac784ec3a7",
+  "end_s": "10977.680"
+ },
+ "examples/scenario-config/salerno-real-timetable.json#regulator": {
+  "conditions": "a96fe4911b29d47b",
+  "samples": "4131941324b2b125",
+  "events": "29a8fe16a2dbb8d7",
+  "timetable": "e1a66b8bbb2fb568",
+  "passengers": "74234e98afe7498f",
+  "summaries": "0f2c7610821c8984",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9c06c2c297f2486b",
+  "end_s": "10977.680"
+ },
+ "examples/scenario-config/valle-lauro-4.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "d05b03e1cb0601d1",
+  "events": "2829b0381e19d80a",
+  "timetable": "7480880e08bba48f",
+  "passengers": "74234e98afe7498f",
+  "summaries": "8ee5562fcc0ca78c",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "33950315b101b003",
+  "end_s": "3089.590"
+ },
+ "examples/scenario-config/valle-lauro-4.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "2a40fc8267c6fc0e",
+  "events": "9efde3eea14673e1",
+  "timetable": "71c562f95095917a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "6c70ce8757304c17",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "31b24716782fa35c",
+  "end_s": "3088.405"
+ },
+ "examples/scenario-config/valle-lauro-4.json#etcs": {
+  "same_as": "as_written"
+ },
+ "examples/scenario-config/valle-lauro-4.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "06efa9be4e7c2309",
+  "events": "2093e0b9f430c2e4",
+  "timetable": "696fdd211dcdd80c",
+  "passengers": "74234e98afe7498f",
+  "summaries": "0ea3498e88e713c0",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9681bc1442fb30a8",
+  "end_s": "3087.380"
+ },
+ "examples/scenario-config/valle-lauro-4.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "bacf87a5b317ab8c",
+  "events": "7364361044e21a83",
+  "timetable": "40cdeeed19bf5e8d",
+  "passengers": "74234e98afe7498f",
+  "summaries": "66ca05333632d0f4",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "bbea125b91afbf3d",
+  "end_s": "3087.380"
+ },
+ "examples/scenario-config/valle-lauro-4.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "d05b03e1cb0601d1",
+  "events": "2829b0381e19d80a",
+  "timetable": "7480880e08bba48f",
+  "passengers": "74234e98afe7498f",
+  "summaries": "8ee5562fcc0ca78c",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "33950315b101b003",
+  "end_s": "3089.590"
+ },
+ "examples/scenario-config/valle-lauro-passengers.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "f2b56398e852eb4d",
+  "events": "9826e41be40f22b3",
+  "timetable": "6da335848ee0243f",
+  "passengers": "808bda903ec8209e",
+  "summaries": "59e1104b6153e9c0",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9bb6efaf3efeae33",
+  "end_s": "2339.880"
+ },
+ "examples/scenario-config/valle-lauro-passengers.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "da3f1f01bd040f96",
+  "events": "a529a0abad04ccce",
+  "timetable": "2fabc1cad35e44c3",
+  "passengers": "32960440e2b77d14",
+  "summaries": "3655cbc68fffc7d1",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "ecd4490f6c9c664f",
+  "end_s": "2338.695"
+ },
+ "examples/scenario-config/valle-lauro-passengers.json#etcs": {
+  "same_as": "as_written"
+ },
+ "examples/scenario-config/valle-lauro-passengers.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "9f9631bc79597f2b",
+  "events": "430abf40719512da",
+  "timetable": "8bbe88d5a5374fc0",
+  "passengers": "51fad57004edf6fe",
+  "summaries": "a1b121639477e613",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "7ed2863c64f06c21",
+  "end_s": "2337.635"
+ },
+ "examples/scenario-config/valle-lauro-passengers.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "cf8fa919bb65a731",
+  "events": "867ab7ee5ccfcbee",
+  "timetable": "501a818898a3cd7d",
+  "passengers": "bd67156d5e473128",
+  "summaries": "bc82f807527e8f0b",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "b9044702ab6a91bd",
+  "end_s": "2337.670"
+ },
+ "examples/scenario-config/valle-lauro-passengers.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "f2b56398e852eb4d",
+  "events": "9826e41be40f22b3",
+  "timetable": "6da335848ee0243f",
+  "passengers": "808bda903ec8209e",
+  "summaries": "59e1104b6153e9c0",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9bb6efaf3efeae33",
+  "end_s": "2339.880"
+ },
+ "scenarios/degraded-brake.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "46c63d2626fe9ac2",
+  "events": "ffebb051889348de",
+  "timetable": "fde19c04acbd5527",
+  "passengers": "74234e98afe7498f",
+  "summaries": "9e55ae3bb2e73cda",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "c5ec53a9669304d4",
+  "end_s": "1356.695"
+ },
+ "scenarios/degraded-brake.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "89ec0954f8697f6e",
+  "events": "fc7f602a77d4a5ac",
+  "timetable": "ed17cbedebd2c9ba",
+  "passengers": "74234e98afe7498f",
+  "summaries": "28caa044207bc627",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "fd46baee90e6b3e8",
+  "end_s": "1313.345"
+ },
+ "scenarios/degraded-brake.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/degraded-brake.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "7b6e78d0e1de143d",
+  "events": "0efea0bfb73c14dc",
+  "timetable": "a6bae5ced0d0afec",
+  "passengers": "74234e98afe7498f",
+  "summaries": "d67919ea27b54f93",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "1dcb83a65c469625",
+  "end_s": "1498.400"
+ },
+ "scenarios/degraded-brake.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "a3b7d8ac161eab85",
+  "events": "891a0da4e4ee7118",
+  "timetable": "a4bd2339cbb8e8dc",
+  "passengers": "74234e98afe7498f",
+  "summaries": "0ceb98aa29136083",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9020433d8f72050e",
+  "end_s": "1374.695"
+ },
+ "scenarios/degraded-brake.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "46c63d2626fe9ac2",
+  "events": "370a503670712d1e",
+  "timetable": "270372e30c55d6eb",
+  "passengers": "74234e98afe7498f",
+  "summaries": "66d4e977a8f57473",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "89ba0ea2177fa7da",
+  "end_s": "1356.695"
+ },
+ "scenarios/leader-stopped-etcs.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "81a3d3753d5f4dc3",
+  "events": "ad0cb3473f50abb8",
+  "timetable": "4c588d7e76f00f1d",
+  "passengers": "74234e98afe7498f",
+  "summaries": "74e50278e5613aba",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "16b48f9ec526a9a1",
+  "end_s": "1568.345"
+ },
+ "scenarios/leader-stopped-etcs.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "3b33a88f28fa9d81",
+  "events": "ca9f786690f60548",
+  "timetable": "bccce7aea68ce73e",
+  "passengers": "74234e98afe7498f",
+  "summaries": "41fc09785bf4a3ee",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "2c1f3e45b0ec6c8a",
+  "end_s": "1565.575"
+ },
+ "scenarios/leader-stopped-etcs.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/leader-stopped-etcs.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "d0d65613473762e3",
+  "events": "c6f98ad07869c43a",
+  "timetable": "5a4064a427e7663a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "27749e8881e5db3c",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "f2e1669730d075e0",
+  "end_s": "1711.185"
+ },
+ "scenarios/leader-stopped-etcs.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "d98f873207d0cd99",
+  "events": "2230d179273d9e52",
+  "timetable": "5a2db1478ad44a03",
+  "passengers": "74234e98afe7498f",
+  "summaries": "0fd4e90075ed38f0",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "aa4d3d9d26714b3b",
+  "end_s": "1567.420"
+ },
+ "scenarios/leader-stopped-etcs.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "81a3d3753d5f4dc3",
+  "events": "f167da0a0e2e3847",
+  "timetable": "3af967cb029e2955",
+  "passengers": "74234e98afe7498f",
+  "summaries": "2cd11148a74a6c29",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "a9e6b3e595ae5964",
+  "end_s": "1568.345"
+ },
+ "scenarios/leader-stopped-scmt.json#as_written": {
+  "conditions": "37217faaf984991b",
+  "samples": "3b33a88f28fa9d81",
+  "events": "ca9f786690f60548",
+  "timetable": "bccce7aea68ce73e",
+  "passengers": "74234e98afe7498f",
+  "summaries": "07e996fc8ca5ba9f",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "2c1f3e45b0ec6c8a",
+  "end_s": "1565.575"
+ },
+ "scenarios/leader-stopped-scmt.json#bacc": {
+  "same_as": "as_written"
+ },
+ "scenarios/leader-stopped-scmt.json#etcs": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "81a3d3753d5f4dc3",
+  "events": "ad0cb3473f50abb8",
+  "timetable": "4c588d7e76f00f1d",
+  "passengers": "74234e98afe7498f",
+  "summaries": "bf28d6f359b5acf8",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "16b48f9ec526a9a1",
+  "end_s": "1568.345"
+ },
+ "scenarios/leader-stopped-scmt.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "d0d65613473762e3",
+  "events": "c6f98ad07869c43a",
+  "timetable": "5a4064a427e7663a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "e9eb4a6f154cbc7b",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "f2e1669730d075e0",
+  "end_s": "1711.185"
+ },
+ "scenarios/leader-stopped-scmt.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "d98f873207d0cd99",
+  "events": "2230d179273d9e52",
+  "timetable": "5a2db1478ad44a03",
+  "passengers": "74234e98afe7498f",
+  "summaries": "9dc12a91d924845f",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "aa4d3d9d26714b3b",
+  "end_s": "1567.420"
+ },
+ "scenarios/leader-stopped-scmt.json#regulator": {
+  "conditions": "a96fe4911b29d47b",
+  "samples": "3b33a88f28fa9d81",
+  "events": "72aefbdd94075f30",
+  "timetable": "18834ccbf64808b0",
+  "passengers": "74234e98afe7498f",
+  "summaries": "f98190c0c36b9ec9",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9a455977f2636e2f",
+  "end_s": "1565.575"
+ },
+ "scenarios/leaves-ponte-sabato.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "c306cb9eb6932d9f",
+  "events": "ada759d70a92102b",
+  "timetable": "304dbfb824eb43ae",
+  "passengers": "74234e98afe7498f",
+  "summaries": "70c02f37d6ea59e6",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "eb7682c7c7d89afc",
+  "end_s": "1000.010"
+ },
+ "scenarios/leaves-ponte-sabato.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "43f273fe9f5189bf",
+  "events": "70105ede8f167a59",
+  "timetable": "c4c22584716fcad6",
+  "passengers": "74234e98afe7498f",
+  "summaries": "79c9e72b52e31e5f",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "3170ce9bd1eaa6c5",
+  "end_s": "997.155"
+ },
+ "scenarios/leaves-ponte-sabato.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/leaves-ponte-sabato.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "b311f0a001b08093",
+  "events": "44ced1dbf207d3da",
+  "timetable": "73aa9f47cbdda30a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "6e240325157f08ed",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "94c1b8f0411e5c6b",
+  "end_s": "1000.685"
+ },
+ "scenarios/leaves-ponte-sabato.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "d14a44cf372a1b51",
+  "events": "7e0872f088044b26",
+  "timetable": "a464a2d29c7ebf66",
+  "passengers": "74234e98afe7498f",
+  "summaries": "cc0a3a5191c0b977",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "b60ecfece09721f7",
+  "end_s": "1001.810"
+ },
+ "scenarios/leaves-ponte-sabato.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "687b6baa6d5415f5",
+  "events": "ada759d70a92102b",
+  "timetable": "ad088b4dbfe85fd1",
+  "passengers": "74234e98afe7498f",
+  "summaries": "e73199571a06d070",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "d7549a5d5df6cecf",
+  "end_s": "1000.010"
+ },
+ "scenarios/moving-block-integrity-loss.json#as_written": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "12e8c43963ff563a",
+  "events": "6ca823b8a5cc0d33",
+  "timetable": "b36f878a3eae9416",
+  "passengers": "74234e98afe7498f",
+  "summaries": "daef76cb3b932e78",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "52fc1b655ffe04a8",
+  "end_s": "962.740"
+ },
+ "scenarios/moving-block-integrity-loss.json#bacc": {
+  "conditions": "53cc48e9a29b0f9c",
+  "samples": "a909c1a394ff6b40",
+  "events": "68393966ad3850d6",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "058a8f75a291c2a4",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "3d7f3b25336352cf",
+  "end_s": "996.955"
+ },
+ "scenarios/moving-block-integrity-loss.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block-integrity-loss.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "90a95a20ee22ef1b",
+  "events": "ea6c95c0daaed880",
+  "timetable": "3b387742b5efd055",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ac159951147fb5c8",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "3bb952ae5b2728ce",
+  "end_s": "1000.685"
+ },
+ "scenarios/moving-block-integrity-loss.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block-integrity-loss.json#regulator": {
+  "conditions": "5eec4fe16cd995fb",
+  "samples": "ff3d4c52c0dffdd9",
+  "events": "0eada4ec0d00ac69",
+  "timetable": "d3cd180ff002d45c",
+  "passengers": "74234e98afe7498f",
+  "summaries": "481c38202f641b10",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "d4c66566c712d296",
+  "end_s": "1047.815"
+ },
+ "scenarios/moving-block-leader-stopped.json#as_written": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "53d87104a94dc809",
+  "events": "ccce1218e6de98e2",
+  "timetable": "8e210bc881c51459",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ba0e8b78d24b3f2f",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "6f33b8f51237d510",
+  "end_s": "1247.625"
+ },
+ "scenarios/moving-block-leader-stopped.json#bacc": {
+  "conditions": "53cc48e9a29b0f9c",
+  "samples": "d00aee807018ba3a",
+  "events": "5ac61b56142199a2",
+  "timetable": "42bc8c0d285e0a20",
+  "passengers": "74234e98afe7498f",
+  "summaries": "a1f2dea8d010875d",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9fb6fb4e330be03f",
+  "end_s": "1301.355"
+ },
+ "scenarios/moving-block-leader-stopped.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block-leader-stopped.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "9602f32fd1878545",
+  "events": "cf3e072709f853e5",
+  "timetable": "afd8686334c07a76",
+  "passengers": "74234e98afe7498f",
+  "summaries": "80265c08c2d04ff7",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "f2bdddc4ca1052f8",
+  "end_s": "1431.860"
+ },
+ "scenarios/moving-block-leader-stopped.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block-leader-stopped.json#regulator": {
+  "conditions": "5eec4fe16cd995fb",
+  "samples": "0074fc313d681cd6",
+  "events": "344376adffb2bf16",
+  "timetable": "880a1038b8887a45",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ae7f5d8ecdbe80f7",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "e06ea5202dabcbdd",
+  "end_s": "1247.625"
+ },
+ "scenarios/moving-block-radio-loss.json#as_written": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "f9c766c36b89b066",
+  "events": "c3e0da610b30bc45",
+  "timetable": "99b0888299acb240",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ed6af8f78f5ca49a",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "afb5a4f3ce47c50d",
+  "end_s": "1042.245"
+ },
+ "scenarios/moving-block-radio-loss.json#bacc": {
+  "conditions": "53cc48e9a29b0f9c",
+  "samples": "a909c1a394ff6b40",
+  "events": "975c4080de82d039",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "6d827dfb46ea62dc",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "9ee60b5c7caf45f5",
+  "end_s": "996.955"
+ },
+ "scenarios/moving-block-radio-loss.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block-radio-loss.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "fc3dcd437a34bfb0",
+  "events": "13d7b3f3b8412f09",
+  "timetable": "7e0beae096509f28",
+  "passengers": "74234e98afe7498f",
+  "summaries": "11d8175afdd4e20a",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "21ca309f9f63a1f5",
+  "end_s": "1100.085"
+ },
+ "scenarios/moving-block-radio-loss.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block-radio-loss.json#regulator": {
+  "conditions": "5eec4fe16cd995fb",
+  "samples": "d994688abf2d8a81",
+  "events": "c3e0da610b30bc45",
+  "timetable": "e7861590a5fdc412",
+  "passengers": "74234e98afe7498f",
+  "summaries": "de740eeb7d855e97",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "a2fc3e4b33c4e7a8",
+  "end_s": "1042.245"
+ },
+ "scenarios/moving-block.json#as_written": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "4e4bf3db6242789f",
+  "events": "f58e28c3fafb1f1e",
+  "timetable": "d87ead24d21fb128",
+  "passengers": "74234e98afe7498f",
+  "summaries": "6372bd2a93bca847",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "35de2117f5f14d6a",
+  "end_s": "942.840"
+ },
+ "scenarios/moving-block.json#bacc": {
+  "conditions": "53cc48e9a29b0f9c",
+  "samples": "a909c1a394ff6b40",
+  "events": "df1aedb243cf51de",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "a2c2b64ca08c8e95",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "2dd7697ce2797ca3",
+  "end_s": "996.955"
+ },
+ "scenarios/moving-block.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "a646d8c7add8e8fc",
+  "events": "4bd3e689ee271674",
+  "timetable": "3b387742b5efd055",
+  "passengers": "74234e98afe7498f",
+  "summaries": "a650993dd73499b9",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "6a31e31b2d1e185d",
+  "end_s": "1000.685"
+ },
+ "scenarios/moving-block.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/moving-block.json#regulator": {
+  "conditions": "5eec4fe16cd995fb",
+  "samples": "da88e0b477a106a2",
+  "events": "e1c8a8fe6b9a3d04",
+  "timetable": "97419f4196ed8828",
+  "passengers": "74234e98afe7498f",
+  "summaries": "9abda612bc50c02c",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "8d086c49843e8cbf",
+  "end_s": "942.840"
+ },
+ "scenarios/odometry-drift.json#as_written": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "e03845b06530eb06",
+  "events": "a3f86da08a81bddc",
+  "timetable": "023968b2818628f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "2196763006ee428a",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "5db8fd14ff87d870",
+  "end_s": "1003.535"
+ },
+ "scenarios/odometry-drift.json#bacc": {
+  "conditions": "53cc48e9a29b0f9c",
+  "samples": "a909c1a394ff6b40",
+  "events": "25d63cd6fdb9224d",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "135fa3837ab382b9",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "dea16c384e91548f",
+  "end_s": "996.955"
+ },
+ "scenarios/odometry-drift.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/odometry-drift.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "84b3f5a8bba77257",
+  "events": "6940ca24c9ff05ad",
+  "timetable": "f3467e26d48bd06e",
+  "passengers": "74234e98afe7498f",
+  "summaries": "76941f8d7d89bab1",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "97b5cae0a715b3b2",
+  "end_s": "999.395"
+ },
+ "scenarios/odometry-drift.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/odometry-drift.json#regulator": {
+  "conditions": "5eec4fe16cd995fb",
+  "samples": "c9b436c2bf964657",
+  "events": "7ee29f1ba449d373",
+  "timetable": "2c247d296335b94e",
+  "passengers": "74234e98afe7498f",
+  "summaries": "5a7046c205fa49c0",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "bc9a022fb7094f7a",
+  "end_s": "1003.535"
+ },
+ "scenarios/radio-loss.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "80b7306e3e7279de",
+  "events": "bd150c67629bdd14",
+  "timetable": "13be3bb6c7de014e",
+  "passengers": "74234e98afe7498f",
+  "summaries": "b723455222e75531",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "6802b7de3c2c2948",
+  "end_s": "1059.785"
+ },
+ "scenarios/radio-loss.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "a909c1a394ff6b40",
+  "events": "2a82dc553a11b22c",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "cbe3b4e92f9f13fa",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "93b7c88473148d0a",
+  "end_s": "996.955"
+ },
+ "scenarios/radio-loss.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/radio-loss.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "f4ab68fc28ebc327",
+  "events": "79b137dfc9e17cd4",
+  "timetable": "dd112e4f981b539c",
+  "passengers": "74234e98afe7498f",
+  "summaries": "c31030415bca026d",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "1181bc94b92054e1",
+  "end_s": "1066.395"
+ },
+ "scenarios/radio-loss.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "08729693e150454d",
+  "events": "7097bd6523ac78f0",
+  "timetable": "2159c9f922921d05",
+  "passengers": "74234e98afe7498f",
+  "summaries": "d2d97d5192a96ab8",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "ffd8720e17ba87e8",
+  "end_s": "1069.825"
+ },
+ "scenarios/radio-loss.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "c180f9b17b210379",
+  "events": "bd150c67629bdd14",
+  "timetable": "17bab42a9ef4aa3b",
+  "passengers": "74234e98afe7498f",
+  "summaries": "d346d3a281704bac",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "68a79f1e6a372aa4",
+  "end_s": "1059.785"
+ },
+ "scenarios/rbc-emergency-stop.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "a72c8d531c5d3573",
+  "events": "f5a889e2a1f6e9d4",
+  "timetable": "635d62def677feef",
+  "passengers": "74234e98afe7498f",
+  "summaries": "816f2089bc94bdb2",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "c7cd8c60a5be556b",
+  "end_s": "998.150"
+ },
+ "scenarios/rbc-emergency-stop.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "60f5f3eb9a754ea5",
+  "events": "29c2c3640c416de3",
+  "timetable": "e33b80c6a471c300",
+  "passengers": "74234e98afe7498f",
+  "summaries": "106f07da8e5804d4",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "a9a5c86f906c7d02",
+  "end_s": "995.440"
+ },
+ "scenarios/rbc-emergency-stop.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/rbc-emergency-stop.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "fa38318b1b1eb0f7",
+  "events": "d67f737a622e0435",
+  "timetable": "ba6b2bc2610f84c1",
+  "passengers": "74234e98afe7498f",
+  "summaries": "064b5434708503ac",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "22bdb34ccba99d61",
+  "end_s": "1055.655"
+ },
+ "scenarios/rbc-emergency-stop.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "d9aaad7bb3bed835",
+  "events": "a2e0a3994b1fcb87",
+  "timetable": "6c3069f149078c06",
+  "passengers": "74234e98afe7498f",
+  "summaries": "d14e7eb5cf9546d6",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "bf03d56170e36ec0",
+  "end_s": "998.225"
+ },
+ "scenarios/rbc-emergency-stop.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "0b80dd581a93406e",
+  "events": "679ba2c4b77039b6",
+  "timetable": "1d5d62d993980e68",
+  "passengers": "74234e98afe7498f",
+  "summaries": "19090f23f5a0413d",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "d7c1c022ce7df77e",
+  "end_s": "998.150"
+ },
+ "scenarios/services/benevento.json#as_written": {
+  "conditions": "37217faaf984991b",
+  "samples": "95d098ad711da371",
+  "events": "d022f82163d1d012",
+  "timetable": "c78339ae4a8e2b52",
+  "passengers": "74234e98afe7498f",
+  "summaries": "da833259bc27b439",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "84d0b8247345769e",
+  "end_s": "6691.950"
+ },
+ "scenarios/services/benevento.json#bacc": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/benevento.json#etcs": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "d442390beacd007c",
+  "events": "9faccfb0d8a5c311",
+  "timetable": "e7d0532ae450e449",
+  "passengers": "74234e98afe7498f",
+  "summaries": "8e3991bebfb5800f",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "5cc7ecfa5adc6759",
+  "end_s": "6691.950"
+ },
+ "scenarios/services/benevento.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "c1c1f07092e75399",
+  "events": "1116ae87ca064eee",
+  "timetable": "2c19b60f1049cbf4",
+  "passengers": "74234e98afe7498f",
+  "summaries": "33df200ff98d64fa",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "f22aeda5becd756a",
+  "end_s": "7200.000"
+ },
+ "scenarios/services/benevento.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "44b92d3d4c8fcf51",
+  "events": "aaed8123f95de86a",
+  "timetable": "90b836ff074deaa5",
+  "passengers": "74234e98afe7498f",
+  "summaries": "9b956909e30a0da3",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "b81d52081497421f",
+  "end_s": "6691.950"
+ },
+ "scenarios/services/benevento.json#regulator": {
+  "conditions": "a96fe4911b29d47b",
+  "samples": "95d098ad711da371",
+  "events": "d022f82163d1d012",
+  "timetable": "c78339ae4a8e2b52",
+  "passengers": "74234e98afe7498f",
+  "summaries": "da833259bc27b439",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "84d0b8247345769e",
+  "end_s": "6691.950"
+ },
+ "scenarios/services/branch-shuttle.json#as_written": {
+  "conditions": "37217faaf984991b",
+  "samples": "6e8c500fed124093",
+  "events": "ef1ef232519e03f4",
+  "timetable": "f421b3d208dcffc0",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ae79d9e5dbd9edf6",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "83631552a5e1e2d4",
+  "end_s": "2927.785"
+ },
+ "scenarios/services/branch-shuttle.json#bacc": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/branch-shuttle.json#etcs": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "8cde72abee3847a4",
+  "events": "5ceff0d7e0946cd3",
+  "timetable": "b8ac7d7c4e931b12",
+  "passengers": "74234e98afe7498f",
+  "summaries": "fa96fa935305967c",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "202347877849a7f2",
+  "end_s": "2929.595"
+ },
+ "scenarios/services/branch-shuttle.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "b3f2360f35cb4525",
+  "events": "86aa0950c3c69790",
+  "timetable": "c42c87bab0e05314",
+  "passengers": "74234e98afe7498f",
+  "summaries": "9f55a7d7867d898d",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "c7c32d456ec1ea60",
+  "end_s": "2929.155"
+ },
+ "scenarios/services/branch-shuttle.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "6c2fbe05d648ca3a",
+  "events": "3aa78775dd2eae4e",
+  "timetable": "c42c87bab0e05314",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ce54ddbee4e6e67d",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "8b50c74a1d0d1f3d",
+  "end_s": "2929.155"
+ },
+ "scenarios/services/branch-shuttle.json#regulator": {
+  "conditions": "a96fe4911b29d47b",
+  "samples": "6e8c500fed124093",
+  "events": "ef1ef232519e03f4",
+  "timetable": "f421b3d208dcffc0",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ae79d9e5dbd9edf6",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "83631552a5e1e2d4",
+  "end_s": "2927.785"
+ },
+ "scenarios/services/branch.json#as_written": {
+  "conditions": "37217faaf984991b",
+  "samples": "de3aed4ff8e621aa",
+  "events": "3d1008f44ba6ad95",
+  "timetable": "c2e6b172cb66bcbb",
+  "passengers": "74234e98afe7498f",
+  "summaries": "276ada73762f21ac",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "2baa22f9753726b5",
+  "end_s": "2048.405"
+ },
+ "scenarios/services/branch.json#bacc": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/branch.json#etcs": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "fb27e465710919b4",
+  "events": "aad03cc647763a7a",
+  "timetable": "c2d7145880a4774c",
+  "passengers": "74234e98afe7498f",
+  "summaries": "5c0c55ed0ba2a8f7",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "aa1c5128d793a95d",
+  "end_s": "2049.590"
+ },
+ "scenarios/services/branch.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "7af2fdeff2ac375b",
+  "events": "367916f9ab489e42",
+  "timetable": "7c01afc36e91983f",
+  "passengers": "74234e98afe7498f",
+  "summaries": "fffcb7418099f7db",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "ffd56922e485504e",
+  "end_s": "2047.530"
+ },
+ "scenarios/services/branch.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "cc95ffb5ac369d90",
+  "events": "55b76884c841922b",
+  "timetable": "c7be473db8fb7632",
+  "passengers": "74234e98afe7498f",
+  "summaries": "ec48284f336e4dae",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "40d5b8ad25af1ced",
+  "end_s": "2047.530"
+ },
+ "scenarios/services/branch.json#regulator": {
+  "conditions": "a96fe4911b29d47b",
+  "samples": "de3aed4ff8e621aa",
+  "events": "3d1008f44ba6ad95",
+  "timetable": "c2e6b172cb66bcbb",
+  "passengers": "74234e98afe7498f",
+  "summaries": "276ada73762f21ac",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "2baa22f9753726b5",
+  "end_s": "2048.405"
+ },
+ "scenarios/services/breakdown.json#as_written": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "4d6792a523965af3",
+  "events": "e3f83bff25b53c2a",
+  "timetable": "53504c0bc6ad1993",
+  "passengers": "74234e98afe7498f",
+  "summaries": "d824433cbd8912e9",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "39377c41605bab8e",
+  "end_s": "1201.640"
+ },
+ "scenarios/services/breakdown.json#bacc": {
+  "conditions": "cb2343551111403e",
+  "samples": "795f1aa99961eb47",
+  "events": "f7ea8eb7117ab2cf",
+  "timetable": "2397380d181642d2",
+  "passengers": "74234e98afe7498f",
+  "summaries": "8313c6f4654b0510",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "6ea1531cd8e1cebd",
+  "end_s": "1302.410"
+ },
+ "scenarios/services/breakdown.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/breakdown.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/breakdown.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/breakdown.json#regulator": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/cancellation.json#as_written": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "138e9783df9335a5",
+  "events": "6c695f4401c8cc0a",
+  "timetable": "5963839c391d3aaf",
+  "passengers": "74234e98afe7498f",
+  "summaries": "837839c04a43c889",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "2880afd9d7665427",
+  "end_s": "1000.005"
+ },
+ "scenarios/services/cancellation.json#bacc": {
+  "conditions": "cb2343551111403e",
+  "samples": "413a27f5a2ef7c64",
+  "events": "17bc51fe61bec316",
+  "timetable": "ecdfc4cc99260cd2",
+  "passengers": "74234e98afe7498f",
+  "summaries": "06a6008779dfba8b",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "b98fde55097a8dc8",
+  "end_s": "1272.770"
+ },
+ "scenarios/services/cancellation.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/cancellation.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/cancellation.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/cancellation.json#regulator": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/crossing-interlocking.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "08de98aff001393d",
+  "events": "e249db65db38c946",
+  "timetable": "41003fefb8488ab3",
+  "passengers": "74234e98afe7498f",
+  "summaries": "718fa66bde81f2fc",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "23e589e65b8162cb",
+  "end_s": "1167.380"
+ },
+ "scenarios/services/crossing-interlocking.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "374e4ae2db9b8774",
+  "events": "553537caa66d395f",
+  "timetable": "3dcfaf78c7001b62",
+  "passengers": "74234e98afe7498f",
+  "summaries": "994a3ae9951dae68",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "a6e326effeed5bda",
+  "end_s": "1168.405"
+ },
+ "scenarios/services/crossing-interlocking.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/crossing-interlocking.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/crossing-interlocking.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/crossing-interlocking.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "08de98aff001393d",
+  "events": "e249db65db38c946",
+  "timetable": "41003fefb8488ab3",
+  "passengers": "74234e98afe7498f",
+  "summaries": "718fa66bde81f2fc",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "23e589e65b8162cb",
+  "end_s": "1167.380"
+ },
+ "scenarios/services/crossing.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "255e7699f5e55104",
+  "events": "436b3c1d8cd7737e",
+  "timetable": "d173f6b66bb32522",
+  "passengers": "74234e98afe7498f",
+  "summaries": "4988eb429170c2fa",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "82ca89b940e7ef77",
+  "end_s": "1169.590"
+ },
+ "scenarios/services/crossing.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "374e4ae2db9b8774",
+  "events": "553537caa66d395f",
+  "timetable": "3dcfaf78c7001b62",
+  "passengers": "74234e98afe7498f",
+  "summaries": "26e2fb72a1dad72b",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "a6e326effeed5bda",
+  "end_s": "1168.405"
+ },
+ "scenarios/services/crossing.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/crossing.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "08de98aff001393d",
+  "events": "e249db65db38c946",
+  "timetable": "41003fefb8488ab3",
+  "passengers": "74234e98afe7498f",
+  "summaries": "dd4f6572d9f1f418",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "23e589e65b8162cb",
+  "end_s": "1167.380"
+ },
+ "scenarios/services/crossing.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "2518ee2ec6f1112b",
+  "events": "047af16c7c0f9e7b",
+  "timetable": "c951115f51bc3c9f",
+  "passengers": "74234e98afe7498f",
+  "summaries": "cab8c09df3d29930",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "3a677ae2353fbde8",
+  "end_s": "1167.380"
+ },
+ "scenarios/services/crossing.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "255e7699f5e55104",
+  "events": "436b3c1d8cd7737e",
+  "timetable": "d173f6b66bb32522",
+  "passengers": "74234e98afe7498f",
+  "summaries": "4988eb429170c2fa",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "82ca89b940e7ef77",
+  "end_s": "1169.590"
+ },
+ "scenarios/services/following.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "529958c0c27b2030",
+  "events": "84dea403e4dc184f",
+  "timetable": "7de91ee2a8d7e390",
+  "passengers": "74234e98afe7498f",
+  "summaries": "8b1a529f1149d8df",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "e4441ea644db196b",
+  "end_s": "1573.215"
+ },
+ "scenarios/services/following.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "d61725e589e78390",
+  "events": "45d0a41cb08aae2e",
+  "timetable": "b69fea65df00c001",
+  "passengers": "74234e98afe7498f",
+  "summaries": "35307f97644b96e2",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "cb6ddf268d1f7156",
+  "end_s": "1572.370"
+ },
+ "scenarios/services/following.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/following.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "8c08e35f20a01354",
+  "events": "0a8149e3d388c00b",
+  "timetable": "676e6e13ae0dba40",
+  "passengers": "74234e98afe7498f",
+  "summaries": "98f1079eb513d1ea",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "126a175d5380315f",
+  "end_s": "1571.015"
+ },
+ "scenarios/services/following.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "5b445d0d00ca8b36",
+  "events": "0a8149e3d388c00b",
+  "timetable": "676e6e13ae0dba40",
+  "passengers": "74234e98afe7498f",
+  "summaries": "1998c1559453f8f4",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "dbf689904e8dbd3a",
+  "end_s": "1571.015"
+ },
+ "scenarios/services/following.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "529958c0c27b2030",
+  "events": "84dea403e4dc184f",
+  "timetable": "7de91ee2a8d7e390",
+  "passengers": "74234e98afe7498f",
+  "summaries": "8b1a529f1149d8df",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "e4441ea644db196b",
+  "end_s": "1573.215"
+ },
+ "scenarios/services/loop-reroute.json#as_written": {
+  "conditions": "a96fe4911b29d47b",
+  "samples": "9edd3c79e2529672",
+  "events": "7c81e56f24ae664c",
+  "timetable": "71ea0e044909a28a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "418bfa1102d87821",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "35cb89f0552e5b6a",
+  "end_s": "1787.650"
+ },
+ "scenarios/services/loop-reroute.json#bacc": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/loop-reroute.json#etcs": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "996521ba77c6b852",
+  "events": "727f5d47a70e5ef4",
+  "timetable": "a9aa98c32f59a1ad",
+  "passengers": "74234e98afe7498f",
+  "summaries": "e3fe9b3f7ae65ce5",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "e0c49c172bdb6fa1",
+  "end_s": "1789.460"
+ },
+ "scenarios/services/loop-reroute.json#etcs_interlocking": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "7c98d1020254a752",
+  "events": "0649e43d14d07c13",
+  "timetable": "59611aa8b47d9905",
+  "passengers": "74234e98afe7498f",
+  "summaries": "98cca3da2a4ff7e3",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "3639e94ecc66c1f2",
+  "end_s": "1789.070"
+ },
+ "scenarios/services/loop-reroute.json#etcs_reference": {
+  "conditions": "5eec4fe16cd995fb",
+  "samples": "a262d39dd8c5d674",
+  "events": "df718d4481a213c1",
+  "timetable": "59611aa8b47d9905",
+  "passengers": "74234e98afe7498f",
+  "summaries": "9eaa8ca91b732db3",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "390a4b68888308e8",
+  "end_s": "1789.070"
+ },
+ "scenarios/services/loop-reroute.json#regulator": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/precedence.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "fdfc04f7fd9c9a9a",
+  "events": "22499cbbd5f4b45d",
+  "timetable": "a2becc55b543e503",
+  "passengers": "74234e98afe7498f",
+  "summaries": "11bb630e9d3351f8",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "bb2e2aeea270cf59",
+  "end_s": "1066.940"
+ },
+ "scenarios/services/precedence.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "b6d57651eea14d33",
+  "events": "59bfb68712fbc101",
+  "timetable": "083fcd20c4fcd3e5",
+  "passengers": "74234e98afe7498f",
+  "summaries": "cdfe8261f6db86d0",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "7faf14e6b14aec88",
+  "end_s": "989.020"
+ },
+ "scenarios/services/precedence.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/precedence.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/precedence.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/services/precedence.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "fdfc04f7fd9c9a9a",
+  "events": "e9479864f66b3249",
+  "timetable": "932070e29eb2b760",
+  "passengers": "74234e98afe7498f",
+  "summaries": "81b2ae3d21baa0c0",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "0f457f9feaf38620",
+  "end_s": "1066.940"
+ },
+ "scenarios/trackside/handover-link-loss.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "24d7399594664bcf",
+  "events": "907e67a47ed1c762",
+  "timetable": "8ba6f5b4d317277a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "bdcb42b1c5da784e",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "49ed6b835ffc92e3",
+  "end_s": "867.015"
+ },
+ "scenarios/trackside/handover-link-loss.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "41edb1d976fca46f",
+  "events": "d44f2e27187aee60",
+  "timetable": "7030a502cfb4513a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "b4c0639c2e0451f3",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "694900c9068343ca",
+  "end_s": "852.370"
+ },
+ "scenarios/trackside/handover-link-loss.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover-link-loss.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover-link-loss.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover-link-loss.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "24d7399594664bcf",
+  "events": "907e67a47ed1c762",
+  "timetable": "8ba6f5b4d317277a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "bdcb42b1c5da784e",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "49ed6b835ffc92e3",
+  "end_s": "867.015"
+ },
+ "scenarios/trackside/handover-radio-loss.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "f5fa5a14abaefcb3",
+  "events": "70c8ee8072bb1f9d",
+  "timetable": "e37ab5003ce0c03f",
+  "passengers": "74234e98afe7498f",
+  "summaries": "af95ac5d09afb57b",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "4a184c79f8329ace",
+  "end_s": "866.615"
+ },
+ "scenarios/trackside/handover-radio-loss.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "41edb1d976fca46f",
+  "events": "3dd9023ce17e6f5a",
+  "timetable": "7030a502cfb4513a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "8d60d1f61443078a",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "a52d68c461cd6b9f",
+  "end_s": "852.370"
+ },
+ "scenarios/trackside/handover-radio-loss.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover-radio-loss.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover-radio-loss.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover-radio-loss.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "f5fa5a14abaefcb3",
+  "events": "70c8ee8072bb1f9d",
+  "timetable": "e37ab5003ce0c03f",
+  "passengers": "74234e98afe7498f",
+  "summaries": "af95ac5d09afb57b",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "4a184c79f8329ace",
+  "end_s": "866.615"
+ },
+ "scenarios/trackside/handover.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "9556bf2b5b8930a5",
+  "events": "5fb2fda60b6aeed1",
+  "timetable": "3b387742b5efd055",
+  "passengers": "74234e98afe7498f",
+  "summaries": "90702904a3c734c9",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "45c39ad565466f7b",
+  "end_s": "1000.685"
+ },
+ "scenarios/trackside/handover.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "a909c1a394ff6b40",
+  "events": "39e678e8e96d5be2",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "f8166c7ae22626cf",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "8295b416cda763c0",
+  "end_s": "996.955"
+ },
+ "scenarios/trackside/handover.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/handover.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "9556bf2b5b8930a5",
+  "events": "549452dd07a8c74d",
+  "timetable": "58707c3cca1fc279",
+  "passengers": "74234e98afe7498f",
+  "summaries": "9b46184bb9f6c97f",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "490d2d03c6cef049",
+  "end_s": "1000.685"
+ },
+ "scenarios/trackside/nominal.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "a646d8c7add8e8fc",
+  "events": "5fb2fda60b6aeed1",
+  "timetable": "3b387742b5efd055",
+  "passengers": "74234e98afe7498f",
+  "summaries": "7f7ab7951e9e1a0a",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "2113d928ba413451",
+  "end_s": "1000.685"
+ },
+ "scenarios/trackside/nominal.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "a909c1a394ff6b40",
+  "events": "39e678e8e96d5be2",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "a4acd15fbd080f33",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "8295b416cda763c0",
+  "end_s": "996.955"
+ },
+ "scenarios/trackside/nominal.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/nominal.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/nominal.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/nominal.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "a646d8c7add8e8fc",
+  "events": "549452dd07a8c74d",
+  "timetable": "58707c3cca1fc279",
+  "passengers": "74234e98afe7498f",
+  "summaries": "1d760a36dfa4d363",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "6d9d97450a53ec18",
+  "end_s": "1000.685"
+ },
+ "scenarios/trackside/operator-commands.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "40301bf51375e65e",
+  "events": "6689d5fe0a71bc96",
+  "timetable": "1e4cfac5c8d86218",
+  "passengers": "74234e98afe7498f",
+  "summaries": "c40c3bce4c90e0ac",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "41bf75df4b005538",
+  "end_s": "1058.655"
+ },
+ "scenarios/trackside/operator-commands.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "a909c1a394ff6b40",
+  "events": "527993f944c30001",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "28c69450b08dd066",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "b3ce1946aaecfdb9",
+  "end_s": "996.955"
+ },
+ "scenarios/trackside/operator-commands.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/operator-commands.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/operator-commands.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/operator-commands.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "febf5e719ff2508e",
+  "events": "6689d5fe0a71bc96",
+  "timetable": "45720ea96b50c963",
+  "passengers": "74234e98afe7498f",
+  "summaries": "4df4ee850cf5a5b1",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "e15fb4049c58bf92",
+  "end_s": "1058.655"
+ },
+ "scenarios/trackside/overtaking.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "8e300fe8f7ad30cb",
+  "events": "7f44aa3e2917c629",
+  "timetable": "fd0da2a81ad45721",
+  "passengers": "74234e98afe7498f",
+  "summaries": "2d9ae46c13e22578",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "1d85c542638c53cf",
+  "end_s": "1351.950"
+ },
+ "scenarios/trackside/overtaking.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "8a30b086a88b6aaf",
+  "events": "8a0a88eb29cb13a3",
+  "timetable": "f36647331f55abaf",
+  "passengers": "74234e98afe7498f",
+  "summaries": "6567fd31c71bf8ae",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "d88e52d8008b2b6f",
+  "end_s": "1223.865"
+ },
+ "scenarios/trackside/overtaking.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/overtaking.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/overtaking.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/overtaking.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "316af6a5f85aa147",
+  "events": "f8cb3b1dfd903adc",
+  "timetable": "368ae9daaccf2e9e",
+  "passengers": "74234e98afe7498f",
+  "summaries": "97a4ed0e8242f6b4",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "7f6c1d331aa084b0",
+  "end_s": "1408.305"
+ },
+ "scenarios/trackside/point-failure.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "07f034d7839a514b",
+  "events": "12262105a6e970c8",
+  "timetable": "dde57da146ae2a99",
+  "passengers": "74234e98afe7498f",
+  "summaries": "cb72dda93b63aea7",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "afd0f5b22ee7d7f9",
+  "end_s": "1132.245"
+ },
+ "scenarios/trackside/point-failure.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "a909c1a394ff6b40",
+  "events": "7301d4e4544cc6b5",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "006cfd154b4dfa93",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "ca22dea96d2d253c",
+  "end_s": "996.955"
+ },
+ "scenarios/trackside/point-failure.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/point-failure.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/point-failure.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/point-failure.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "07f034d7839a514b",
+  "events": "12262105a6e970c8",
+  "timetable": "15dd1ae69d08a388",
+  "passengers": "74234e98afe7498f",
+  "summaries": "a412e5fb484f9ebc",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "91ef609a3aba01c1",
+  "end_s": "1132.245"
+ },
+ "scenarios/trackside/tvps-failure.json#as_written": {
+  "conditions": "18088425b5396fb9",
+  "samples": "c6d72a736158504a",
+  "events": "107cef600a385547",
+  "timetable": "10e0bc7ab6ef8bf1",
+  "passengers": "74234e98afe7498f",
+  "summaries": "920888a5ccd33b40",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "6ca9feea77c4b6ad",
+  "end_s": "1301.685"
+ },
+ "scenarios/trackside/tvps-failure.json#bacc": {
+  "conditions": "7b66663e70414d80",
+  "samples": "a909c1a394ff6b40",
+  "events": "be691b869764f447",
+  "timetable": "80cef924a96483f8",
+  "passengers": "74234e98afe7498f",
+  "summaries": "60868fc9569569ba",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "1e60fe34d9100e9f",
+  "end_s": "996.955"
+ },
+ "scenarios/trackside/tvps-failure.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/tvps-failure.json#etcs_interlocking": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/tvps-failure.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/trackside/tvps-failure.json#regulator": {
+  "conditions": "d75a20080afb1a4e",
+  "samples": "c6d72a736158504a",
+  "events": "45afc99b4b4bdd1a",
+  "timetable": "d2c43644bd6b34a4",
+  "passengers": "74234e98afe7498f",
+  "summaries": "dfa0b3336bc6debf",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "90f9463318f3d09e",
+  "end_s": "1301.685"
+ },
+ "scenarios/wet-descent-worksite.json#as_written": {
+  "conditions": "a2b4b9578eb67ecb",
+  "samples": "b0a1682dead7838f",
+  "events": "b90b5612596891a6",
+  "timetable": "9db0a1b97de30839",
+  "passengers": "74234e98afe7498f",
+  "summaries": "b8c886238ae6c740",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "0a6a07606e2377f0",
+  "end_s": "1569.975"
+ },
+ "scenarios/wet-descent-worksite.json#bacc": {
+  "conditions": "dab02423d97c0d8b",
+  "samples": "41b68eb6dc7fa74b",
+  "events": "38e8fa59d64e4532",
+  "timetable": "71be3c06225279ab",
+  "passengers": "74234e98afe7498f",
+  "summaries": "d7639a1e3c7c86a1",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "07810f3d3023d94a",
+  "end_s": "1569.435"
+ },
+ "scenarios/wet-descent-worksite.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/wet-descent-worksite.json#etcs_interlocking": {
+  "conditions": "3cdc7907d7816052",
+  "samples": "7a43d4bd5921a423",
+  "events": "77c656e8eed82cdd",
+  "timetable": "d4c9484270dcea46",
+  "passengers": "74234e98afe7498f",
+  "summaries": "1746c7e6eeadcd66",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "b167b92153a3517a",
+  "end_s": "1757.550"
+ },
+ "scenarios/wet-descent-worksite.json#etcs_reference": {
+  "same_as": "as_written"
+ },
+ "scenarios/wet-descent-worksite.json#regulator": {
+  "conditions": "92a993c0d81f03c1",
+  "samples": "b0a1682dead7838f",
+  "events": "7be25b22698804a2",
+  "timetable": "d7e4aa3bc1cdad6d",
+  "passengers": "74234e98afe7498f",
+  "summaries": "c2e220ecfd336bdc",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "7161ed3e9b739c89",
+  "end_s": "1569.975"
+ },
+ "scenarios/worksite-speed-restriction.json#as_written": {
+  "conditions": "0cac10165d732e2b",
+  "samples": "a34a1f6554b88860",
+  "events": "beda44cfb776dd51",
+  "timetable": "ac4c402c3f5c681a",
+  "passengers": "74234e98afe7498f",
+  "summaries": "97c93c8724a62911",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "aabb59a57db82aff",
+  "end_s": "1188.350"
+ },
+ "scenarios/worksite-speed-restriction.json#bacc": {
+  "conditions": "37217faaf984991b",
+  "samples": "ada9ab1e9ce58203",
+  "events": "f228e312717dea87",
+  "timetable": "da1dc75383dd73bf",
+  "passengers": "74234e98afe7498f",
+  "summaries": "05e58cf446fd370b",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "ac9f62d028676836",
+  "end_s": "1174.435"
+ },
+ "scenarios/worksite-speed-restriction.json#etcs": {
+  "same_as": "as_written"
+ },
+ "scenarios/worksite-speed-restriction.json#etcs_interlocking": {
+  "conditions": "18088425b5396fb9",
+  "samples": "0210f085a127f2e7",
+  "events": "233897a99b2a3ff2",
+  "timetable": "3ec91e10ee9aac2f",
+  "passengers": "74234e98afe7498f",
+  "summaries": "6fc881b7118226ca",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "adafc798c178593b",
+  "end_s": "1188.570"
+ },
+ "scenarios/worksite-speed-restriction.json#etcs_reference": {
+  "conditions": "ec89820fc07b0bbe",
+  "samples": "493e7a69554f5c49",
+  "events": "f81d492df48d1d11",
+  "timetable": "7936829c7d0017a4",
+  "passengers": "74234e98afe7498f",
+  "summaries": "724e0cac3f2f03b7",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "7bd5431d7cdb7e86",
+  "end_s": "1188.170"
+ },
+ "scenarios/worksite-speed-restriction.json#regulator": {
+  "conditions": "33c1b65108c6bfa9",
+  "samples": "19e5c62d36a3f9ed",
+  "events": "9a1ae292e9dc7a31",
+  "timetable": "b5e522846af89f88",
+  "passengers": "74234e98afe7498f",
+  "summaries": "b30cc0764ddbc311",
+  "dispatched": "4f53cda18c2baa0c",
+  "control_room": "f674027355f8b1ee",
+  "end_s": "1188.350"
+ }
+}

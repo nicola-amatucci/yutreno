@@ -1,0 +1,20 @@
+{
+  "name": "Two services following the controlled train",
+  "description": "Valle Lauro line, automatic block (ETCS internal supervision): the controlled train runs its usual timetable; two regional services follow it 6 and 12 minutes later, stopping at every station, driven by the built-in ATO.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "leader": { "on": false },
+  "services": [
+    { "id": "R 2102", "train": "regional", "stops": [
+      { "station": "Valle Lauro", "departure_s": 360 },
+      { "station": "Ponte Sabato", "arrival_s": 620, "departure_s": 650 },
+      { "station": "San Felice Scalo", "arrival_s": 980, "departure_s": 1010 },
+      { "station": "Monte Clanio", "arrival_s": 1240 } ] },
+    { "id": "R 2104", "train": "regional", "stops": [
+      { "station": "Valle Lauro", "departure_s": 720 },
+      { "station": "Ponte Sabato", "arrival_s": 980, "departure_s": 1010 },
+      { "station": "San Felice Scalo", "arrival_s": 1340, "departure_s": 1370 },
+      { "station": "Monte Clanio", "arrival_s": 1600 } ] }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Interlocking: failed block section",
+  "description": "A block section on the line shows as occupied because of a track circuit failure. The block route through it is not set, the authority stops before the section and the train waits. Once the track circuit is repaired the block route is set again and the run goes on.",
+  "line": "valle-lauro",
+  "train": "regional",
+  "signalling": "ETCS",
+  "onboard": "reference",
+  "trackside": "interlocking",
+  "events": [
+    {"type": "tvps_failure", "when": {"t": 0}, "element": "Line/B3", "duration_s": 300}
+  ],
+  "criteria": {"delay_max_s": 480}
+}
